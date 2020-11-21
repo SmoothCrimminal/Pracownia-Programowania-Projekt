@@ -1,0 +1,12 @@
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\bin\Debug\netcoreapp3.1\P.P.Database.deps.json
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\bin\Debug\netcoreapp3.1\P.P.Database.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.csprojAssemblyReference.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.AssemblyInfoInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.AssemblyInfo.cs
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\bin\Debug\netcoreapp3.1\P.P.Database.runtimeconfig.json
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\bin\Debug\netcoreapp3.1\P.P.Database.runtimeconfig.dev.json
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\bin\Debug\netcoreapp3.1\P.P.Database.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.genruntimeconfig.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\P.P.Database\obj\Debug\netcoreapp3.1\P.P.Database.csproj.CoreCompileInputs.cache

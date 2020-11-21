@@ -1,0 +1,12 @@
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\bin\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.deps.json
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\bin\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\bin\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\bin\Debug\netcoreapp3.1\P.P.Database.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\bin\Debug\netcoreapp3.1\P.P.Database.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.csprojAssemblyReference.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.AssemblyInfoInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.AssemblyInfo.cs
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.csproj.CoreCompileInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.csproj.CopyComplete
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer.Logic\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.Logic.pdb

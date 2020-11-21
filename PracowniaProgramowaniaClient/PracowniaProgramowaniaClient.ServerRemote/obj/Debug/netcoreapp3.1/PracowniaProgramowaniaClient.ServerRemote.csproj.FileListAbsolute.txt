@@ -1,0 +1,9 @@
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\bin\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.deps.json
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\bin\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.csprojAssemblyReference.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.AssemblyInfoInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.AssemblyInfo.cs
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\bin\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.csproj.CoreCompileInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaClient\PracowniaProgramowaniaClient.ServerRemote\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaClient.ServerRemote.pdb
