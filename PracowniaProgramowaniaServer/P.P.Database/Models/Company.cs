@@ -22,6 +22,7 @@ namespace P.P.Database.Models
         public int IdUżytkownika { get; set; }
         public bool? IsDeleted { get; set; }
 
+        public virtual Brand IdBranżyNavigation { get; set; }
         public virtual User IdUżytkownikaNavigation { get; set; }
         public virtual ICollection<Contact> Contacts { get; set; }
         public virtual ICollection<TradeNote> TradeNotes { get; set; }

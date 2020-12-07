@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lc1iOukCYNLPQTLW5fcNI9VVxwH5Xy1h8s72xASWwm6CdanMorytfJ03x23A96KE+xrwcH0nwb15j+VNgzt61A==",
+  "dgSpecHash": "Khb4QdEIuh+4QfoUaVX0h6GX6WWVI+CvJXFYBUkQnm7gzvN0TlL+FfzHc7fQUbcdkv/lKvZnF9gWIBYK2o4SXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.csproj",
+  "projectFilePath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lataw\\.nuget\\packages\\google.protobuf\\3.11.2\\google.protobuf.3.11.2.nupkg.sha512",
     "C:\\Users\\lataw\\.nuget\\packages\\grpc.aspnetcore\\2.27.0\\grpc.aspnetcore.2.27.0.nupkg.sha512",

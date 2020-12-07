@@ -9,6 +9,15 @@ service PracowniaProgramowaniaServer {
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply);
   rpc CreateBrand (CreateBrandRequest) returns (CreateBrandReply);
+  rpc DeleteBrand (DeleteBrandRequest) returns (DeleteBrandReply);
+  //rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
+  rpc ReadBrand (ReadBrandRequest) returns (ReadBrandReply);
+  rpc UpdateBrand (UpdateBrandRequest) returns (UpdateBrandReply);
+  rpc CreateRole (CreateRoleRequest) returns (CreateRoleReply);
+  rpc DeleteRole (DeleteRoleRequest) returns (DeleteRoleReply);
+  //rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
+  rpc ReadRole (ReadRoleRequest) returns (ReadRoleReply);
+  rpc UpdateRole (UpdateRoleRequest) returns (UpdateRoleReply);
 }
 
 // The request message containing the user's name.
@@ -22,10 +31,71 @@ message HelloReply {
 }
 
 message CreateBrandRequest{
-	string brandName = 1;
+	string brandName = 1;  // checemy mieæ nazwê Brandu
 }
 
 message CreateBrandReply{
+	int32 brandId = 1;       // zwracamy ID i Name
+	string brandName = 2;
+}
+
+message DeleteBrandRequest{
+	int32 brandId = 1;
+}
+
+message DeleteBrandReply{
+	bool result = 1;
+}
+
+message ReadBrandRequest{
+	int32 brandId = 1;
+}
+
+message ReadBrandReply{
+	string brandDetails = 1;
+}
+
+message UpdateBrandRequest{
 	int32 brandId = 1;
 	string brandName = 2;
 }
+
+message UpdateBrandReply{
+	string updatedBrand = 1;
+}
+
+message CreateRoleRequest{
+	string roleName = 1;  // checemy mieæ nazwê Brandu
+}
+
+message CreateRoleReply{
+	int32 roleId = 1;       // zwracamy ID i Name
+	string roleName = 2;
+}
+
+message DeleteRoleRequest{
+	int32 roleId = 1;
+}
+
+message DeleteRoleReply{
+	bool result = 1;
+}
+
+message ReadRoleRequest{
+	int32 roleId = 1;
+}
+
+message ReadRoleReply{
+	string roleDetails = 1;
+}
+
+message UpdateRoleRequest{
+	int32 roleId = 1;
+	string roleName = 2;
+}
+
+message UpdateRoleReply{
+	string updatedRole = 1;
+}
+
+

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj": {}
+    "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj": {
+    "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj",
+        "projectUniqueName": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj",
         "projectName": "P.P.Database",
-        "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj",
+        "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj",
         "packagesPath": "C:\\Users\\lataw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\P.P.Database\\obj\\",
+        "outputPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lataw\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj": {
+    "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj",
+        "projectUniqueName": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj",
         "projectName": "PracowniaProgramowaniaServer.Logic",
-        "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj",
+        "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj",
         "packagesPath": "C:\\Users\\lataw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\obj\\",
+        "outputPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lataw\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,8 +105,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj": {
-                "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj"
+              "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj": {
+                "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj"
               }
             }
           }

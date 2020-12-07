@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace P.P.Database.Models
 {
-    public partial class masterContext : DbContext
+    public partial class ProjektPPContext : DbContext
     {
-        public masterContext()
+        public ProjektPPContext()
         {
         }
 
-        public masterContext(DbContextOptions<masterContext> options)
+        public ProjektPPContext(DbContextOptions<ProjektPPContext> options)
             : base(options)
         {
         }
@@ -29,7 +29,7 @@ namespace P.P.Database.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=master;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=ProjektPP;Trusted_Connection=True;");
             }
         }
 
@@ -37,9 +37,7 @@ namespace P.P.Database.Models
         {
             modelBuilder.Entity<Brand>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.NazwaBranzy)
                     .HasMaxLength(30)
@@ -49,9 +47,7 @@ namespace P.P.Database.Models
 
             modelBuilder.Entity<Company>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Adres)
                     .HasMaxLength(30)
@@ -80,20 +76,23 @@ namespace P.P.Database.Models
                     .IsUnicode(false)
                     .HasColumnName("nip");
 
+                entity.HasOne(d => d.IdBranżyNavigation)
+                    .WithMany(p => p.Companies)
+                    .HasForeignKey(d => d.IdBranży)
+                    .HasConstraintName("FK__Companies__idBra__44FF419A");
+
                 entity.HasOne(d => d.IdUżytkownikaNavigation)
                     .WithMany(p => p.Companies)
                     .HasForeignKey(d => d.IdUżytkownika)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Companies__idUży__147C05D0");
+                    .HasConstraintName("FK__Companies__idUży__45F365D3");
             });
 
             modelBuilder.Entity<Contact>(entity =>
             {
                 entity.ToTable("Contact");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.FirmaPowiazana).HasColumnName("firmaPowiazana");
 
@@ -132,20 +131,18 @@ namespace P.P.Database.Models
                     .WithMany(p => p.Contacts)
                     .HasForeignKey(d => d.FirmaPowiazana)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Contact__firmaPo__1B29035F");
+                    .HasConstraintName("FK__Contact__firmaPo__48CFD27E");
 
                 entity.HasOne(d => d.IdUżytkownikaNavigation)
                     .WithMany(p => p.Contacts)
                     .HasForeignKey(d => d.IdUżytkownika)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Contact__idUżytk__1C1D2798");
+                    .HasConstraintName("FK__Contact__idUżytk__49C3F6B7");
             });
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.NazwaRoli)
                     .HasMaxLength(30)
@@ -157,9 +154,7 @@ namespace P.P.Database.Models
             {
                 entity.ToTable("TradeNote");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.FirmaPowiazana).HasColumnName("firmaPowiazana");
 
@@ -176,20 +171,18 @@ namespace P.P.Database.Models
                     .WithMany(p => p.TradeNotes)
                     .HasForeignKey(d => d.FirmaPowiazana)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__TradeNote__firma__1758727B");
+                    .HasConstraintName("FK__TradeNote__firma__4CA06362");
 
                 entity.HasOne(d => d.IdUżytkownikaNavigation)
                     .WithMany(p => p.TradeNotes)
                     .HasForeignKey(d => d.IdUżytkownika)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__TradeNote__idUży__184C96B4");
+                    .HasConstraintName("FK__TradeNote__idUży__4D94879B");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.DateOfBirth)
                     .HasColumnType("datetime")
@@ -220,6 +213,12 @@ namespace P.P.Database.Models
                     .HasMaxLength(30)
                     .IsUnicode(false)
                     .HasColumnName("passwordMd5");
+
+                entity.HasOne(d => d.IdRoliNavigation)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.IdRoli)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Users__id_roli__4222D4EF");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -6253,11 +6253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.csproj",
+      "projectUniqueName": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.csproj",
       "projectName": "PracowniaProgramowaniaServer",
-      "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.csproj",
+      "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.csproj",
       "packagesPath": "C:\\Users\\lataw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\obj\\",
+      "outputPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lataw\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6273,8 +6273,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj": {
-              "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj"
+            "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj": {
+              "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\PracowniaProgramowaniaServer.Logic\\PracowniaProgramowaniaServer.Logic.csproj"
             }
           }
         }
