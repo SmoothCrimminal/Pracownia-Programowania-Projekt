@@ -8,7 +8,7 @@ namespace CRUD.Brands
 {
     public class ReadBrands
     {
-      /*  public IEnumerable<Brand> ReadAllBrands()
+        public List<Brand> ReadAllBrands()
         {
             using (var context = new ProjektPPContext())
             {
@@ -16,7 +16,7 @@ namespace CRUD.Brands
                 return allBrands;
                 
             }
-        } */
+        } 
 
         public string ReadBrand(int brandId)
         {

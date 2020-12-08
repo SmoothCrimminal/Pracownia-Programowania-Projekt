@@ -20,11 +20,11 @@ namespace PracowniaProgramowaniaServer.Logic
             return dbDeleteBrand.DeleteBrand(brandId);
         }
 
-        /* public IEnumerable<Brand> ReadAllBrands()
+         public List<Brand> ReadAllBrands()
         {
             var dbReadAllBrands = new ReadBrands();
             return dbReadAllBrands.ReadAllBrands();
-        } */
+        } 
 
         public string ReadBrand(int brandId)
         {

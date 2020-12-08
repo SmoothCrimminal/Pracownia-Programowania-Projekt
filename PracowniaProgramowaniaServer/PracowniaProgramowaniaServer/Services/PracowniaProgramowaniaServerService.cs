@@ -6,6 +6,7 @@ using Grpc.Core;
 using Microsoft.Extensions.Logging;
 using PracowniaProgramowaniaServer.Logic;
 using Google.Protobuf.Collections;
+using P.P.Database.Models;
 
 namespace PracowniaProgramowaniaServer
 {
@@ -47,11 +48,18 @@ namespace PracowniaProgramowaniaServer
             });
         }
 
-        /* public override Task<ReadAllBrandsReply> ReadAllBrands(ReadAllBrandsRequest request, ServerCallContext context)
-         {
-             var brandsLogic = new BrandsLogic();
-             var readAllBrands = brandsLogic.ReadAllBrands();
-             RepeatedField<Brand> brands = readAllBrands; */
+        public override Task<ReadAllBrandsReply> ReadAllBrands(ReadAllBrandsRequest request, ServerCallContext context)
+        {
+            var brandsLogic = new BrandsLogic();
+            var readAllBrands = brandsLogic.ReadAllBrands();
+            var allBrandsReply = new ReadAllBrandsReply();
+            foreach(Brand brand in readAllBrands)
+            {
+                allBrandsReply.AllBrands.Add(new BrandField { Id = brand.Id, BrandName = brand.NazwaBranzy });
+            }
+
+            return Task.FromResult(allBrandsReply);
+        }
 
         public override Task<ReadBrandReply> ReadBrand(ReadBrandRequest request, ServerCallContext context)
         {
@@ -72,6 +80,8 @@ namespace PracowniaProgramowaniaServer
                 UpdatedBrand = updateBrand
             });
         }
+
+
 
         public override Task<CreateRoleReply> CreateRole(CreateRoleRequest request, ServerCallContext context)
         {
@@ -95,11 +105,20 @@ namespace PracowniaProgramowaniaServer
             });
         }
 
-        /* public override Task<ReadAllBrandsReply> ReadAllBrands(ReadAllBrandsRequest request, ServerCallContext context)
-         {
-             var brandsLogic = new BrandsLogic();
-             var readAllBrands = brandsLogic.ReadAllBrands();
-             RepeatedField<Brand> brands = readAllBrands; */
+        public override Task<ReadAllRolesReply> ReadAllRoles(ReadAllRolesRequest request, ServerCallContext context)
+        {
+            var rolesLogic = new RolesLogic();
+            var readAllRoles = rolesLogic.ReadAllRoles();
+            var allRolesReply = new ReadAllRolesReply();
+
+            foreach (Role role in readAllRoles)
+            {
+                allRolesReply.AllRoles.Add(new RoleField { Id = role.Id, RoleName = role.NazwaRoli });
+            }
+
+            return Task.FromResult(allRolesReply);
+
+        }
 
         public override Task<ReadRoleReply> ReadRole (ReadRoleRequest request, ServerCallContext context)
         {
@@ -118,6 +137,140 @@ namespace PracowniaProgramowaniaServer
             return Task.FromResult(new UpdateRoleReply()
             {
                 UpdatedRole = updateRole
+            });
+        }
+
+
+        public override Task<CreateTradeNoteReply> CreateTradeNote(CreateTradeNoteRequest request, ServerCallContext context)
+        {
+            var tradeNotesLogic = new TradeNotesLogic();
+            var newTradeNote = tradeNotesLogic.CreateTradeNote(request.Content, request.CompanyId, request.UserId);
+            return Task.FromResult(new CreateTradeNoteReply()
+            {
+                TradeNoteId = newTradeNote.Id,
+                TradeNoteContent = newTradeNote.Tresc,
+                ConnectedCompanyId = newTradeNote.FirmaPowiazana,
+                UserAddingNoteId = newTradeNote.IdU퓓tkownika
+            });
+        }
+
+        public override Task<DeleteTradeNoteReply> DeleteTradeNote(DeleteTradeNoteRequest request, ServerCallContext context)
+        {
+            var tradeNotesLogic = new TradeNotesLogic();
+            var deleteTradeNote = tradeNotesLogic.DeleteTradeNote(request.TradeNoteId);
+            return Task.FromResult(new DeleteTradeNoteReply()
+            {
+                Message = deleteTradeNote
+            });
+        }
+
+        public override Task<ReadAllTradeNotesReply> ReadAllTradeNotes(ReadAllTradeNotesRequest request, ServerCallContext context)
+        {
+            var tradeNotesLogic = new TradeNotesLogic();
+            var readAllTradeNotes = tradeNotesLogic.ReadAllTradeNotes();
+            var allTradNotesReply = new ReadAllTradeNotesReply();
+            foreach (TradeNote tradeNote in readAllTradeNotes)
+            {
+                allTradNotesReply.ReadAllTradeNotes.Add(new TradeNoteField { Id = tradeNote.Id, Content = tradeNote.Tresc, ConnectedCompanyId
+                = tradeNote.FirmaPowiazana, UserAddingNoteId = tradeNote.IdU퓓tkownika, IsDeleted = (bool)tradeNote.IsDeleted});
+            }
+
+            return Task.FromResult(allTradNotesReply);
+        }
+
+        public override Task<ReadTradeNoteReply> ReadTradeNote(ReadTradeNoteRequest request, ServerCallContext context)
+        {
+            var tradeNotesLogic = new TradeNotesLogic();
+            var readTradeNote = tradeNotesLogic.ReadTradeNote(request.TradeNoteId);
+            return Task.FromResult(new ReadTradeNoteReply()
+            {
+                TradeNoteDetails = readTradeNote
+            });
+        }
+
+        public override Task<UpdateTradeNoteReply> UpdateTradeNote(UpdateTradeNoteRequest request, ServerCallContext context)
+        {
+            var tradeNotesLogic = new TradeNotesLogic();
+            var updateTradeNote = tradeNotesLogic.UpdateTradeNote(request.TradeNoteId, request.NewContent);
+            return Task.FromResult(new UpdateTradeNoteReply()
+            {
+                UpdatedTradeNote = updateTradeNote
+            });
+        }
+
+
+
+        public override Task<CreateContactReply> CreateContact(CreateContactRequest request, ServerCallContext context) 
+        {
+            var contactsLogic = new ContactsLogic();
+            var createContact = contactsLogic.CreateContact(request.Name, request.Surname, request.ConnectedCompanyId, request.UserAddingContactId,
+                request.PhoneNumber, request.EmailAddress, request.Position);
+            return Task.FromResult(new CreateContactReply()
+            {
+                Name = createContact.Imie,
+                Surname = createContact.Nazwisko,
+                ConnectedCompanyId = createContact.FirmaPowiazana,
+                UserAddingContactId = createContact.IdU퓓tkownika,
+                PhoneNumber = createContact.Telefon,
+                EmailAddress = createContact.Mail,
+                Position = createContact.Stanowisko
+            });
+        
+        }
+
+        public override Task<DeleteContactReply> DeleteContact(DeleteContactRequest request, ServerCallContext context)
+        {
+            var contactsLogic = new ContactsLogic();
+            var deleteContat = contactsLogic.DeleteContact(request.ContactId);
+            return Task.FromResult(new DeleteContactReply()
+            {
+                Message = deleteContat
+            });
+        }
+
+        public override Task<ReadAllContactsReply> ReadAllContacts(ReadAllContactsRequest request, ServerCallContext context)
+        {
+            var contactsLogic = new ContactsLogic();
+            var readAllContacts = contactsLogic.ReadAllContacts();
+            var readAllContactsReply = new ReadAllContactsReply();
+            
+            foreach(Contact contact in readAllContacts)
+            {
+                readAllContactsReply.AllContacts.Add(new ContactField
+                {
+                    Id = contact.Id,
+                    Name = contact.Imie,
+                    Surname = contact.Nazwisko,
+                    ConnectedCompanyId = contact.FirmaPowiazana,
+                    UserAddingContactId = contact.IdU퓓tkownika,
+                    Position = contact.Stanowisko,
+                    PhoneNumber = contact.Telefon,
+                    EmailAddress = contact.Mail,
+                    IsDeleted = (bool)contact.IsDeleted
+                });
+            }
+
+            return Task.FromResult(readAllContactsReply);
+        }
+
+        public override Task<ReadContactReply> ReadContact(ReadContactRequest request, ServerCallContext context)
+        {
+            var contactsLogic = new ContactsLogic();
+            var readAllContacts = contactsLogic.ReadContact(request.Id);
+            return Task.FromResult(new ReadContactReply()
+            {
+                ContactDetails = readAllContacts
+            });
+        }
+
+        public override Task<UpdateContactReply> UpdateContact(UpdateContactRequest request, ServerCallContext context)
+        {
+            var contactsLogic = new ContactsLogic();
+            var updateContact = contactsLogic.UpdateContact(request.ContactId, request.Name, request.Surname, request.PhoneNumber, request.Position,
+                request.EmailAddress);
+            return Task.FromResult(new UpdateContactReply()
+            {
+                UpdatedContact = updateContact
             });
         }
     }

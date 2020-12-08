@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using PracowniaProgramowaniaClient.Api.Models;
 using PracowniaProgramowaniaClient.ServerRemote;
+using Google.Protobuf.Collections;
+using PracowniaProgramowaniaServer;
 
 namespace PracowniaProgramowaniaClient.Api.Controllers
 {
@@ -51,12 +53,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
         [HttpGet]
         [Route("read")]
 
-        /*public string ReadAllBrands()
+        public RepeatedField<BrandField> ReadAllBrands()
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
             var reply = remote.ReadAllBrands();
             return reply.AllBrands;
-        } */
+        } 
 
         [HttpGet]
         [Route("read/{brandId}")]

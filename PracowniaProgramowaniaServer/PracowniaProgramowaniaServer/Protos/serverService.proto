@@ -10,14 +10,27 @@ service PracowniaProgramowaniaServer {
   rpc SayHello (HelloRequest) returns (HelloReply);
   rpc CreateBrand (CreateBrandRequest) returns (CreateBrandReply);
   rpc DeleteBrand (DeleteBrandRequest) returns (DeleteBrandReply);
-  //rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
+  rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
   rpc ReadBrand (ReadBrandRequest) returns (ReadBrandReply);
   rpc UpdateBrand (UpdateBrandRequest) returns (UpdateBrandReply);
+
   rpc CreateRole (CreateRoleRequest) returns (CreateRoleReply);
   rpc DeleteRole (DeleteRoleRequest) returns (DeleteRoleReply);
-  //rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
+  rpc ReadAllRoles (ReadAllRolesRequest) returns (ReadAllRolesReply);
   rpc ReadRole (ReadRoleRequest) returns (ReadRoleReply);
   rpc UpdateRole (UpdateRoleRequest) returns (UpdateRoleReply);
+
+  rpc CreateTradeNote (CreateTradeNoteRequest) returns (CreateTradeNoteReply);
+  rpc DeleteTradeNote (DeleteTradeNoteRequest) returns (DeleteTradeNoteReply);
+  rpc ReadAllTradeNotes (ReadAllTradeNotesRequest) returns (ReadAllTradeNotesReply);
+  rpc ReadTradeNote (ReadTradeNoteRequest) returns (ReadTradeNoteReply);
+  rpc UpdateTradeNote (UpdateTradeNoteRequest) returns (UpdateTradeNoteReply);
+
+  rpc CreateContact (CreateContactRequest) returns (CreateContactReply);
+  rpc DeleteContact (DeleteContactRequest) returns (DeleteContactReply);
+  rpc ReadAllContacts (ReadAllContactsRequest) returns (ReadAllContactsReply);
+  rpc ReadContact (ReadContactRequest) returns (ReadContactReply);
+  rpc UpdateContact (UpdateContactRequest) returns (UpdateContactReply);
 }
 
 // The request message containing the user's name.
@@ -28,6 +41,36 @@ message HelloRequest {
 // The response message containing the greetings.
 message HelloReply {
   string message = 1;
+}
+
+message BrandField{
+	int32 id = 1;
+	string brandName = 2;
+}
+
+message RoleField{
+	int32 id = 1;
+	string roleName = 2;
+}
+
+message TradeNoteField{
+	int32 id = 1;
+	string content = 2;
+	int32 connectedCompanyId = 3;
+	int32 userAddingNoteId = 4;
+	bool isDeleted = 5;
+}
+
+message ContactField{
+	int32 id = 1;
+	string name = 2;
+	int32 connectedCompanyId = 3;
+	int32 userAddingContactId = 4;
+	string surname = 5;
+	string phoneNumber = 6;
+	string emailAddress = 7;
+	string position = 8;
+	bool isDeleted = 9;
 }
 
 message CreateBrandRequest{
@@ -47,6 +90,14 @@ message DeleteBrandReply{
 	bool result = 1;
 }
 
+message ReadAllBrandsRequest{
+
+}
+
+message ReadAllBrandsReply{
+	repeated BrandField allBrands = 1;
+}
+
 message ReadBrandRequest{
 	int32 brandId = 1;
 }
@@ -63,6 +114,8 @@ message UpdateBrandRequest{
 message UpdateBrandReply{
 	string updatedBrand = 1;
 }
+
+
 
 message CreateRoleRequest{
 	string roleName = 1;  // checemy mieæ nazwê Brandu
@@ -81,6 +134,14 @@ message DeleteRoleReply{
 	bool result = 1;
 }
 
+message ReadAllRolesRequest{
+
+}
+
+message ReadAllRolesReply{
+	repeated RoleField allRoles = 1;
+}
+
 message ReadRoleRequest{
 	int32 roleId = 1;
 }
@@ -96,6 +157,115 @@ message UpdateRoleRequest{
 
 message UpdateRoleReply{
 	string updatedRole = 1;
+}
+
+
+message CreateTradeNoteRequest{
+	string content = 1;
+	int32 companyId = 2;
+	int32 userId = 3;
+}
+
+message CreateTradeNoteReply{
+	int32 tradeNoteId = 1;
+	string tradeNoteContent = 2;
+	int32 connectedCompanyId = 3;
+	int32 userAddingNoteId = 4;
+}
+
+message DeleteTradeNoteRequest{
+	int32 tradeNoteId = 1;
+}
+
+message DeleteTradeNoteReply{
+	string message = 1;
+}
+
+message ReadAllTradeNotesRequest{
+
+}
+
+message ReadAllTradeNotesReply{
+	repeated TradeNoteField readAllTradeNotes = 1;
+}
+
+message ReadTradeNoteRequest{
+	int32 tradeNoteId = 1;
+}
+
+message ReadTradeNoteReply{
+	string tradeNoteDetails = 1;
+}
+
+message UpdateTradeNoteRequest{
+	int32 tradeNoteId = 1;
+	string newContent = 2;
+}
+
+message UpdateTradeNoteReply{
+	string updatedTradeNote = 1;
+}
+
+
+message CreateContactRequest{
+	int32 contactId = 1;
+	string name = 2;
+	string surname = 3;
+	int32 connectedCompanyId = 4;
+	int32 userAddingContactId = 5;
+	string phoneNumber = 6;
+	string emailAddress = 7;
+	string position = 8;
+}
+
+message CreateContactReply{
+	int32 contactId = 1;
+	string name = 2;
+	string surname = 3;
+	int32 connectedCompanyId = 4;
+	int32 userAddingContactId = 5;
+	string phoneNumber = 6;
+	string emailAddress = 7;
+	string position = 8;
+}
+
+message DeleteContactRequest{
+	int32 contactId = 1;
+}
+
+message DeleteContactReply{
+	string message = 1;
+}
+
+message ReadAllContactsRequest{
+
+}
+
+message ReadAllContactsReply{
+	repeated ContactField allContacts = 1;
+}
+
+message ReadContactRequest{
+	int32 id = 1;
+}
+
+message ReadContactReply{
+	string contactDetails = 1;
+}
+
+message UpdateContactRequest{
+	int32 contactId = 1;
+	string name = 2;
+	string surname = 3;
+	int32 connectedCompanyId = 4;
+	int32 userAddingContactId = 5;
+	string phoneNumber = 6;
+	string emailAddress = 7;
+	string position = 8;
+}
+
+message UpdateContactReply{
+	string updatedContact = 1;
 }
 
 

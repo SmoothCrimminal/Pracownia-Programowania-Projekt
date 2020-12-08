@@ -26,10 +26,14 @@ namespace PracowniaProgramowaniaServer {
           string.Concat(
             "ChNzZXJ2ZXJTZXJ2aWNlLnByb3RvEg1zZXJ2ZXJTZXJ2aWNlIhwKDEhlbGxv",
             "UmVxdWVzdBIMCgRuYW1lGAEgASgJIh0KCkhlbGxvUmVwbHkSDwoHbWVzc2Fn",
-            "ZRgBIAEoCSInChJDcmVhdGVCcmFuZFJlcXVlc3QSEQoJYnJhbmROYW1lGAEg",
-            "ASgJIjYKEENyZWF0ZUJyYW5kUmVwbHkSDwoHYnJhbmRJZBgBIAEoBRIRCgli",
-            "cmFuZE5hbWUYAiABKAkiJQoSRGVsZXRlQnJhbmRSZXF1ZXN0Eg8KB2JyYW5k",
-            "SWQYASABKAUiIgoQRGVsZXRlQnJhbmRSZXBseRIOCgZyZXN1bHQYASABKAgi",
+            "ZRgBIAEoCSIrCgpCcmFuZEZpZWxkEgoKAmlkGAEgASgFEhEKCWJyYW5kTmFt",
+            "ZRgCIAEoCSIpCglSb2xlRmllbGQSCgoCaWQYASABKAUSEAoIcm9sZU5hbWUY",
+            "AiABKAkiJwoSQ3JlYXRlQnJhbmRSZXF1ZXN0EhEKCWJyYW5kTmFtZRgBIAEo",
+            "CSI2ChBDcmVhdGVCcmFuZFJlcGx5Eg8KB2JyYW5kSWQYASABKAUSEQoJYnJh",
+            "bmROYW1lGAIgASgJIiUKEkRlbGV0ZUJyYW5kUmVxdWVzdBIPCgdicmFuZElk",
+            "GAEgASgFIiIKEERlbGV0ZUJyYW5kUmVwbHkSDgoGcmVzdWx0GAEgASgIIhYK",
+            "FFJlYWRBbGxCcmFuZHNSZXF1ZXN0IkIKElJlYWRBbGxCcmFuZHNSZXBseRIs",
+            "CglhbGxCcmFuZHMYASADKAsyGS5zZXJ2ZXJTZXJ2aWNlLkJyYW5kRmllbGQi",
             "IwoQUmVhZEJyYW5kUmVxdWVzdBIPCgdicmFuZElkGAEgASgFIiYKDlJlYWRC",
             "cmFuZFJlcGx5EhQKDGJyYW5kRGV0YWlscxgBIAEoCSI4ChJVcGRhdGVCcmFu",
             "ZFJlcXVlc3QSDwoHYnJhbmRJZBgBIAEoBRIRCglicmFuZE5hbWUYAiABKAki",
@@ -37,37 +41,47 @@ namespace PracowniaProgramowaniaServer {
             "Q3JlYXRlUm9sZVJlcXVlc3QSEAoIcm9sZU5hbWUYASABKAkiMwoPQ3JlYXRl",
             "Um9sZVJlcGx5Eg4KBnJvbGVJZBgBIAEoBRIQCghyb2xlTmFtZRgCIAEoCSIj",
             "ChFEZWxldGVSb2xlUmVxdWVzdBIOCgZyb2xlSWQYASABKAUiIQoPRGVsZXRl",
-            "Um9sZVJlcGx5Eg4KBnJlc3VsdBgBIAEoCCIhCg9SZWFkUm9sZVJlcXVlc3QS",
-            "DgoGcm9sZUlkGAEgASgFIiQKDVJlYWRSb2xlUmVwbHkSEwoLcm9sZURldGFp",
-            "bHMYASABKAkiNQoRVXBkYXRlUm9sZVJlcXVlc3QSDgoGcm9sZUlkGAEgASgF",
-            "EhAKCHJvbGVOYW1lGAIgASgJIiYKD1VwZGF0ZVJvbGVSZXBseRITCgt1cGRh",
-            "dGVkUm9sZRgBIAEoCTLiBQocUHJhY293bmlhUHJvZ3JhbW93YW5pYVNlcnZl",
-            "chJCCghTYXlIZWxsbxIbLnNlcnZlclNlcnZpY2UuSGVsbG9SZXF1ZXN0Ghku",
-            "c2VydmVyU2VydmljZS5IZWxsb1JlcGx5ElEKC0NyZWF0ZUJyYW5kEiEuc2Vy",
-            "dmVyU2VydmljZS5DcmVhdGVCcmFuZFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNl",
-            "LkNyZWF0ZUJyYW5kUmVwbHkSUQoLRGVsZXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2",
-            "aWNlLkRlbGV0ZUJyYW5kUmVxdWVzdBofLnNlcnZlclNlcnZpY2UuRGVsZXRl",
-            "QnJhbmRSZXBseRJLCglSZWFkQnJhbmQSHy5zZXJ2ZXJTZXJ2aWNlLlJlYWRC",
-            "cmFuZFJlcXVlc3QaHS5zZXJ2ZXJTZXJ2aWNlLlJlYWRCcmFuZFJlcGx5ElEK",
-            "C1VwZGF0ZUJyYW5kEiEuc2VydmVyU2VydmljZS5VcGRhdGVCcmFuZFJlcXVl",
-            "c3QaHy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUJyYW5kUmVwbHkSTgoKQ3JlYXRl",
-            "Um9sZRIgLnNlcnZlclNlcnZpY2UuQ3JlYXRlUm9sZVJlcXVlc3QaHi5zZXJ2",
-            "ZXJTZXJ2aWNlLkNyZWF0ZVJvbGVSZXBseRJOCgpEZWxldGVSb2xlEiAuc2Vy",
-            "dmVyU2VydmljZS5EZWxldGVSb2xlUmVxdWVzdBoeLnNlcnZlclNlcnZpY2Uu",
-            "RGVsZXRlUm9sZVJlcGx5EkgKCFJlYWRSb2xlEh4uc2VydmVyU2VydmljZS5S",
-            "ZWFkUm9sZVJlcXVlc3QaHC5zZXJ2ZXJTZXJ2aWNlLlJlYWRSb2xlUmVwbHkS",
-            "TgoKVXBkYXRlUm9sZRIgLnNlcnZlclNlcnZpY2UuVXBkYXRlUm9sZVJlcXVl",
-            "c3QaHi5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVJvbGVSZXBseUIfqgIcUHJhY293",
-            "bmlhUHJvZ3JhbW93YW5pYVNlcnZlcmIGcHJvdG8z"));
+            "Um9sZVJlcGx5Eg4KBnJlc3VsdBgBIAEoCCIVChNSZWFkQWxsUm9sZXNSZXF1",
+            "ZXN0Ij8KEVJlYWRBbGxSb2xlc1JlcGx5EioKCGFsbFJvbGVzGAEgAygLMhgu",
+            "c2VydmVyU2VydmljZS5Sb2xlRmllbGQiIQoPUmVhZFJvbGVSZXF1ZXN0Eg4K",
+            "BnJvbGVJZBgBIAEoBSIkCg1SZWFkUm9sZVJlcGx5EhMKC3JvbGVEZXRhaWxz",
+            "GAEgASgJIjUKEVVwZGF0ZVJvbGVSZXF1ZXN0Eg4KBnJvbGVJZBgBIAEoBRIQ",
+            "Cghyb2xlTmFtZRgCIAEoCSImCg9VcGRhdGVSb2xlUmVwbHkSEwoLdXBkYXRl",
+            "ZFJvbGUYASABKAkykQcKHFByYWNvd25pYVByb2dyYW1vd2FuaWFTZXJ2ZXIS",
+            "QgoIU2F5SGVsbG8SGy5zZXJ2ZXJTZXJ2aWNlLkhlbGxvUmVxdWVzdBoZLnNl",
+            "cnZlclNlcnZpY2UuSGVsbG9SZXBseRJRCgtDcmVhdGVCcmFuZBIhLnNlcnZl",
+            "clNlcnZpY2UuQ3JlYXRlQnJhbmRSZXF1ZXN0Gh8uc2VydmVyU2VydmljZS5D",
+            "cmVhdGVCcmFuZFJlcGx5ElEKC0RlbGV0ZUJyYW5kEiEuc2VydmVyU2Vydmlj",
+            "ZS5EZWxldGVCcmFuZFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUJy",
+            "YW5kUmVwbHkSVwoNUmVhZEFsbEJyYW5kcxIjLnNlcnZlclNlcnZpY2UuUmVh",
+            "ZEFsbEJyYW5kc1JlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxCcmFu",
+            "ZHNSZXBseRJLCglSZWFkQnJhbmQSHy5zZXJ2ZXJTZXJ2aWNlLlJlYWRCcmFu",
+            "ZFJlcXVlc3QaHS5zZXJ2ZXJTZXJ2aWNlLlJlYWRCcmFuZFJlcGx5ElEKC1Vw",
+            "ZGF0ZUJyYW5kEiEuc2VydmVyU2VydmljZS5VcGRhdGVCcmFuZFJlcXVlc3Qa",
+            "Hy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUJyYW5kUmVwbHkSTgoKQ3JlYXRlUm9s",
+            "ZRIgLnNlcnZlclNlcnZpY2UuQ3JlYXRlUm9sZVJlcXVlc3QaHi5zZXJ2ZXJT",
+            "ZXJ2aWNlLkNyZWF0ZVJvbGVSZXBseRJOCgpEZWxldGVSb2xlEiAuc2VydmVy",
+            "U2VydmljZS5EZWxldGVSb2xlUmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuRGVs",
+            "ZXRlUm9sZVJlcGx5ElQKDFJlYWRBbGxSb2xlcxIiLnNlcnZlclNlcnZpY2Uu",
+            "UmVhZEFsbFJvbGVzUmVxdWVzdBogLnNlcnZlclNlcnZpY2UuUmVhZEFsbFJv",
+            "bGVzUmVwbHkSSAoIUmVhZFJvbGUSHi5zZXJ2ZXJTZXJ2aWNlLlJlYWRSb2xl",
+            "UmVxdWVzdBocLnNlcnZlclNlcnZpY2UuUmVhZFJvbGVSZXBseRJOCgpVcGRh",
+            "dGVSb2xlEiAuc2VydmVyU2VydmljZS5VcGRhdGVSb2xlUmVxdWVzdBoeLnNl",
+            "cnZlclNlcnZpY2UuVXBkYXRlUm9sZVJlcGx5Qh+qAhxQcmFjb3duaWFQcm9n",
+            "cmFtb3dhbmlhU2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.HelloRequest), global::PracowniaProgramowaniaServer.HelloRequest.Parser, new[]{ "Name" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.HelloReply), global::PracowniaProgramowaniaServer.HelloReply.Parser, new[]{ "Message" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.BrandField), global::PracowniaProgramowaniaServer.BrandField.Parser, new[]{ "Id", "BrandName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.RoleField), global::PracowniaProgramowaniaServer.RoleField.Parser, new[]{ "Id", "RoleName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateBrandRequest), global::PracowniaProgramowaniaServer.CreateBrandRequest.Parser, new[]{ "BrandName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateBrandReply), global::PracowniaProgramowaniaServer.CreateBrandReply.Parser, new[]{ "BrandId", "BrandName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteBrandRequest), global::PracowniaProgramowaniaServer.DeleteBrandRequest.Parser, new[]{ "BrandId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteBrandReply), global::PracowniaProgramowaniaServer.DeleteBrandReply.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllBrandsRequest), global::PracowniaProgramowaniaServer.ReadAllBrandsRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllBrandsReply), global::PracowniaProgramowaniaServer.ReadAllBrandsReply.Parser, new[]{ "AllBrands" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadBrandRequest), global::PracowniaProgramowaniaServer.ReadBrandRequest.Parser, new[]{ "BrandId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadBrandReply), global::PracowniaProgramowaniaServer.ReadBrandReply.Parser, new[]{ "BrandDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateBrandRequest), global::PracowniaProgramowaniaServer.UpdateBrandRequest.Parser, new[]{ "BrandId", "BrandName" }, null, null, null),
@@ -76,6 +90,8 @@ namespace PracowniaProgramowaniaServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateRoleReply), global::PracowniaProgramowaniaServer.CreateRoleReply.Parser, new[]{ "RoleId", "RoleName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteRoleRequest), global::PracowniaProgramowaniaServer.DeleteRoleRequest.Parser, new[]{ "RoleId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteRoleReply), global::PracowniaProgramowaniaServer.DeleteRoleReply.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllRolesRequest), global::PracowniaProgramowaniaServer.ReadAllRolesRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllRolesReply), global::PracowniaProgramowaniaServer.ReadAllRolesReply.Parser, new[]{ "AllRoles" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadRoleRequest), global::PracowniaProgramowaniaServer.ReadRoleRequest.Parser, new[]{ "RoleId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadRoleReply), global::PracowniaProgramowaniaServer.ReadRoleReply.Parser, new[]{ "RoleDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateRoleRequest), global::PracowniaProgramowaniaServer.UpdateRoleRequest.Parser, new[]{ "RoleId", "RoleName" }, null, null, null),
@@ -350,6 +366,320 @@ namespace PracowniaProgramowaniaServer {
 
   }
 
+  public sealed partial class BrandField : pb::IMessage<BrandField> {
+    private static readonly pb::MessageParser<BrandField> _parser = new pb::MessageParser<BrandField>(() => new BrandField());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<BrandField> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BrandField() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BrandField(BrandField other) : this() {
+      id_ = other.id_;
+      brandName_ = other.brandName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BrandField Clone() {
+      return new BrandField(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "brandName" field.</summary>
+    public const int BrandNameFieldNumber = 2;
+    private string brandName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BrandName {
+      get { return brandName_; }
+      set {
+        brandName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as BrandField);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(BrandField other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (BrandName != other.BrandName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (BrandName.Length != 0) hash ^= BrandName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (BrandName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(BrandName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (BrandName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BrandName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(BrandField other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.BrandName.Length != 0) {
+        BrandName = other.BrandName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            BrandName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class RoleField : pb::IMessage<RoleField> {
+    private static readonly pb::MessageParser<RoleField> _parser = new pb::MessageParser<RoleField>(() => new RoleField());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RoleField> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoleField() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoleField(RoleField other) : this() {
+      id_ = other.id_;
+      roleName_ = other.roleName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoleField Clone() {
+      return new RoleField(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "roleName" field.</summary>
+    public const int RoleNameFieldNumber = 2;
+    private string roleName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RoleName {
+      get { return roleName_; }
+      set {
+        roleName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RoleField);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RoleField other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (RoleName != other.RoleName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (RoleName.Length != 0) hash ^= RoleName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (RoleName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RoleName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (RoleName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoleName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RoleField other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.RoleName.Length != 0) {
+        RoleName = other.RoleName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            RoleName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class CreateBrandRequest : pb::IMessage<CreateBrandRequest> {
     private static readonly pb::MessageParser<CreateBrandRequest> _parser = new pb::MessageParser<CreateBrandRequest>(() => new CreateBrandRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -358,7 +688,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -490,7 +820,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -650,7 +980,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -779,7 +1109,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -900,6 +1230,228 @@ namespace PracowniaProgramowaniaServer {
 
   }
 
+  public sealed partial class ReadAllBrandsRequest : pb::IMessage<ReadAllBrandsRequest> {
+    private static readonly pb::MessageParser<ReadAllBrandsRequest> _parser = new pb::MessageParser<ReadAllBrandsRequest>(() => new ReadAllBrandsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReadAllBrandsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllBrandsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllBrandsRequest(ReadAllBrandsRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllBrandsRequest Clone() {
+      return new ReadAllBrandsRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReadAllBrandsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReadAllBrandsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReadAllBrandsRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ReadAllBrandsReply : pb::IMessage<ReadAllBrandsReply> {
+    private static readonly pb::MessageParser<ReadAllBrandsReply> _parser = new pb::MessageParser<ReadAllBrandsReply>(() => new ReadAllBrandsReply());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReadAllBrandsReply> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllBrandsReply() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllBrandsReply(ReadAllBrandsReply other) : this() {
+      allBrands_ = other.allBrands_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllBrandsReply Clone() {
+      return new ReadAllBrandsReply(this);
+    }
+
+    /// <summary>Field number for the "allBrands" field.</summary>
+    public const int AllBrandsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::PracowniaProgramowaniaServer.BrandField> _repeated_allBrands_codec
+        = pb::FieldCodec.ForMessage(10, global::PracowniaProgramowaniaServer.BrandField.Parser);
+    private readonly pbc::RepeatedField<global::PracowniaProgramowaniaServer.BrandField> allBrands_ = new pbc::RepeatedField<global::PracowniaProgramowaniaServer.BrandField>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::PracowniaProgramowaniaServer.BrandField> AllBrands {
+      get { return allBrands_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReadAllBrandsReply);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReadAllBrandsReply other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!allBrands_.Equals(other.allBrands_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= allBrands_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      allBrands_.WriteTo(output, _repeated_allBrands_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += allBrands_.CalculateSize(_repeated_allBrands_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReadAllBrandsReply other) {
+      if (other == null) {
+        return;
+      }
+      allBrands_.Add(other.allBrands_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            allBrands_.AddEntriesFrom(input, _repeated_allBrands_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class ReadBrandRequest : pb::IMessage<ReadBrandRequest> {
     private static readonly pb::MessageParser<ReadBrandRequest> _parser = new pb::MessageParser<ReadBrandRequest>(() => new ReadBrandRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -908,7 +1460,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1037,7 +1589,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1166,7 +1718,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1323,7 +1875,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1452,7 +2004,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1584,7 +2136,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1744,7 +2296,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1873,7 +2425,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1994,6 +2546,228 @@ namespace PracowniaProgramowaniaServer {
 
   }
 
+  public sealed partial class ReadAllRolesRequest : pb::IMessage<ReadAllRolesRequest> {
+    private static readonly pb::MessageParser<ReadAllRolesRequest> _parser = new pb::MessageParser<ReadAllRolesRequest>(() => new ReadAllRolesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReadAllRolesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllRolesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllRolesRequest(ReadAllRolesRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllRolesRequest Clone() {
+      return new ReadAllRolesRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReadAllRolesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReadAllRolesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReadAllRolesRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ReadAllRolesReply : pb::IMessage<ReadAllRolesReply> {
+    private static readonly pb::MessageParser<ReadAllRolesReply> _parser = new pb::MessageParser<ReadAllRolesReply>(() => new ReadAllRolesReply());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ReadAllRolesReply> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllRolesReply() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllRolesReply(ReadAllRolesReply other) : this() {
+      allRoles_ = other.allRoles_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ReadAllRolesReply Clone() {
+      return new ReadAllRolesReply(this);
+    }
+
+    /// <summary>Field number for the "allRoles" field.</summary>
+    public const int AllRolesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::PracowniaProgramowaniaServer.RoleField> _repeated_allRoles_codec
+        = pb::FieldCodec.ForMessage(10, global::PracowniaProgramowaniaServer.RoleField.Parser);
+    private readonly pbc::RepeatedField<global::PracowniaProgramowaniaServer.RoleField> allRoles_ = new pbc::RepeatedField<global::PracowniaProgramowaniaServer.RoleField>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::PracowniaProgramowaniaServer.RoleField> AllRoles {
+      get { return allRoles_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ReadAllRolesReply);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ReadAllRolesReply other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!allRoles_.Equals(other.allRoles_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= allRoles_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      allRoles_.WriteTo(output, _repeated_allRoles_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += allRoles_.CalculateSize(_repeated_allRoles_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ReadAllRolesReply other) {
+      if (other == null) {
+        return;
+      }
+      allRoles_.Add(other.allRoles_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            allRoles_.AddEntriesFrom(input, _repeated_allRoles_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class ReadRoleRequest : pb::IMessage<ReadRoleRequest> {
     private static readonly pb::MessageParser<ReadRoleRequest> _parser = new pb::MessageParser<ReadRoleRequest>(() => new ReadRoleRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2002,7 +2776,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[14]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2131,7 +2905,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[15]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2260,7 +3034,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[16]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2417,7 +3191,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[17]; }
+      get { return global::PracowniaProgramowaniaServer.ServerServiceReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

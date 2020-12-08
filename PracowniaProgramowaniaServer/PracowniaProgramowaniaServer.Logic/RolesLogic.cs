@@ -20,11 +20,11 @@ namespace PracowniaProgramowaniaServer.Logic
             return dbDeleteRole.DeleteRole(roleId);
         }
 
-        /* public IEnumerable<Brand> ReadAllBrands()
+         public List<Role> ReadAllRoles()
         {
-            var dbReadAllBrands = new ReadBrands();
-            return dbReadAllBrands.ReadAllBrands();
-        } */
+            var dbReadAllRoles = new ReadRoles();
+            return dbReadAllRoles.ReadAllRoles();
+        } 
 
         public string ReadRole(int roleId)
         {

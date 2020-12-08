@@ -22,11 +22,11 @@ namespace PracowniaProgramowaniaClient.ServerRemote
 
         }
 
-       /* public PracowniaProgramowaniaServer.ReadAllBrandsReply ReadAllBrands()
+       public PracowniaProgramowaniaServer.ReadAllBrandsReply ReadAllBrands()
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
             return pPServer.ReadAllBrands(new PracowniaProgramowaniaServer.ReadAllBrandsRequest());
-        } */
+        } 
         public PracowniaProgramowaniaServer.ReadBrandReply ReadBrand(int brandId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
@@ -54,11 +54,11 @@ namespace PracowniaProgramowaniaClient.ServerRemote
 
         }
 
-        /* public PracowniaProgramowaniaServer.ReadAllBrandsReply ReadAllBrands()
-         {
+        public PracowniaProgramowaniaServer.ReadAllRolesReply ReadAllRoles()       
+        {
              var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-             return pPServer.ReadAllBrands(new PracowniaProgramowaniaServer.ReadAllBrandsRequest());
-         } */
+             return pPServer.ReadAllRoles(new PracowniaProgramowaniaServer.ReadAllRolesRequest());
+        } 
         public PracowniaProgramowaniaServer.ReadRoleReply ReadRole(int roleId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));

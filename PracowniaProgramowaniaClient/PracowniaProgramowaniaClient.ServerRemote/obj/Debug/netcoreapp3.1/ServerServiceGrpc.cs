@@ -21,6 +21,8 @@ namespace PracowniaProgramowaniaServer {
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateBrandReply> __Marshaller_serverService_CreateBrandReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateBrandReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteBrandRequest> __Marshaller_serverService_DeleteBrandRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteBrandRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteBrandReply> __Marshaller_serverService_DeleteBrandReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteBrandReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllBrandsRequest> __Marshaller_serverService_ReadAllBrandsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllBrandsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllBrandsReply> __Marshaller_serverService_ReadAllBrandsReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllBrandsReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadBrandRequest> __Marshaller_serverService_ReadBrandRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadBrandRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadBrandReply> __Marshaller_serverService_ReadBrandReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadBrandReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateBrandRequest> __Marshaller_serverService_UpdateBrandRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateBrandRequest.Parser.ParseFrom);
@@ -29,6 +31,8 @@ namespace PracowniaProgramowaniaServer {
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateRoleReply> __Marshaller_serverService_CreateRoleReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateRoleReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteRoleRequest> __Marshaller_serverService_DeleteRoleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteRoleRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteRoleReply> __Marshaller_serverService_DeleteRoleReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteRoleReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllRolesRequest> __Marshaller_serverService_ReadAllRolesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllRolesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllRolesReply> __Marshaller_serverService_ReadAllRolesReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllRolesReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadRoleRequest> __Marshaller_serverService_ReadRoleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadRoleRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadRoleReply> __Marshaller_serverService_ReadRoleReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadRoleReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateRoleRequest> __Marshaller_serverService_UpdateRoleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateRoleRequest.Parser.ParseFrom);
@@ -54,6 +58,13 @@ namespace PracowniaProgramowaniaServer {
         "DeleteBrand",
         __Marshaller_serverService_DeleteBrandRequest,
         __Marshaller_serverService_DeleteBrandReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllBrandsRequest, global::PracowniaProgramowaniaServer.ReadAllBrandsReply> __Method_ReadAllBrands = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllBrandsRequest, global::PracowniaProgramowaniaServer.ReadAllBrandsReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllBrands",
+        __Marshaller_serverService_ReadAllBrandsRequest,
+        __Marshaller_serverService_ReadAllBrandsReply);
 
     static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadBrandRequest, global::PracowniaProgramowaniaServer.ReadBrandReply> __Method_ReadBrand = new grpc::Method<global::PracowniaProgramowaniaServer.ReadBrandRequest, global::PracowniaProgramowaniaServer.ReadBrandReply>(
         grpc::MethodType.Unary,
@@ -82,6 +93,13 @@ namespace PracowniaProgramowaniaServer {
         "DeleteRole",
         __Marshaller_serverService_DeleteRoleRequest,
         __Marshaller_serverService_DeleteRoleReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllRolesRequest, global::PracowniaProgramowaniaServer.ReadAllRolesReply> __Method_ReadAllRoles = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllRolesRequest, global::PracowniaProgramowaniaServer.ReadAllRolesReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllRoles",
+        __Marshaller_serverService_ReadAllRolesRequest,
+        __Marshaller_serverService_ReadAllRolesReply);
 
     static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadRoleRequest, global::PracowniaProgramowaniaServer.ReadRoleReply> __Method_ReadRole = new grpc::Method<global::PracowniaProgramowaniaServer.ReadRoleRequest, global::PracowniaProgramowaniaServer.ReadRoleReply>(
         grpc::MethodType.Unary,
@@ -202,46 +220,34 @@ namespace PracowniaProgramowaniaServer {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteBrand, null, options, request);
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
+      public virtual global::PracowniaProgramowaniaServer.ReadAllBrandsReply ReadAllBrands(global::PracowniaProgramowaniaServer.ReadAllBrandsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllBrands(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllBrandsReply ReadAllBrands(global::PracowniaProgramowaniaServer.ReadAllBrandsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadAllBrands, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllBrandsReply> ReadAllBrandsAsync(global::PracowniaProgramowaniaServer.ReadAllBrandsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllBrandsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllBrandsReply> ReadAllBrandsAsync(global::PracowniaProgramowaniaServer.ReadAllBrandsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadAllBrands, null, options, request);
+      }
       public virtual global::PracowniaProgramowaniaServer.ReadBrandReply ReadBrand(global::PracowniaProgramowaniaServer.ReadBrandRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ReadBrand(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       public virtual global::PracowniaProgramowaniaServer.ReadBrandReply ReadBrand(global::PracowniaProgramowaniaServer.ReadBrandRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ReadBrand, null, options, request);
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadBrandReply> ReadBrandAsync(global::PracowniaProgramowaniaServer.ReadBrandRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ReadBrandAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadBrandReply> ReadBrandAsync(global::PracowniaProgramowaniaServer.ReadBrandRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ReadBrand, null, options, request);
@@ -294,46 +300,34 @@ namespace PracowniaProgramowaniaServer {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteRole, null, options, request);
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
+      public virtual global::PracowniaProgramowaniaServer.ReadAllRolesReply ReadAllRoles(global::PracowniaProgramowaniaServer.ReadAllRolesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllRoles(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllRolesReply ReadAllRoles(global::PracowniaProgramowaniaServer.ReadAllRolesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadAllRoles, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllRolesReply> ReadAllRolesAsync(global::PracowniaProgramowaniaServer.ReadAllRolesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllRolesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllRolesReply> ReadAllRolesAsync(global::PracowniaProgramowaniaServer.ReadAllRolesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadAllRoles, null, options, request);
+      }
       public virtual global::PracowniaProgramowaniaServer.ReadRoleReply ReadRole(global::PracowniaProgramowaniaServer.ReadRoleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ReadRole(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       public virtual global::PracowniaProgramowaniaServer.ReadRoleReply ReadRole(global::PracowniaProgramowaniaServer.ReadRoleRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ReadRole, null, options, request);
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadRoleReply> ReadRoleAsync(global::PracowniaProgramowaniaServer.ReadRoleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ReadRoleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///rpc ReadAllBrands (ReadAllBrandsRequest) returns (ReadAllBrandsReply);
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadRoleReply> ReadRoleAsync(global::PracowniaProgramowaniaServer.ReadRoleRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ReadRole, null, options, request);
