@@ -57,6 +57,26 @@ namespace PracowniaProgramowaniaServer {
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadContactReply> __Marshaller_serverService_ReadContactReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadContactReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateContactRequest> __Marshaller_serverService_UpdateContactRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateContactRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateContactReply> __Marshaller_serverService_UpdateContactReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateContactReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateCompanyRequest> __Marshaller_serverService_CreateCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateCompanyReply> __Marshaller_serverService_CreateCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteCompanyRequest> __Marshaller_serverService_DeleteCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteCompanyReply> __Marshaller_serverService_DeleteCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest> __Marshaller_serverService_ReadAllCompaniesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> __Marshaller_serverService_ReadAllCompaniesReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllCompaniesReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadCompanyRequest> __Marshaller_serverService_ReadCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadCompanyReply> __Marshaller_serverService_ReadCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateCompanyRequest> __Marshaller_serverService_UpdateCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateCompanyReply> __Marshaller_serverService_UpdateCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateUserRequest> __Marshaller_serverService_CreateUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateUserReply> __Marshaller_serverService_CreateUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateUserReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteUserRequest> __Marshaller_serverService_DeleteUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteUserReply> __Marshaller_serverService_DeleteUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteUserReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllUsersRequest> __Marshaller_serverService_ReadAllUsersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllUsersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllUsersReply> __Marshaller_serverService_ReadAllUsersReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllUsersReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadUserRequest> __Marshaller_serverService_ReadUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadUserReply> __Marshaller_serverService_ReadUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadUserReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateUserRequest> __Marshaller_serverService_UpdateUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateUserReply> __Marshaller_serverService_UpdateUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateUserReply.Parser.ParseFrom);
 
     static readonly grpc::Method<global::PracowniaProgramowaniaServer.HelloRequest, global::PracowniaProgramowaniaServer.HelloReply> __Method_SayHello = new grpc::Method<global::PracowniaProgramowaniaServer.HelloRequest, global::PracowniaProgramowaniaServer.HelloReply>(
         grpc::MethodType.Unary,
@@ -205,6 +225,76 @@ namespace PracowniaProgramowaniaServer {
         __Marshaller_serverService_UpdateContactRequest,
         __Marshaller_serverService_UpdateContactReply);
 
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.CreateCompanyRequest, global::PracowniaProgramowaniaServer.CreateCompanyReply> __Method_CreateCompany = new grpc::Method<global::PracowniaProgramowaniaServer.CreateCompanyRequest, global::PracowniaProgramowaniaServer.CreateCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateCompany",
+        __Marshaller_serverService_CreateCompanyRequest,
+        __Marshaller_serverService_CreateCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.DeleteCompanyRequest, global::PracowniaProgramowaniaServer.DeleteCompanyReply> __Method_DeleteCompany = new grpc::Method<global::PracowniaProgramowaniaServer.DeleteCompanyRequest, global::PracowniaProgramowaniaServer.DeleteCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteCompany",
+        __Marshaller_serverService_DeleteCompanyRequest,
+        __Marshaller_serverService_DeleteCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest, global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> __Method_ReadAllCompanies = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest, global::PracowniaProgramowaniaServer.ReadAllCompaniesReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllCompanies",
+        __Marshaller_serverService_ReadAllCompaniesRequest,
+        __Marshaller_serverService_ReadAllCompaniesReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadCompanyRequest, global::PracowniaProgramowaniaServer.ReadCompanyReply> __Method_ReadCompany = new grpc::Method<global::PracowniaProgramowaniaServer.ReadCompanyRequest, global::PracowniaProgramowaniaServer.ReadCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadCompany",
+        __Marshaller_serverService_ReadCompanyRequest,
+        __Marshaller_serverService_ReadCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.UpdateCompanyRequest, global::PracowniaProgramowaniaServer.UpdateCompanyReply> __Method_UpdateCompany = new grpc::Method<global::PracowniaProgramowaniaServer.UpdateCompanyRequest, global::PracowniaProgramowaniaServer.UpdateCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateCompany",
+        __Marshaller_serverService_UpdateCompanyRequest,
+        __Marshaller_serverService_UpdateCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.CreateUserRequest, global::PracowniaProgramowaniaServer.CreateUserReply> __Method_CreateUser = new grpc::Method<global::PracowniaProgramowaniaServer.CreateUserRequest, global::PracowniaProgramowaniaServer.CreateUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateUser",
+        __Marshaller_serverService_CreateUserRequest,
+        __Marshaller_serverService_CreateUserReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.DeleteUserRequest, global::PracowniaProgramowaniaServer.DeleteUserReply> __Method_DeleteUser = new grpc::Method<global::PracowniaProgramowaniaServer.DeleteUserRequest, global::PracowniaProgramowaniaServer.DeleteUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteUser",
+        __Marshaller_serverService_DeleteUserRequest,
+        __Marshaller_serverService_DeleteUserReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllUsersRequest, global::PracowniaProgramowaniaServer.ReadAllUsersReply> __Method_ReadAllUsers = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllUsersRequest, global::PracowniaProgramowaniaServer.ReadAllUsersReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllUsers",
+        __Marshaller_serverService_ReadAllUsersRequest,
+        __Marshaller_serverService_ReadAllUsersReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadUserRequest, global::PracowniaProgramowaniaServer.ReadUserReply> __Method_ReadUser = new grpc::Method<global::PracowniaProgramowaniaServer.ReadUserRequest, global::PracowniaProgramowaniaServer.ReadUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadUser",
+        __Marshaller_serverService_ReadUserRequest,
+        __Marshaller_serverService_ReadUserReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.UpdateUserRequest, global::PracowniaProgramowaniaServer.UpdateUserReply> __Method_UpdateUser = new grpc::Method<global::PracowniaProgramowaniaServer.UpdateUserRequest, global::PracowniaProgramowaniaServer.UpdateUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateUser",
+        __Marshaller_serverService_UpdateUserRequest,
+        __Marshaller_serverService_UpdateUserReply);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -326,6 +416,56 @@ namespace PracowniaProgramowaniaServer {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.CreateCompanyReply> CreateCompany(global::PracowniaProgramowaniaServer.CreateCompanyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.DeleteCompanyReply> DeleteCompany(global::PracowniaProgramowaniaServer.DeleteCompanyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> ReadAllCompanies(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.ReadCompanyReply> ReadCompany(global::PracowniaProgramowaniaServer.ReadCompanyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.UpdateCompanyReply> UpdateCompany(global::PracowniaProgramowaniaServer.UpdateCompanyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.CreateUserReply> CreateUser(global::PracowniaProgramowaniaServer.CreateUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.DeleteUserReply> DeleteUser(global::PracowniaProgramowaniaServer.DeleteUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.ReadAllUsersReply> ReadAllUsers(global::PracowniaProgramowaniaServer.ReadAllUsersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.ReadUserReply> ReadUser(global::PracowniaProgramowaniaServer.ReadUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::PracowniaProgramowaniaServer.UpdateUserReply> UpdateUser(global::PracowniaProgramowaniaServer.UpdateUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -353,7 +493,17 @@ namespace PracowniaProgramowaniaServer {
           .AddMethod(__Method_DeleteContact, serviceImpl.DeleteContact)
           .AddMethod(__Method_ReadAllContacts, serviceImpl.ReadAllContacts)
           .AddMethod(__Method_ReadContact, serviceImpl.ReadContact)
-          .AddMethod(__Method_UpdateContact, serviceImpl.UpdateContact).Build();
+          .AddMethod(__Method_UpdateContact, serviceImpl.UpdateContact)
+          .AddMethod(__Method_CreateCompany, serviceImpl.CreateCompany)
+          .AddMethod(__Method_DeleteCompany, serviceImpl.DeleteCompany)
+          .AddMethod(__Method_ReadAllCompanies, serviceImpl.ReadAllCompanies)
+          .AddMethod(__Method_ReadCompany, serviceImpl.ReadCompany)
+          .AddMethod(__Method_UpdateCompany, serviceImpl.UpdateCompany)
+          .AddMethod(__Method_CreateUser, serviceImpl.CreateUser)
+          .AddMethod(__Method_DeleteUser, serviceImpl.DeleteUser)
+          .AddMethod(__Method_ReadAllUsers, serviceImpl.ReadAllUsers)
+          .AddMethod(__Method_ReadUser, serviceImpl.ReadUser)
+          .AddMethod(__Method_UpdateUser, serviceImpl.UpdateUser).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -383,6 +533,16 @@ namespace PracowniaProgramowaniaServer {
       serviceBinder.AddMethod(__Method_ReadAllContacts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.ReadAllContactsRequest, global::PracowniaProgramowaniaServer.ReadAllContactsReply>(serviceImpl.ReadAllContacts));
       serviceBinder.AddMethod(__Method_ReadContact, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.ReadContactRequest, global::PracowniaProgramowaniaServer.ReadContactReply>(serviceImpl.ReadContact));
       serviceBinder.AddMethod(__Method_UpdateContact, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.UpdateContactRequest, global::PracowniaProgramowaniaServer.UpdateContactReply>(serviceImpl.UpdateContact));
+      serviceBinder.AddMethod(__Method_CreateCompany, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.CreateCompanyRequest, global::PracowniaProgramowaniaServer.CreateCompanyReply>(serviceImpl.CreateCompany));
+      serviceBinder.AddMethod(__Method_DeleteCompany, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.DeleteCompanyRequest, global::PracowniaProgramowaniaServer.DeleteCompanyReply>(serviceImpl.DeleteCompany));
+      serviceBinder.AddMethod(__Method_ReadAllCompanies, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest, global::PracowniaProgramowaniaServer.ReadAllCompaniesReply>(serviceImpl.ReadAllCompanies));
+      serviceBinder.AddMethod(__Method_ReadCompany, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.ReadCompanyRequest, global::PracowniaProgramowaniaServer.ReadCompanyReply>(serviceImpl.ReadCompany));
+      serviceBinder.AddMethod(__Method_UpdateCompany, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.UpdateCompanyRequest, global::PracowniaProgramowaniaServer.UpdateCompanyReply>(serviceImpl.UpdateCompany));
+      serviceBinder.AddMethod(__Method_CreateUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.CreateUserRequest, global::PracowniaProgramowaniaServer.CreateUserReply>(serviceImpl.CreateUser));
+      serviceBinder.AddMethod(__Method_DeleteUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.DeleteUserRequest, global::PracowniaProgramowaniaServer.DeleteUserReply>(serviceImpl.DeleteUser));
+      serviceBinder.AddMethod(__Method_ReadAllUsers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.ReadAllUsersRequest, global::PracowniaProgramowaniaServer.ReadAllUsersReply>(serviceImpl.ReadAllUsers));
+      serviceBinder.AddMethod(__Method_ReadUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.ReadUserRequest, global::PracowniaProgramowaniaServer.ReadUserReply>(serviceImpl.ReadUser));
+      serviceBinder.AddMethod(__Method_UpdateUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PracowniaProgramowaniaServer.UpdateUserRequest, global::PracowniaProgramowaniaServer.UpdateUserReply>(serviceImpl.UpdateUser));
     }
 
   }

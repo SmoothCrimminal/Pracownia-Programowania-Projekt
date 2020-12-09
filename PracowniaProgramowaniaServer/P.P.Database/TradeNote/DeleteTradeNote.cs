@@ -23,6 +23,8 @@ namespace CRUD.TradeNote
                     return "Note with this id already has been deleted";
                 }
 
+                context.SaveChanges();
+
                 return "Trade Note Not Found";
             }
         } 

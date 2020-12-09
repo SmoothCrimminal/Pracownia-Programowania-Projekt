@@ -31,6 +31,18 @@ service PracowniaProgramowaniaServer {
   rpc ReadAllContacts (ReadAllContactsRequest) returns (ReadAllContactsReply);
   rpc ReadContact (ReadContactRequest) returns (ReadContactReply);
   rpc UpdateContact (UpdateContactRequest) returns (UpdateContactReply);
+
+  rpc CreateCompany (CreateCompanyRequest) returns (CreateCompanyReply);
+  rpc DeleteCompany (DeleteCompanyRequest) returns (DeleteCompanyReply);
+  rpc ReadAllCompanies (ReadAllCompaniesRequest) returns (ReadAllCompaniesReply);
+  rpc ReadCompany (ReadCompanyRequest) returns (ReadCompanyReply);
+  rpc UpdateCompany (UpdateCompanyRequest) returns (UpdateCompanyReply);
+
+  rpc CreateUser (CreateUserRequest) returns (CreateUserReply);
+  rpc DeleteUser (DeleteUserRequest) returns (DeleteUserReply);
+  rpc ReadAllUsers (ReadAllUsersRequest) returns (ReadAllUsersReply);
+  rpc ReadUser (ReadUserRequest) returns (ReadUserReply);
+  rpc UpdateUser (UpdateUserRequest) returns (UpdateUserReply);
 }
 
 // The request message containing the user's name.
@@ -71,6 +83,28 @@ message ContactField{
 	string emailAddress = 7;
 	string position = 8;
 	bool isDeleted = 9;
+}
+
+message CompanyField{
+	int32 id = 1;
+	string companyName = 2;
+	int32 brandId = 3;
+	int32 userAddingCompanyId = 4;
+	string nip = 5;
+	string address = 6;
+	string city = 7;
+	bool isDeleted = 8;
+}
+
+message UserField{
+	int32 id = 1;
+	string login = 2;
+	string password = 3;
+	int32 roleID = 4;
+	string name = 5;
+	string surname = 6;
+	string dateOfBirth = 7;
+	bool isDeleted = 8;
 }
 
 message CreateBrandRequest{
@@ -266,6 +300,121 @@ message UpdateContactRequest{
 
 message UpdateContactReply{
 	string updatedContact = 1;
+}
+
+
+
+message CreateCompanyRequest{
+	string companyName = 1;
+	int32 brandId = 2;
+	int32 userAddingCompanyId = 3;
+	string nip = 4;
+	string address = 5;
+	string city = 6;	
+}
+
+message CreateCompanyReply{
+	int32 companyId = 1;
+	string companyName = 2;
+	int32 brandId = 3;
+	int32 userAddingCompanyId = 4;
+	string nip = 5;
+	string address = 6;
+	string city = 7;
+}
+
+message DeleteCompanyRequest{
+	int32 companyId = 1;
+}
+
+message DeleteCompanyReply{
+	string message = 1;
+}
+
+message ReadAllCompaniesRequest{
+
+}
+
+message ReadAllCompaniesReply{
+	repeated CompanyField readAllCompanies = 1;
+}
+
+message ReadCompanyRequest{
+	int32 companyId = 1;
+}
+
+message ReadCompanyReply{
+	string companyDetails = 1;
+}
+
+message UpdateCompanyRequest{
+	int32 id = 1;
+	string companyName = 2;
+	int32 brandId = 3;
+	int32 userAddingCompanyId = 4;
+	string nip = 5;
+	string address = 6;
+	string city = 7;
+	bool isDeleted = 8;
+}
+
+message UpdateCompanyReply{
+	string updatedCompany = 1;
+}
+
+
+message CreateUserRequest{
+	string login = 1;
+	string password = 2;
+	int32 roleID = 3;
+	string name = 4;
+	string surname = 5;
+	string dateOfBirth = 6;
+}
+
+message CreateUserReply{
+	int32 id = 1;
+	string login = 2;
+	int32 roleID = 3;
+}
+
+message DeleteUserRequest{
+	int32 id = 1;
+}
+
+message DeleteUserReply{
+	string message = 1;
+}
+
+message ReadAllUsersRequest{
+	
+}
+
+message ReadAllUsersReply{
+	repeated UserField readAllUsers = 1;
+}
+
+message ReadUserRequest{
+	int32 id = 1;
+}
+
+message ReadUserReply{
+	string userDetails = 1;
+}
+
+message UpdateUserRequest{
+	int32 id = 1;
+	string login = 2;
+	string password = 3;
+	int32 roleID = 4;
+	string name = 5;
+	string surname = 6;
+	string dateOfBirth = 7;
+	bool isDeleted = 8;
+}
+
+message UpdateUserReply{
+	string updatedUser = 1;
 }
 
 

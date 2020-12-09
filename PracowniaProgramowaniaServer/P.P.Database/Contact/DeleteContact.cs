@@ -23,6 +23,8 @@ namespace CRUD.Contact
                     return "Contact with this id already has been deleted";
                 }
 
+                context.SaveChanges();
+
                 return "Contact Not Found";
 
             }

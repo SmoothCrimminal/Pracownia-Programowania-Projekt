@@ -273,5 +273,124 @@ namespace PracowniaProgramowaniaServer
                 UpdatedContact = updateContact
             });
         }
+
+
+
+        public override Task<CreateCompanyReply> CreateCompany(CreateCompanyRequest request, ServerCallContext context)
+        {
+            var companiesLogic = new CompaniesLogic();
+            var newCompany = companiesLogic.CreateCompany(request.CompanyName, request.BrandId, request.BrandId, request.Nip, request.Address, request.City);
+            return Task.FromResult(new CreateCompanyReply()
+            {
+                CompanyId = newCompany.Id,
+                CompanyName = newCompany.NazwaFirmy,
+                BrandId = (int)newCompany.IdBran퓓,
+                UserAddingCompanyId = newCompany.IdU퓓tkownika,
+                Nip = newCompany.Nip,
+                Address = newCompany.Adres,
+                City = newCompany.Miasto
+            });
+        }
+
+        public override Task<DeleteCompanyReply> DeleteCompany(DeleteCompanyRequest request, ServerCallContext context)
+        {
+            var companiesLogic = new CompaniesLogic();
+            var deleteCompany = companiesLogic.DeleteCompany(request.CompanyId);
+            return Task.FromResult(new DeleteCompanyReply() { Message = deleteCompany });
+        }
+
+        public override Task<ReadAllCompaniesReply> ReadAllCompanies(ReadAllCompaniesRequest request, ServerCallContext context)
+        {
+            var companiesLogic = new CompaniesLogic();
+            var readAllCompanies = companiesLogic.ReadAllCompanies();
+            var readAllCompaniesReply = new ReadAllCompaniesReply();
+            
+            foreach (Company company in readAllCompanies)
+            {
+                readAllCompaniesReply.ReadAllCompanies.Add(new CompanyField
+                {
+                    Id = company.Id,
+                    CompanyName = company.NazwaFirmy,
+                    BrandId = (int)company.IdBran퓓,
+                    UserAddingCompanyId = company.IdU퓓tkownika,
+                    Nip = company.Nip,
+                    Address = company.Adres,
+                    City = company.Miasto,
+                    IsDeleted = (bool) company.IsDeleted
+                });
+            }
+            return Task.FromResult(readAllCompaniesReply);
+        }
+
+        public override Task<ReadCompanyReply> ReadCompany(ReadCompanyRequest request, ServerCallContext context)
+        {
+            var companiesLogic = new CompaniesLogic();
+            var readCompany = companiesLogic.ReadCompany(request.CompanyId);
+            return Task.FromResult(new ReadCompanyReply { CompanyDetails = readCompany });
+        }
+
+        public override Task<UpdateCompanyReply> UpdateCompany(UpdateCompanyRequest request, ServerCallContext context)
+        {
+            var companiesLogic = new CompaniesLogic();
+            var updateCompany = companiesLogic.UpdateCompany(request.Id, request.CompanyName, request.Nip, request.Address, request.City);
+            return Task.FromResult(new UpdateCompanyReply { UpdatedCompany = updateCompany });
+        }
+
+
+        public override Task<CreateUserReply> CreateUser(CreateUserRequest request, ServerCallContext context)
+        {
+            var usersLogic = new UsersLogic();
+            var newUser = usersLogic.CreateUser(request.Login, request.Password, request.RoleID, request.Name, request.Surname, request.DateOfBirth);
+            return Task.FromResult(new CreateUserReply()
+            {
+                Id = newUser.Id,
+                Login = newUser.Login,
+                RoleID = newUser.IdRoli
+            });
+        }
+
+        public override Task<DeleteUserReply> DeleteUser(DeleteUserRequest request, ServerCallContext context)
+        {
+            var usersLogic = new UsersLogic();
+            var deleteUser = usersLogic.DeleteUser(request.Id);
+            return Task.FromResult(new DeleteUserReply { Message = deleteUser });
+        }
+
+        public override Task<ReadAllUsersReply> ReadAllUsers(ReadAllUsersRequest request, ServerCallContext context)
+        {
+            var usersLogic = new UsersLogic();
+            var readAllUsers = usersLogic.ReadAllUsers();
+            var readAllUsersReply = new ReadAllUsersReply();
+
+            foreach (User user in readAllUsers)
+            {
+                readAllUsersReply.ReadAllUsers.Add(new UserField
+                {
+                    Id = user.Id,
+                    Login = user.Login,
+                    RoleID = user.IdRoli,
+                    IsDeleted = (bool)user.IsDeleted
+                });
+            }
+
+            return Task.FromResult(readAllUsersReply);
+        }
+
+        public override Task<ReadUserReply> ReadUser(ReadUserRequest request, ServerCallContext context)
+        {
+            var usersLogic = new UsersLogic();
+            var readUser = usersLogic.ReadUser(request.Id);
+            return Task.FromResult(new ReadUserReply { UserDetails = readUser });
+        }
+
+        public override Task<UpdateUserReply> UpdateUser(UpdateUserRequest request, ServerCallContext context)
+        {
+            var usersLogic = new UsersLogic();
+            var updateUser = usersLogic.UpdateUser(request.Id, request.Login, request.Password, request.Name, request.Surname, request.DateOfBirth);
+            return Task.FromResult(new UpdateUserReply()
+            {
+                UpdatedUser = updateUser
+            });
+        }
     }
 }
