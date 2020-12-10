@@ -8,7 +8,7 @@ namespace PracowniaProgramowaniaServer.Logic
     public class ContactsLogic
     {
         public Contact CreateContact(string name, string surname, int connectedCompanyId, int userId,
-            string phoneNumber = "", string emailAddress = "", string stanowisko = "")
+            string phoneNumber = "", string emailAddress = "", string position = "")
         {
             var dbCreateContact = new CreateContact();
             return dbCreateContact.CreateContacts(new Contact()
@@ -19,7 +19,7 @@ namespace PracowniaProgramowaniaServer.Logic
                 IdUżytkownika = userId,
                 Telefon = phoneNumber,
                 Mail = emailAddress,
-                Stanowisko = stanowisko,
+                Stanowisko = position,
                 IsDeleted = false
             });
         }

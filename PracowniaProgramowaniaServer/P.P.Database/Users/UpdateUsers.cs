@@ -13,12 +13,12 @@ namespace CRUD.Users
             using (var context = new ProjektPPContext())
             {
                 var userToUpdate = context.Users.Find(userId);
+                bool isTaken = false, isParsed, isChanged = false;
                 if ((userToUpdate != null) && ((bool)userToUpdate.IsDeleted == false))
                 {
                     if (login != "")
                     {
                         var allUsers = context.Users.ToList();
-                        bool isTaken = false;
 
                         foreach (User user in allUsers)
                         {
@@ -27,23 +27,20 @@ namespace CRUD.Users
                                 isTaken = true;
                                 break;
                             }
-                            
+
                         }
 
-                        if (isTaken == true)
-                        {
-                            return "User with this login already exists!";
-                        }
-
-                        else
+                        if (isTaken == false)
                         {
                             userToUpdate.Login = login;
-                            return "Login successfully changed!";
                         }
 
                     }
                     if ((password != "") && (userToUpdate.PasswordMd5 != password))
+                    {
                         userToUpdate.PasswordMd5 = password;
+                        isChanged = true;
+                    }
                     if (name != "")
                         userToUpdate.Imie = name;
                     if (surname != "")
@@ -51,22 +48,23 @@ namespace CRUD.Users
                     if (dateOfBirth != "")
                     {
                         DateTime parsedDate;
-                        bool isParsed = DateTime.TryParse(dateOfBirth, out parsedDate);
+                        isParsed = DateTime.TryParse(dateOfBirth, out parsedDate);
                         if (isParsed == true)
                         {
                             userToUpdate.DateOfBirth = parsedDate;
-                            return "Date of birth successfully changed";
                         }
 
-                        else
-                        {
-                            return "Changing date of birth failed!";
-                        }
                     }
                         
-
                     context.SaveChanges();
-                    return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli}";
+                    if ((password != "") && (isChanged == true))                   
+                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli} {userToUpdate.DateOfBirth} {userToUpdate.Nazwisko}" +
+                            $"Password Successfully changed!";
+                    else if ((password != "") && (isChanged == false))
+                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli} {userToUpdate.DateOfBirth} {userToUpdate.Nazwisko}" +
+                            $"Changing Password Failed!";
+                    else
+                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli} {userToUpdate.DateOfBirth} {userToUpdate.Nazwisko}";
                 }
 
                 return "User with such id not found in database or has been deleted";

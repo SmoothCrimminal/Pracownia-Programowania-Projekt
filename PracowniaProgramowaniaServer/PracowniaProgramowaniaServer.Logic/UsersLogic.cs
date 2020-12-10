@@ -9,20 +9,25 @@ namespace PracowniaProgramowaniaServer.Logic
 {
     public class UsersLogic
     {
-        public User CreateUser(string login, string password, int roleId, string imie="", string nazwisko="", string dateOfBirth="1/1/2000")
+        public User CreateUser(string login, string password, int roleId, string name="", string surname="", string dateOfBirth="")
         {
             var dbCreateUser = new CreateUsers();
             var data = System.Text.Encoding.ASCII.GetBytes(password);
-            var parsedDate = DateTime.Parse(dateOfBirth);
+            DateTime dateTime;
+            bool isParsed = DateTime.TryParse(dateOfBirth, out dateTime);
+            if (isParsed == false)
+            {
+                dateTime = DateTime.Parse("1/1/2000");
+            }
             data = MD5.Create().ComputeHash(data);
             return dbCreateUser.CreateUser(new User()
             {
                 Login = login,
                 PasswordMd5 = data.ToString(),
                 IdRoli = roleId,
-                Imie = imie,
-                Nazwisko = nazwisko,
-                DateOfBirth = parsedDate,
+                Imie = name,
+                Nazwisko = surname,
+                DateOfBirth = dateTime,
                 IsDeleted = false
             });
         }

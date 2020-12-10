@@ -37,6 +37,46 @@ namespace PracowniaProgramowaniaServer {
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadRoleReply> __Marshaller_serverService_ReadRoleReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadRoleReply.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateRoleRequest> __Marshaller_serverService_UpdateRoleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateRoleRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateRoleReply> __Marshaller_serverService_UpdateRoleReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateRoleReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateTradeNoteRequest> __Marshaller_serverService_CreateTradeNoteRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateTradeNoteRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateTradeNoteReply> __Marshaller_serverService_CreateTradeNoteReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateTradeNoteReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest> __Marshaller_serverService_DeleteTradeNoteRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteTradeNoteReply> __Marshaller_serverService_DeleteTradeNoteReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteTradeNoteReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest> __Marshaller_serverService_ReadAllTradeNotesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply> __Marshaller_serverService_ReadAllTradeNotesReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadTradeNoteRequest> __Marshaller_serverService_ReadTradeNoteRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadTradeNoteRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadTradeNoteReply> __Marshaller_serverService_ReadTradeNoteReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadTradeNoteReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest> __Marshaller_serverService_UpdateTradeNoteRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateTradeNoteReply> __Marshaller_serverService_UpdateTradeNoteReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateTradeNoteReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateContactRequest> __Marshaller_serverService_CreateContactRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateContactRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateContactReply> __Marshaller_serverService_CreateContactReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateContactReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteContactRequest> __Marshaller_serverService_DeleteContactRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteContactRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteContactReply> __Marshaller_serverService_DeleteContactReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteContactReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllContactsRequest> __Marshaller_serverService_ReadAllContactsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllContactsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllContactsReply> __Marshaller_serverService_ReadAllContactsReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllContactsReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadContactRequest> __Marshaller_serverService_ReadContactRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadContactRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadContactReply> __Marshaller_serverService_ReadContactReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadContactReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateContactRequest> __Marshaller_serverService_UpdateContactRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateContactRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateContactReply> __Marshaller_serverService_UpdateContactReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateContactReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateCompanyRequest> __Marshaller_serverService_CreateCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateCompanyReply> __Marshaller_serverService_CreateCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteCompanyRequest> __Marshaller_serverService_DeleteCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteCompanyReply> __Marshaller_serverService_DeleteCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest> __Marshaller_serverService_ReadAllCompaniesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> __Marshaller_serverService_ReadAllCompaniesReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllCompaniesReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadCompanyRequest> __Marshaller_serverService_ReadCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadCompanyReply> __Marshaller_serverService_ReadCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateCompanyRequest> __Marshaller_serverService_UpdateCompanyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateCompanyRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateCompanyReply> __Marshaller_serverService_UpdateCompanyReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateCompanyReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateUserRequest> __Marshaller_serverService_CreateUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.CreateUserReply> __Marshaller_serverService_CreateUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.CreateUserReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteUserRequest> __Marshaller_serverService_DeleteUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.DeleteUserReply> __Marshaller_serverService_DeleteUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.DeleteUserReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllUsersRequest> __Marshaller_serverService_ReadAllUsersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllUsersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadAllUsersReply> __Marshaller_serverService_ReadAllUsersReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadAllUsersReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadUserRequest> __Marshaller_serverService_ReadUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.ReadUserReply> __Marshaller_serverService_ReadUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.ReadUserReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateUserRequest> __Marshaller_serverService_UpdateUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PracowniaProgramowaniaServer.UpdateUserReply> __Marshaller_serverService_UpdateUserReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PracowniaProgramowaniaServer.UpdateUserReply.Parser.ParseFrom);
 
     static readonly grpc::Method<global::PracowniaProgramowaniaServer.HelloRequest, global::PracowniaProgramowaniaServer.HelloReply> __Method_SayHello = new grpc::Method<global::PracowniaProgramowaniaServer.HelloRequest, global::PracowniaProgramowaniaServer.HelloReply>(
         grpc::MethodType.Unary,
@@ -114,6 +154,146 @@ namespace PracowniaProgramowaniaServer {
         "UpdateRole",
         __Marshaller_serverService_UpdateRoleRequest,
         __Marshaller_serverService_UpdateRoleReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.CreateTradeNoteRequest, global::PracowniaProgramowaniaServer.CreateTradeNoteReply> __Method_CreateTradeNote = new grpc::Method<global::PracowniaProgramowaniaServer.CreateTradeNoteRequest, global::PracowniaProgramowaniaServer.CreateTradeNoteReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateTradeNote",
+        __Marshaller_serverService_CreateTradeNoteRequest,
+        __Marshaller_serverService_CreateTradeNoteReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest, global::PracowniaProgramowaniaServer.DeleteTradeNoteReply> __Method_DeleteTradeNote = new grpc::Method<global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest, global::PracowniaProgramowaniaServer.DeleteTradeNoteReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteTradeNote",
+        __Marshaller_serverService_DeleteTradeNoteRequest,
+        __Marshaller_serverService_DeleteTradeNoteReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest, global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply> __Method_ReadAllTradeNotes = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest, global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllTradeNotes",
+        __Marshaller_serverService_ReadAllTradeNotesRequest,
+        __Marshaller_serverService_ReadAllTradeNotesReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadTradeNoteRequest, global::PracowniaProgramowaniaServer.ReadTradeNoteReply> __Method_ReadTradeNote = new grpc::Method<global::PracowniaProgramowaniaServer.ReadTradeNoteRequest, global::PracowniaProgramowaniaServer.ReadTradeNoteReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadTradeNote",
+        __Marshaller_serverService_ReadTradeNoteRequest,
+        __Marshaller_serverService_ReadTradeNoteReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest, global::PracowniaProgramowaniaServer.UpdateTradeNoteReply> __Method_UpdateTradeNote = new grpc::Method<global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest, global::PracowniaProgramowaniaServer.UpdateTradeNoteReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateTradeNote",
+        __Marshaller_serverService_UpdateTradeNoteRequest,
+        __Marshaller_serverService_UpdateTradeNoteReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.CreateContactRequest, global::PracowniaProgramowaniaServer.CreateContactReply> __Method_CreateContact = new grpc::Method<global::PracowniaProgramowaniaServer.CreateContactRequest, global::PracowniaProgramowaniaServer.CreateContactReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateContact",
+        __Marshaller_serverService_CreateContactRequest,
+        __Marshaller_serverService_CreateContactReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.DeleteContactRequest, global::PracowniaProgramowaniaServer.DeleteContactReply> __Method_DeleteContact = new grpc::Method<global::PracowniaProgramowaniaServer.DeleteContactRequest, global::PracowniaProgramowaniaServer.DeleteContactReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteContact",
+        __Marshaller_serverService_DeleteContactRequest,
+        __Marshaller_serverService_DeleteContactReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllContactsRequest, global::PracowniaProgramowaniaServer.ReadAllContactsReply> __Method_ReadAllContacts = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllContactsRequest, global::PracowniaProgramowaniaServer.ReadAllContactsReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllContacts",
+        __Marshaller_serverService_ReadAllContactsRequest,
+        __Marshaller_serverService_ReadAllContactsReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadContactRequest, global::PracowniaProgramowaniaServer.ReadContactReply> __Method_ReadContact = new grpc::Method<global::PracowniaProgramowaniaServer.ReadContactRequest, global::PracowniaProgramowaniaServer.ReadContactReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadContact",
+        __Marshaller_serverService_ReadContactRequest,
+        __Marshaller_serverService_ReadContactReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.UpdateContactRequest, global::PracowniaProgramowaniaServer.UpdateContactReply> __Method_UpdateContact = new grpc::Method<global::PracowniaProgramowaniaServer.UpdateContactRequest, global::PracowniaProgramowaniaServer.UpdateContactReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateContact",
+        __Marshaller_serverService_UpdateContactRequest,
+        __Marshaller_serverService_UpdateContactReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.CreateCompanyRequest, global::PracowniaProgramowaniaServer.CreateCompanyReply> __Method_CreateCompany = new grpc::Method<global::PracowniaProgramowaniaServer.CreateCompanyRequest, global::PracowniaProgramowaniaServer.CreateCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateCompany",
+        __Marshaller_serverService_CreateCompanyRequest,
+        __Marshaller_serverService_CreateCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.DeleteCompanyRequest, global::PracowniaProgramowaniaServer.DeleteCompanyReply> __Method_DeleteCompany = new grpc::Method<global::PracowniaProgramowaniaServer.DeleteCompanyRequest, global::PracowniaProgramowaniaServer.DeleteCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteCompany",
+        __Marshaller_serverService_DeleteCompanyRequest,
+        __Marshaller_serverService_DeleteCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest, global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> __Method_ReadAllCompanies = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest, global::PracowniaProgramowaniaServer.ReadAllCompaniesReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllCompanies",
+        __Marshaller_serverService_ReadAllCompaniesRequest,
+        __Marshaller_serverService_ReadAllCompaniesReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadCompanyRequest, global::PracowniaProgramowaniaServer.ReadCompanyReply> __Method_ReadCompany = new grpc::Method<global::PracowniaProgramowaniaServer.ReadCompanyRequest, global::PracowniaProgramowaniaServer.ReadCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadCompany",
+        __Marshaller_serverService_ReadCompanyRequest,
+        __Marshaller_serverService_ReadCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.UpdateCompanyRequest, global::PracowniaProgramowaniaServer.UpdateCompanyReply> __Method_UpdateCompany = new grpc::Method<global::PracowniaProgramowaniaServer.UpdateCompanyRequest, global::PracowniaProgramowaniaServer.UpdateCompanyReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateCompany",
+        __Marshaller_serverService_UpdateCompanyRequest,
+        __Marshaller_serverService_UpdateCompanyReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.CreateUserRequest, global::PracowniaProgramowaniaServer.CreateUserReply> __Method_CreateUser = new grpc::Method<global::PracowniaProgramowaniaServer.CreateUserRequest, global::PracowniaProgramowaniaServer.CreateUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateUser",
+        __Marshaller_serverService_CreateUserRequest,
+        __Marshaller_serverService_CreateUserReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.DeleteUserRequest, global::PracowniaProgramowaniaServer.DeleteUserReply> __Method_DeleteUser = new grpc::Method<global::PracowniaProgramowaniaServer.DeleteUserRequest, global::PracowniaProgramowaniaServer.DeleteUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteUser",
+        __Marshaller_serverService_DeleteUserRequest,
+        __Marshaller_serverService_DeleteUserReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadAllUsersRequest, global::PracowniaProgramowaniaServer.ReadAllUsersReply> __Method_ReadAllUsers = new grpc::Method<global::PracowniaProgramowaniaServer.ReadAllUsersRequest, global::PracowniaProgramowaniaServer.ReadAllUsersReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadAllUsers",
+        __Marshaller_serverService_ReadAllUsersRequest,
+        __Marshaller_serverService_ReadAllUsersReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.ReadUserRequest, global::PracowniaProgramowaniaServer.ReadUserReply> __Method_ReadUser = new grpc::Method<global::PracowniaProgramowaniaServer.ReadUserRequest, global::PracowniaProgramowaniaServer.ReadUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReadUser",
+        __Marshaller_serverService_ReadUserRequest,
+        __Marshaller_serverService_ReadUserReply);
+
+    static readonly grpc::Method<global::PracowniaProgramowaniaServer.UpdateUserRequest, global::PracowniaProgramowaniaServer.UpdateUserReply> __Method_UpdateUser = new grpc::Method<global::PracowniaProgramowaniaServer.UpdateUserRequest, global::PracowniaProgramowaniaServer.UpdateUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateUser",
+        __Marshaller_serverService_UpdateUserRequest,
+        __Marshaller_serverService_UpdateUserReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -347,6 +527,326 @@ namespace PracowniaProgramowaniaServer {
       public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateRoleReply> UpdateRoleAsync(global::PracowniaProgramowaniaServer.UpdateRoleRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateRole, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateTradeNoteReply CreateTradeNote(global::PracowniaProgramowaniaServer.CreateTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateTradeNote(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateTradeNoteReply CreateTradeNote(global::PracowniaProgramowaniaServer.CreateTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateTradeNote, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateTradeNoteReply> CreateTradeNoteAsync(global::PracowniaProgramowaniaServer.CreateTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateTradeNoteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateTradeNoteReply> CreateTradeNoteAsync(global::PracowniaProgramowaniaServer.CreateTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateTradeNote, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteTradeNoteReply DeleteTradeNote(global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteTradeNote(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteTradeNoteReply DeleteTradeNote(global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteTradeNote, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteTradeNoteReply> DeleteTradeNoteAsync(global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteTradeNoteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteTradeNoteReply> DeleteTradeNoteAsync(global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteTradeNote, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply ReadAllTradeNotes(global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllTradeNotes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply ReadAllTradeNotes(global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadAllTradeNotes, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply> ReadAllTradeNotesAsync(global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllTradeNotesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply> ReadAllTradeNotesAsync(global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadAllTradeNotes, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadTradeNoteReply ReadTradeNote(global::PracowniaProgramowaniaServer.ReadTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadTradeNote(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadTradeNoteReply ReadTradeNote(global::PracowniaProgramowaniaServer.ReadTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadTradeNote, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadTradeNoteReply> ReadTradeNoteAsync(global::PracowniaProgramowaniaServer.ReadTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadTradeNoteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadTradeNoteReply> ReadTradeNoteAsync(global::PracowniaProgramowaniaServer.ReadTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadTradeNote, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateTradeNoteReply UpdateTradeNote(global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateTradeNote(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateTradeNoteReply UpdateTradeNote(global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateTradeNote, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateTradeNoteReply> UpdateTradeNoteAsync(global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateTradeNoteAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateTradeNoteReply> UpdateTradeNoteAsync(global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateTradeNote, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateContactReply CreateContact(global::PracowniaProgramowaniaServer.CreateContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateContact(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateContactReply CreateContact(global::PracowniaProgramowaniaServer.CreateContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateContact, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateContactReply> CreateContactAsync(global::PracowniaProgramowaniaServer.CreateContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateContactAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateContactReply> CreateContactAsync(global::PracowniaProgramowaniaServer.CreateContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateContact, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteContactReply DeleteContact(global::PracowniaProgramowaniaServer.DeleteContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteContact(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteContactReply DeleteContact(global::PracowniaProgramowaniaServer.DeleteContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteContact, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteContactReply> DeleteContactAsync(global::PracowniaProgramowaniaServer.DeleteContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteContactAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteContactReply> DeleteContactAsync(global::PracowniaProgramowaniaServer.DeleteContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteContact, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllContactsReply ReadAllContacts(global::PracowniaProgramowaniaServer.ReadAllContactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllContacts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllContactsReply ReadAllContacts(global::PracowniaProgramowaniaServer.ReadAllContactsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadAllContacts, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllContactsReply> ReadAllContactsAsync(global::PracowniaProgramowaniaServer.ReadAllContactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllContactsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllContactsReply> ReadAllContactsAsync(global::PracowniaProgramowaniaServer.ReadAllContactsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadAllContacts, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadContactReply ReadContact(global::PracowniaProgramowaniaServer.ReadContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadContact(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadContactReply ReadContact(global::PracowniaProgramowaniaServer.ReadContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadContact, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadContactReply> ReadContactAsync(global::PracowniaProgramowaniaServer.ReadContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadContactAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadContactReply> ReadContactAsync(global::PracowniaProgramowaniaServer.ReadContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadContact, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateContactReply UpdateContact(global::PracowniaProgramowaniaServer.UpdateContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateContact(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateContactReply UpdateContact(global::PracowniaProgramowaniaServer.UpdateContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateContact, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateContactReply> UpdateContactAsync(global::PracowniaProgramowaniaServer.UpdateContactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateContactAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateContactReply> UpdateContactAsync(global::PracowniaProgramowaniaServer.UpdateContactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateContact, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateCompanyReply CreateCompany(global::PracowniaProgramowaniaServer.CreateCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateCompany(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateCompanyReply CreateCompany(global::PracowniaProgramowaniaServer.CreateCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateCompany, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateCompanyReply> CreateCompanyAsync(global::PracowniaProgramowaniaServer.CreateCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateCompanyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateCompanyReply> CreateCompanyAsync(global::PracowniaProgramowaniaServer.CreateCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateCompany, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteCompanyReply DeleteCompany(global::PracowniaProgramowaniaServer.DeleteCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteCompany(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteCompanyReply DeleteCompany(global::PracowniaProgramowaniaServer.DeleteCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteCompany, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteCompanyReply> DeleteCompanyAsync(global::PracowniaProgramowaniaServer.DeleteCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteCompanyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteCompanyReply> DeleteCompanyAsync(global::PracowniaProgramowaniaServer.DeleteCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteCompany, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllCompaniesReply ReadAllCompanies(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllCompanies(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllCompaniesReply ReadAllCompanies(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadAllCompanies, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> ReadAllCompaniesAsync(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllCompaniesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllCompaniesReply> ReadAllCompaniesAsync(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadAllCompanies, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadCompanyReply ReadCompany(global::PracowniaProgramowaniaServer.ReadCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadCompany(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadCompanyReply ReadCompany(global::PracowniaProgramowaniaServer.ReadCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadCompany, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadCompanyReply> ReadCompanyAsync(global::PracowniaProgramowaniaServer.ReadCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadCompanyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadCompanyReply> ReadCompanyAsync(global::PracowniaProgramowaniaServer.ReadCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadCompany, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateCompanyReply UpdateCompany(global::PracowniaProgramowaniaServer.UpdateCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateCompany(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateCompanyReply UpdateCompany(global::PracowniaProgramowaniaServer.UpdateCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateCompany, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateCompanyReply> UpdateCompanyAsync(global::PracowniaProgramowaniaServer.UpdateCompanyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateCompanyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateCompanyReply> UpdateCompanyAsync(global::PracowniaProgramowaniaServer.UpdateCompanyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateCompany, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateUserReply CreateUser(global::PracowniaProgramowaniaServer.CreateUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.CreateUserReply CreateUser(global::PracowniaProgramowaniaServer.CreateUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateUser, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateUserReply> CreateUserAsync(global::PracowniaProgramowaniaServer.CreateUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.CreateUserReply> CreateUserAsync(global::PracowniaProgramowaniaServer.CreateUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateUser, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteUserReply DeleteUser(global::PracowniaProgramowaniaServer.DeleteUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.DeleteUserReply DeleteUser(global::PracowniaProgramowaniaServer.DeleteUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteUser, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteUserReply> DeleteUserAsync(global::PracowniaProgramowaniaServer.DeleteUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.DeleteUserReply> DeleteUserAsync(global::PracowniaProgramowaniaServer.DeleteUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteUser, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllUsersReply ReadAllUsers(global::PracowniaProgramowaniaServer.ReadAllUsersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllUsers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadAllUsersReply ReadAllUsers(global::PracowniaProgramowaniaServer.ReadAllUsersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadAllUsers, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllUsersReply> ReadAllUsersAsync(global::PracowniaProgramowaniaServer.ReadAllUsersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadAllUsersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadAllUsersReply> ReadAllUsersAsync(global::PracowniaProgramowaniaServer.ReadAllUsersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadAllUsers, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadUserReply ReadUser(global::PracowniaProgramowaniaServer.ReadUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.ReadUserReply ReadUser(global::PracowniaProgramowaniaServer.ReadUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReadUser, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadUserReply> ReadUserAsync(global::PracowniaProgramowaniaServer.ReadUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReadUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.ReadUserReply> ReadUserAsync(global::PracowniaProgramowaniaServer.ReadUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReadUser, null, options, request);
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateUserReply UpdateUser(global::PracowniaProgramowaniaServer.UpdateUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PracowniaProgramowaniaServer.UpdateUserReply UpdateUser(global::PracowniaProgramowaniaServer.UpdateUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateUser, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateUserReply> UpdateUserAsync(global::PracowniaProgramowaniaServer.UpdateUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PracowniaProgramowaniaServer.UpdateUserReply> UpdateUserAsync(global::PracowniaProgramowaniaServer.UpdateUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateUser, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override PracowniaProgramowaniaServerClient NewInstance(ClientBaseConfiguration configuration)
