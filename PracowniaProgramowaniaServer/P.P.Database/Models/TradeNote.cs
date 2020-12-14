@@ -5,15 +5,12 @@ using System.Collections.Generic;
 
 namespace P.P.Database.Models
 {
-    public partial class TradeNote
+    public partial class Tradenote
     {
         public int Id { get; set; }
-        public string Tresc { get; set; }
-        public bool? IsDeleted { get; set; }
-        public int FirmaPowiazana { get; set; }
-        public int IdUżytkownika { get; set; }
-
-        public virtual Company FirmaPowiazanaNavigation { get; set; }
-        public virtual User IdUżytkownikaNavigation { get; set; }
+        public string Content { get; set; }
+        public bool IsDeleted { get; set; }
+        public int CompanyId { get; set; }
+        public int UserId { get; set; }
     }
 }

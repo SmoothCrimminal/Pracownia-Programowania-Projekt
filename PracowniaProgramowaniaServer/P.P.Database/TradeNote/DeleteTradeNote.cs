@@ -11,7 +11,7 @@ namespace CRUD.TradeNote
         {
             using (var context = new ProjektPPContext())
             {
-                var note = context.TradeNotes.Find(noteId);
+                var note = context.Tradenotes.Find(noteId);
                 if ((note != null) && ( (bool) note.IsDeleted == false)) 
                 {
                     note.IsDeleted = true;

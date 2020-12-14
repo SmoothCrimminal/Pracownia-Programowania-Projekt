@@ -33,7 +33,7 @@ namespace PracowniaProgramowaniaServer
             return Task.FromResult(new CreateBrandReply()
             {
                 BrandId = newBrand.Id,
-                BrandName = newBrand.NazwaBranzy   // zwracamy w odpowiedzi ID i NazwêBran¿y
+                BrandName = newBrand.BrandName   // zwracamy w odpowiedzi ID i NazwêBran¿y
             });
 
         }
@@ -55,7 +55,7 @@ namespace PracowniaProgramowaniaServer
             var allBrandsReply = new ReadAllBrandsReply();
             foreach(Brand brand in readAllBrands)
             {
-                allBrandsReply.AllBrands.Add(new BrandField { Id = brand.Id, BrandName = brand.NazwaBranzy });
+                allBrandsReply.AllBrands.Add(new BrandField { Id = brand.Id, BrandName = brand.BrandName });
             }
 
             return Task.FromResult(allBrandsReply);
@@ -90,7 +90,7 @@ namespace PracowniaProgramowaniaServer
             return Task.FromResult(new CreateRoleReply()
             {
                 RoleId = newRole.Id,
-                RoleName = newRole.NazwaRoli   // zwracamy w odpowiedzi ID i NazwêBran¿y
+                RoleName = newRole.RoleName   // zwracamy w odpowiedzi ID i NazwêBran¿y
             });
 
         }
@@ -113,7 +113,7 @@ namespace PracowniaProgramowaniaServer
 
             foreach (Role role in readAllRoles)
             {
-                allRolesReply.AllRoles.Add(new RoleField { Id = role.Id, RoleName = role.NazwaRoli });
+                allRolesReply.AllRoles.Add(new RoleField { Id = role.Id, RoleName = role.RoleName });
             }
 
             return Task.FromResult(allRolesReply);
@@ -148,9 +148,9 @@ namespace PracowniaProgramowaniaServer
             return Task.FromResult(new CreateTradeNoteReply()
             {
                 TradeNoteId = newTradeNote.Id,
-                TradeNoteContent = newTradeNote.Tresc,
-                ConnectedCompanyId = newTradeNote.FirmaPowiazana,
-                UserAddingNoteId = newTradeNote.IdU¿ytkownika
+                TradeNoteContent = newTradeNote.Content,
+                ConnectedCompanyId = newTradeNote.CompanyId,
+                UserAddingNoteId = newTradeNote.UserId
             });
         }
 
@@ -169,10 +169,10 @@ namespace PracowniaProgramowaniaServer
             var tradeNotesLogic = new TradeNotesLogic();
             var readAllTradeNotes = tradeNotesLogic.ReadAllTradeNotes();
             var allTradNotesReply = new ReadAllTradeNotesReply();
-            foreach (TradeNote tradeNote in readAllTradeNotes)
+            foreach (Tradenote tradeNote in readAllTradeNotes)
             {
-                allTradNotesReply.ReadAllTradeNotes.Add(new TradeNoteField { Id = tradeNote.Id, Content = tradeNote.Tresc, ConnectedCompanyId
-                = tradeNote.FirmaPowiazana, UserAddingNoteId = tradeNote.IdU¿ytkownika, IsDeleted = (bool)tradeNote.IsDeleted});
+                allTradNotesReply.ReadAllTradeNotes.Add(new TradeNoteField { Id = tradeNote.Id, Content = tradeNote.Content, ConnectedCompanyId
+                = tradeNote.CompanyId, UserAddingNoteId = tradeNote.UserId, IsDeleted = (bool)tradeNote.IsDeleted});
             }
 
             return Task.FromResult(allTradNotesReply);
@@ -207,13 +207,13 @@ namespace PracowniaProgramowaniaServer
                 request.PhoneNumber, request.EmailAddress, request.Position);
             return Task.FromResult(new CreateContactReply()
             {
-                Name = createContact.Imie,
-                Surname = createContact.Nazwisko,
-                ConnectedCompanyId = createContact.FirmaPowiazana,
-                UserAddingContactId = createContact.IdU¿ytkownika,
-                PhoneNumber = createContact.Telefon,
+                Name = createContact.Name,
+                Surname = createContact.Surname,
+                ConnectedCompanyId = createContact.CompanyId,
+                UserAddingContactId = createContact.UserId,
+                PhoneNumber = createContact.PhoneNumber,
                 EmailAddress = createContact.Mail,
-                Position = createContact.Stanowisko
+                Position = createContact.Position
             });
         
         }
@@ -239,12 +239,12 @@ namespace PracowniaProgramowaniaServer
                 readAllContactsReply.AllContacts.Add(new ContactField
                 {
                     Id = contact.Id,
-                    Name = contact.Imie,
-                    Surname = contact.Nazwisko,
-                    ConnectedCompanyId = contact.FirmaPowiazana,
-                    UserAddingContactId = contact.IdU¿ytkownika,
-                    Position = contact.Stanowisko,
-                    PhoneNumber = contact.Telefon,
+                    Name = contact.Name,
+                    Surname = contact.Surname,
+                    ConnectedCompanyId = contact.CompanyId,
+                    UserAddingContactId = contact.UserId,
+                    Position = contact.Position,
+                    PhoneNumber = contact.PhoneNumber,
                     EmailAddress = contact.Mail,
                     IsDeleted = (bool)contact.IsDeleted
                 });
@@ -279,16 +279,15 @@ namespace PracowniaProgramowaniaServer
         public override Task<CreateCompanyReply> CreateCompany(CreateCompanyRequest request, ServerCallContext context)
         {
             var companiesLogic = new CompaniesLogic();
-            var newCompany = companiesLogic.CreateCompany(request.CompanyName, request.BrandId, request.BrandId, request.Nip, request.Address, request.City);
+            var newCompany = companiesLogic.CreateCompany(request.CompanyName, request.BrandId, request.BrandId, request.Nip, request.Address);
             return Task.FromResult(new CreateCompanyReply()
             {
                 CompanyId = newCompany.Id,
-                CompanyName = newCompany.NazwaFirmy,
-                BrandId = (int)newCompany.IdBran¿y,
-                UserAddingCompanyId = newCompany.IdU¿ytkownika,
+                CompanyName = newCompany.CompanyName,
+                BrandId = (int)newCompany.BrandId,
+                UserAddingCompanyId = newCompany.UserId,
                 Nip = newCompany.Nip,
-                Address = newCompany.Adres,
-                City = newCompany.Miasto
+                Address = newCompany.Address
             });
         }
 
@@ -310,12 +309,11 @@ namespace PracowniaProgramowaniaServer
                 readAllCompaniesReply.ReadAllCompanies.Add(new CompanyField
                 {
                     Id = company.Id,
-                    CompanyName = company.NazwaFirmy,
-                    BrandId = (int)company.IdBran¿y,
-                    UserAddingCompanyId = company.IdU¿ytkownika,
+                    CompanyName = company.CompanyName,
+                    BrandId = (int)company.BrandId,
+                    UserAddingCompanyId = company.UserId,
                     Nip = company.Nip,
-                    Address = company.Adres,
-                    City = company.Miasto,
+                    Address = company.Address,
                     IsDeleted = (bool) company.IsDeleted
                 });
             }
@@ -332,7 +330,7 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateCompanyReply> UpdateCompany(UpdateCompanyRequest request, ServerCallContext context)
         {
             var companiesLogic = new CompaniesLogic();
-            var updateCompany = companiesLogic.UpdateCompany(request.Id, request.CompanyName, request.Nip, request.Address, request.City);
+            var updateCompany = companiesLogic.UpdateCompany(request.Id, request.CompanyName, request.Nip, request.Address);
             return Task.FromResult(new UpdateCompanyReply { UpdatedCompany = updateCompany });
         }
 
@@ -345,7 +343,7 @@ namespace PracowniaProgramowaniaServer
             {
                 Id = newUser.Id,
                 Login = newUser.Login,
-                RoleID = newUser.IdRoli
+                RoleID = newUser.RoleId
             });
         }
 
@@ -368,7 +366,7 @@ namespace PracowniaProgramowaniaServer
                 {
                     Id = user.Id,
                     Login = user.Login,
-                    RoleID = user.IdRoli,
+                    RoleID = user.RoleId,
                     IsDeleted = (bool)user.IsDeleted
                 });
             }

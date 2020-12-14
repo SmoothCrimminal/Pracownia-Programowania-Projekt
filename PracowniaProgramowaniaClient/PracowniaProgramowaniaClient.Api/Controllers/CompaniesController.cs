@@ -31,15 +31,14 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
         public Company CreateCompany(string companyName, int brandId, int userId, string nip, string address, string city)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.CreateCompany(companyName, brandId, userId, nip, address, city);
+            var reply = remote.CreateCompany(companyName, brandId, userId, nip, address);
             return new Company()
             {
                 Id = reply.CompanyId,
                 NazwaFirmy = reply.CompanyName,
                 IdBranży = reply.BrandId,
                 Nip = reply.Nip,
-                Adres = reply.Address,
-                Miasto = reply.City
+                Adres = reply.Address
             };
         }
 
@@ -78,7 +77,7 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
         public string UpdateCompany(int companyId, string companyName, string nip, string address, string city)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateCompany(companyId, companyName, nip, address, city);
+            var reply = remote.UpdateCompany(companyId, companyName, nip, address);
             return reply.UpdatedCompany;
         }
     }

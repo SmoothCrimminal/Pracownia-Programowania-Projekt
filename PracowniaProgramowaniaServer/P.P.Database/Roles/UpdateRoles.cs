@@ -14,9 +14,9 @@ namespace CRUD.Roles
                 var roleToUpdate = context.Roles.Find(roleId);
                 if (roleToUpdate != null)
                 {
-                    roleToUpdate.NazwaRoli = roleName;
+                    roleToUpdate.RoleName = roleName;
                     context.SaveChanges();
-                    return $"{roleToUpdate.Id} {roleToUpdate.NazwaRoli}";
+                    return $"{roleToUpdate.Id} {roleToUpdate.RoleName}";
                 }
 
                 return "Role with such id not found in database.";

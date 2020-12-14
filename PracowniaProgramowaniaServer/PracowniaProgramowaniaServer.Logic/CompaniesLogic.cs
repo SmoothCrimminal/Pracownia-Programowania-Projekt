@@ -8,17 +8,16 @@ namespace PracowniaProgramowaniaServer.Logic
 {
     public class CompaniesLogic
     {
-        public Company CreateCompany(string companyName, int brandId, int userId, string nip = "", string address = "", string city = "")
+        public Company CreateCompany(string companyName, int brandId, int userId, string nip = "", string address = "")
         {
             var dbCreateCompany = new CreateCompanies();
             return dbCreateCompany.CreateCompany(new Company()
             {
-                NazwaFirmy = companyName,
+                CompanyName = companyName,
                 Nip = nip,
-                IdBranży = brandId,
-                IdUżytkownika = userId,
-                Adres = address,
-                Miasto = city,
+                BrandId = brandId,
+                UserId = userId,
+                Address = address,
                 IsDeleted = false
             });
         }
@@ -41,10 +40,10 @@ namespace PracowniaProgramowaniaServer.Logic
             return dbReadCompany.ReadCompany(companyId);
         }
 
-        public string UpdateCompany(int companyId, string companyName = "", string nip = "", string address = "", string city = "")
+        public string UpdateCompany(int companyId, string companyName = "", string nip = "", string address = "")
         {
             var dbUpdateCompany = new UpdateCompanies();
-            return dbUpdateCompany.UpdateCompany(companyId, companyName, nip, address, city);
+            return dbUpdateCompany.UpdateCompany(companyId, companyName, nip, address);
         }
     }
 

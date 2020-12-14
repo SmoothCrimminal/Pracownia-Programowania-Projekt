@@ -25,7 +25,7 @@ namespace CRUD.Users
                 var user = context.Users.Find(userId);
                 if (user != null)
                 {
-                    return $"{user.Id} {user.Login} {user.IdRoli} {user.IsDeleted}";
+                    return $"{user.Id} {user.Login} {user.RoleId} {user.IsDeleted}";
                 }
 
                 return "User not found";

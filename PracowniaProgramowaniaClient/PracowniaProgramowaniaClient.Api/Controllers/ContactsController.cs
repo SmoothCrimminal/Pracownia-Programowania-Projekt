@@ -28,7 +28,7 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
         [HttpGet]
         [Route("create/{name} {surname} {connectedCompanyId} {userAddingContactID} {phoneNumber} {email} {position}")]
         public Contact CreateContact(string name, string surname, int connectedCompanyId, int userId,
-            string phoneNumber, string email, string position)
+            int phoneNumber, string email, string position)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
             var reply = remote.CreateContact(name, surname, connectedCompanyId, userId, phoneNumber, email, position);
@@ -77,7 +77,7 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
 
         [HttpGet]
         [Route("update/{contactId} {name} {surname} {phoneNumber} {position} {mail}")]
-        public string UpdateContact(int contactId, string name, string surname, string phoneNumber, string position, string mail)
+        public string UpdateContact(int contactId, string name, string surname, int phoneNumber, string position, string mail)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
             var reply = remote.UpdateContact(contactId, name, surname, phoneNumber, position, mail);

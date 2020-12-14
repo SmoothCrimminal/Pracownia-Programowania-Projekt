@@ -7,12 +7,12 @@ namespace CRUD.Brands
 {
     public class CreateBrands
     {
-        public Brand CreateBrand(Brand brand) // metoda modelu Brand tworząca obiekt typu Brand
+        public Brand CreateBrand(Brand brand) 
         {
-            using (var context = new ProjektPPContext()) // używamy using ponieważ okres istnienia obiektu jest ograniczony do pojedynczej metody
+            using (var context = new ProjektPPContext()) 
             {
                 var test = context.Brands.Add(brand);
-                context.SaveChanges() ; // dzięki metodzie using po zapisaniu i zakończeniu metody na zmiennej context wykona się Dispose
+                context.SaveChanges() ; 
                 return test.Entity;
                 
             };

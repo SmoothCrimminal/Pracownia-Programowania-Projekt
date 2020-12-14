@@ -42,9 +42,9 @@ namespace CRUD.Users
                         isChanged = true;
                     }
                     if (name != "")
-                        userToUpdate.Imie = name;
+                        userToUpdate.Name = name;
                     if (surname != "")
-                        userToUpdate.Nazwisko = surname;
+                        userToUpdate.Surname = surname;
                     if (dateOfBirth != "")
                     {
                         DateTime parsedDate;
@@ -58,13 +58,13 @@ namespace CRUD.Users
                         
                     context.SaveChanges();
                     if ((password != "") && (isChanged == true))                   
-                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli} {userToUpdate.DateOfBirth} {userToUpdate.Nazwisko}" +
+                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.RoleId} {userToUpdate.DateOfBirth} {userToUpdate.Surname}" +
                             $"Password Successfully changed!";
                     else if ((password != "") && (isChanged == false))
-                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli} {userToUpdate.DateOfBirth} {userToUpdate.Nazwisko}" +
+                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.RoleId} {userToUpdate.DateOfBirth} {userToUpdate.Surname}" +
                             $"Changing Password Failed!";
                     else
-                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.IdRoli} {userToUpdate.DateOfBirth} {userToUpdate.Nazwisko}";
+                        return $"{userToUpdate.Id} {userToUpdate.Login} {userToUpdate.RoleId} {userToUpdate.DateOfBirth} {userToUpdate.Surname}";
                 }
 
                 return "User with such id not found in database or has been deleted";

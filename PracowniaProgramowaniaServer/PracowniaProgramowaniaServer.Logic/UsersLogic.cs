@@ -9,24 +9,38 @@ namespace PracowniaProgramowaniaServer.Logic
 {
     public class UsersLogic
     {
+
+        public static string CreateMD5Hash(string input)
+        {
+            using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
+            {
+                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("X2"));
+                }
+                return sb.ToString();
+            }
+        }
         public User CreateUser(string login, string password, int roleId, string name="", string surname="", string dateOfBirth="")
         {
             var dbCreateUser = new CreateUsers();
-            var data = System.Text.Encoding.ASCII.GetBytes(password);
             DateTime dateTime;
             bool isParsed = DateTime.TryParse(dateOfBirth, out dateTime);
             if (isParsed == false)
             {
-                dateTime = DateTime.Parse("1/1/2000");
+                dateTime = DateTime.Parse("1.1.2000");
             }
-            data = MD5.Create().ComputeHash(data);
             return dbCreateUser.CreateUser(new User()
             {
                 Login = login,
-                PasswordMd5 = data.ToString(),
-                IdRoli = roleId,
-                Imie = name,
-                Nazwisko = surname,
+                PasswordMd5 = CreateMD5Hash(password),
+                RoleId = roleId,
+                Name = name,
+                Surname = surname,
                 DateOfBirth = dateTime,
                 IsDeleted = false
             });
@@ -53,9 +67,7 @@ namespace PracowniaProgramowaniaServer.Logic
         public string UpdateUser(int userId, string login = "", string password = "", string name = "", string surname = "", string dateOfBirth = "")
         {
             var dbUpdateUser = new UpdateUsers();
-            var data = System.Text.Encoding.ASCII.GetBytes(password);
-            data = MD5.Create().ComputeHash(data);
-            password = data.ToString();
+            password = CreateMD5Hash(password);
             return dbUpdateUser.UpdateUser(userId, login, password, name, surname, dateOfBirth);
         }
     }

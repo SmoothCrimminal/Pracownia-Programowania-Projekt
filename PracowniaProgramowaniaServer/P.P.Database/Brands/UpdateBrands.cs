@@ -14,9 +14,9 @@ namespace CRUD.Brands
                 var brandToUpdate = context.Brands.Find(brandId);
                 if (brandToUpdate != null)
                 {
-                    brandToUpdate.NazwaBranzy = brandName;
+                    brandToUpdate.BrandName = brandName;
                     context.SaveChanges();
-                    return $"{brandToUpdate.Id} {brandToUpdate.NazwaBranzy}";
+                    return $"{brandToUpdate.Id} {brandToUpdate.BrandName}";
                 }
 
                 return "Brand with such id not found in database.";

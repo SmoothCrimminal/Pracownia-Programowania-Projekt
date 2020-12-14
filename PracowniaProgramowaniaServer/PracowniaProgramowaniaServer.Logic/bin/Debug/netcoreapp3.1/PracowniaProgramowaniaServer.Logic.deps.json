@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "PracowniaProgramowaniaServer.Logic/1.0.0": {
         "dependencies": {
-          "P.P.Database": "1.0.0"
+          "Login": "1.0.0",
+          "P.P.Database": "1.0.0",
+          "System.ServiceModel": "3.0.0.0"
         },
         "runtime": {
           "PracowniaProgramowaniaServer.Logic.dll": {}
@@ -1112,6 +1114,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Login/1.0.0": {
+        "dependencies": {
+          "P.P.Database": "1.0.0"
+        },
+        "runtime": {
+          "Login.dll": {}
+        }
+      },
       "P.P.Database/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
@@ -1120,6 +1130,30 @@
         },
         "runtime": {
           "P.P.Database.dll": {}
+        }
+      },
+      "System.ServiceModel/3.0.0.0": {
+        "runtime": {
+          "System.ServiceModel.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.4506.9149"
+          }
+        }
+      },
+      "System.IdentityModel/3.0.0.0": {
+        "runtime": {
+          "System.IdentityModel.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.4506.9149"
+          }
+        }
+      },
+      "System.IdentityModel.Selectors/3.0.0.0": {
+        "runtime": {
+          "System.IdentityModel.Selectors.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.4506.9135"
+          }
         }
       }
     }
@@ -1823,8 +1857,28 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "Login/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "P.P.Database/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ServiceModel/3.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IdentityModel/3.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IdentityModel.Selectors/3.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

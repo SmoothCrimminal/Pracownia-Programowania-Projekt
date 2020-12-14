@@ -79,7 +79,7 @@ message ContactField{
 	int32 connectedCompanyId = 3;
 	int32 userAddingContactId = 4;
 	string surname = 5;
-	string phoneNumber = 6;
+	int32 phoneNumber = 6;
 	string emailAddress = 7;
 	string position = 8;
 	bool isDeleted = 9;
@@ -92,8 +92,7 @@ message CompanyField{
 	int32 userAddingCompanyId = 4;
 	string nip = 5;
 	string address = 6;
-	string city = 7;
-	bool isDeleted = 8;
+	bool isDeleted = 7;
 }
 
 message UserField{
@@ -108,11 +107,11 @@ message UserField{
 }
 
 message CreateBrandRequest{
-	string brandName = 1;  // checemy mieæ nazwê Brandu
+	string brandName = 1;  
 }
 
 message CreateBrandReply{
-	int32 brandId = 1;       // zwracamy ID i Name
+	int32 brandId = 1;       
 	string brandName = 2;
 }
 
@@ -247,7 +246,7 @@ message CreateContactRequest{
 	string surname = 3;
 	int32 connectedCompanyId = 4;
 	int32 userAddingContactId = 5;
-	string phoneNumber = 6;
+	int32 phoneNumber = 6;
 	string emailAddress = 7;
 	string position = 8;
 }
@@ -258,7 +257,7 @@ message CreateContactReply{
 	string surname = 3;
 	int32 connectedCompanyId = 4;
 	int32 userAddingContactId = 5;
-	string phoneNumber = 6;
+	int32 phoneNumber = 6;
 	string emailAddress = 7;
 	string position = 8;
 }
@@ -293,7 +292,7 @@ message UpdateContactRequest{
 	string surname = 3;
 	int32 connectedCompanyId = 4;
 	int32 userAddingContactId = 5;
-	string phoneNumber = 6;
+	int32 phoneNumber = 6;
 	string emailAddress = 7;
 	string position = 8;
 }
@@ -310,7 +309,6 @@ message CreateCompanyRequest{
 	int32 userAddingCompanyId = 3;
 	string nip = 4;
 	string address = 5;
-	string city = 6;	
 }
 
 message CreateCompanyReply{
@@ -320,7 +318,6 @@ message CreateCompanyReply{
 	int32 userAddingCompanyId = 4;
 	string nip = 5;
 	string address = 6;
-	string city = 7;
 }
 
 message DeleteCompanyRequest{
@@ -354,8 +351,7 @@ message UpdateCompanyRequest{
 	int32 userAddingCompanyId = 4;
 	string nip = 5;
 	string address = 6;
-	string city = 7;
-	bool isDeleted = 8;
+	bool isDeleted = 7;
 }
 
 message UpdateCompanyReply{

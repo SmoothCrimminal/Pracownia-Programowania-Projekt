@@ -105,7 +105,7 @@ namespace PracowniaProgramowaniaClient.ServerRemote
         }
 
         public PracowniaProgramowaniaServer.CreateContactReply CreateContact(string name, string surname, int connectedCompanyId, int userId,
-            string phoneNumber = "", string emailAddress = "", string stanowisko = "")
+            int phoneNumber = 0, string emailAddress = "", string stanowisko = "")
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
             return pPServer.CreateContact(new PracowniaProgramowaniaServer.CreateContactRequest()
@@ -138,7 +138,7 @@ namespace PracowniaProgramowaniaClient.ServerRemote
             return pPServer.ReadContact(new PracowniaProgramowaniaServer.ReadContactRequest() { Id = contactId });
         }
 
-        public PracowniaProgramowaniaServer.UpdateContactReply UpdateContact(int contactId, string name = "", string surname = "", string phoneNumber = "", string position = "", string emailAddress = "")
+        public PracowniaProgramowaniaServer.UpdateContactReply UpdateContact(int contactId, string name = "", string surname = "", int phoneNumber = 0, string position = "", string emailAddress = "")
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
             return pPServer.UpdateContact(new PracowniaProgramowaniaServer.UpdateContactRequest()
@@ -152,7 +152,7 @@ namespace PracowniaProgramowaniaClient.ServerRemote
             });
         }
 
-        public PracowniaProgramowaniaServer.CreateCompanyReply CreateCompany(string companyName, int brandId, int userId, string nip = "", string address = "", string city = "")
+        public PracowniaProgramowaniaServer.CreateCompanyReply CreateCompany(string companyName, int brandId, int userId, string nip = "", string address = "")
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
             return pPServer.CreateCompany(new PracowniaProgramowaniaServer.CreateCompanyRequest()
@@ -161,8 +161,7 @@ namespace PracowniaProgramowaniaClient.ServerRemote
                 BrandId = brandId,
                 UserAddingCompanyId = userId,
                 Nip = nip,
-                Address = address,
-                City = city
+                Address = address
             });
         }
 
@@ -184,7 +183,7 @@ namespace PracowniaProgramowaniaClient.ServerRemote
             return pPServer.ReadCompany(new PracowniaProgramowaniaServer.ReadCompanyRequest() { CompanyId = companyId });
         }
 
-        public PracowniaProgramowaniaServer.UpdateCompanyReply UpdateCompany(int companyId, string companyName = "", string nip = "", string address = "", string city = "")
+        public PracowniaProgramowaniaServer.UpdateCompanyReply UpdateCompany(int companyId, string companyName = "", string nip = "", string address = "")
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
             return pPServer.UpdateCompany(new PracowniaProgramowaniaServer.UpdateCompanyRequest()
@@ -192,8 +191,7 @@ namespace PracowniaProgramowaniaClient.ServerRemote
                 Id = companyId,
                 CompanyName = companyName,
                 Nip = nip,
-                Address = address,
-                City = city
+                Address = address
             });
         }
 

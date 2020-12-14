@@ -11,7 +11,7 @@ namespace PracowniaProgramowaniaServer.Logic
         public Role CreateRole(string roleName) // metoda przyjmuje string name
         {
             var dbCreateRole = new CreateRoles(); // tworzy obiekt CreateBrands
-            return dbCreateRole.CreateRole(new Role() { NazwaRoli = roleName }); // zwraca instancję obiektu z nazwą podaną w stringu brandName
+            return dbCreateRole.CreateRole(new Role() { RoleName = roleName }); // zwraca instancję obiektu z nazwą podaną w stringu brandName
         }
 
         public bool DeleteRole(int roleId)

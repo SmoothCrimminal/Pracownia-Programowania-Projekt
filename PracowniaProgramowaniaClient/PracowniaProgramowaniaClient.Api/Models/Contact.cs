@@ -10,7 +10,7 @@ namespace P.P.Database.Models
         public int Id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
-        public string Telefon { get; set; }
+        public int Telefon { get; set; }
         public string Mail { get; set; }
         public string Stanowisko { get; set; }
         public int FirmaPowiazana { get; set; }

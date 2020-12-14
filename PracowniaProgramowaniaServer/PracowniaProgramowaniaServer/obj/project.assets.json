@@ -1688,6 +1688,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Login/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "P.P.Database": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Login.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Login.dll": {}
+        }
+      },
       "P.P.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1707,6 +1720,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Login": "1.0.0",
           "P.P.Database": "1.0.0"
         },
         "compile": {
@@ -6228,6 +6242,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Login/1.0.0": {
+      "type": "project",
+      "path": "../Login/Login.csproj",
+      "msbuildProject": "../Login/Login.csproj"
     },
     "P.P.Database/1.0.0": {
       "type": "project",

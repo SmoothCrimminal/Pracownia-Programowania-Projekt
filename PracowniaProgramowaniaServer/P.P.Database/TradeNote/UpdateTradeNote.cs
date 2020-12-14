@@ -11,13 +11,13 @@ namespace CRUD.TradeNote
         {
             using (var context = new ProjektPPContext())
             {
-                var tradeNoteToUpdate = context.TradeNotes.Find(tradeNoteId);
+                var tradeNoteToUpdate = context.Tradenotes.Find(tradeNoteId);
                 if ((tradeNoteToUpdate != null) && ( (bool) tradeNoteToUpdate.IsDeleted == false))
                 {                   
-                   tradeNoteToUpdate.Tresc = content;
+                   tradeNoteToUpdate.Content = content;
          
                    context.SaveChanges();
-                   return $"{tradeNoteToUpdate.Id} {tradeNoteToUpdate.Tresc} {tradeNoteToUpdate.FirmaPowiazana}";
+                   return $"{tradeNoteToUpdate.Id} {tradeNoteToUpdate.Content} {tradeNoteToUpdate.CompanyId}";
                 }
 
                 return "Trade Note with such id not found in database or has been deleted";

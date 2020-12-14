@@ -8,18 +8,18 @@ namespace PracowniaProgramowaniaServer.Logic
     public class ContactsLogic
     {
         public Contact CreateContact(string name, string surname, int connectedCompanyId, int userId,
-            string phoneNumber = "", string emailAddress = "", string position = "")
+            int phoneNumber = 0, string emailAddress = "", string position = "")
         {
             var dbCreateContact = new CreateContact();
             return dbCreateContact.CreateContacts(new Contact()
             {
-                Imie = name,
-                Nazwisko = surname,
-                FirmaPowiazana = connectedCompanyId,
-                IdUżytkownika = userId,
-                Telefon = phoneNumber,
+                Name = name,
+                Surname = surname,
+                CompanyId = connectedCompanyId,
+                UserId = userId,
+                PhoneNumber = phoneNumber,
                 Mail = emailAddress,
-                Stanowisko = position,
+                Position = position,
                 IsDeleted = false
             });
         }
@@ -42,7 +42,7 @@ namespace PracowniaProgramowaniaServer.Logic
             return dbReadContact.ReadContacts(contactId);
         }
 
-        public string UpdateContact(int contactId, string name = "", string surname = "", string phoneNumber = "", string position = "", string emailAddress = "")
+        public string UpdateContact(int contactId, string name = "", string surname = "", int phoneNumber = 0, string position = "", string emailAddress = "")
         {
             var dbUpdateContact = new UpdateContact();
             return dbUpdateContact.UpdateContacts(contactId, name, surname, phoneNumber, position, emailAddress);

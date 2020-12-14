@@ -33,159 +33,158 @@ namespace PracowniaProgramowaniaServer {
             "EHVzZXJBZGRpbmdOb3RlSWQYBCABKAUSEQoJaXNEZWxldGVkGAUgASgIIsIB",
             "CgxDb250YWN0RmllbGQSCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCRIaChJj",
             "b25uZWN0ZWRDb21wYW55SWQYAyABKAUSGwoTdXNlckFkZGluZ0NvbnRhY3RJ",
-            "ZBgEIAEoBRIPCgdzdXJuYW1lGAUgASgJEhMKC3Bob25lTnVtYmVyGAYgASgJ",
+            "ZBgEIAEoBRIPCgdzdXJuYW1lGAUgASgJEhMKC3Bob25lTnVtYmVyGAYgASgF",
             "EhQKDGVtYWlsQWRkcmVzcxgHIAEoCRIQCghwb3NpdGlvbhgIIAEoCRIRCglp",
-            "c0RlbGV0ZWQYCSABKAginAEKDENvbXBhbnlGaWVsZBIKCgJpZBgBIAEoBRIT",
+            "c0RlbGV0ZWQYCSABKAgijgEKDENvbXBhbnlGaWVsZBIKCgJpZBgBIAEoBRIT",
             "Cgtjb21wYW55TmFtZRgCIAEoCRIPCgdicmFuZElkGAMgASgFEhsKE3VzZXJB",
             "ZGRpbmdDb21wYW55SWQYBCABKAUSCwoDbmlwGAUgASgJEg8KB2FkZHJlc3MY",
-            "BiABKAkSDAoEY2l0eRgHIAEoCRIRCglpc0RlbGV0ZWQYCCABKAgijwEKCVVz",
-            "ZXJGaWVsZBIKCgJpZBgBIAEoBRINCgVsb2dpbhgCIAEoCRIQCghwYXNzd29y",
-            "ZBgDIAEoCRIOCgZyb2xlSUQYBCABKAUSDAoEbmFtZRgFIAEoCRIPCgdzdXJu",
-            "YW1lGAYgASgJEhMKC2RhdGVPZkJpcnRoGAcgASgJEhEKCWlzRGVsZXRlZBgI",
-            "IAEoCCInChJDcmVhdGVCcmFuZFJlcXVlc3QSEQoJYnJhbmROYW1lGAEgASgJ",
-            "IjYKEENyZWF0ZUJyYW5kUmVwbHkSDwoHYnJhbmRJZBgBIAEoBRIRCglicmFu",
-            "ZE5hbWUYAiABKAkiJQoSRGVsZXRlQnJhbmRSZXF1ZXN0Eg8KB2JyYW5kSWQY",
-            "ASABKAUiIgoQRGVsZXRlQnJhbmRSZXBseRIOCgZyZXN1bHQYASABKAgiFgoU",
-            "UmVhZEFsbEJyYW5kc1JlcXVlc3QiQgoSUmVhZEFsbEJyYW5kc1JlcGx5EiwK",
-            "CWFsbEJyYW5kcxgBIAMoCzIZLnNlcnZlclNlcnZpY2UuQnJhbmRGaWVsZCIj",
-            "ChBSZWFkQnJhbmRSZXF1ZXN0Eg8KB2JyYW5kSWQYASABKAUiJgoOUmVhZEJy",
-            "YW5kUmVwbHkSFAoMYnJhbmREZXRhaWxzGAEgASgJIjgKElVwZGF0ZUJyYW5k",
-            "UmVxdWVzdBIPCgdicmFuZElkGAEgASgFEhEKCWJyYW5kTmFtZRgCIAEoCSIo",
-            "ChBVcGRhdGVCcmFuZFJlcGx5EhQKDHVwZGF0ZWRCcmFuZBgBIAEoCSIlChFD",
-            "cmVhdGVSb2xlUmVxdWVzdBIQCghyb2xlTmFtZRgBIAEoCSIzCg9DcmVhdGVS",
-            "b2xlUmVwbHkSDgoGcm9sZUlkGAEgASgFEhAKCHJvbGVOYW1lGAIgASgJIiMK",
-            "EURlbGV0ZVJvbGVSZXF1ZXN0Eg4KBnJvbGVJZBgBIAEoBSIhCg9EZWxldGVS",
-            "b2xlUmVwbHkSDgoGcmVzdWx0GAEgASgIIhUKE1JlYWRBbGxSb2xlc1JlcXVl",
-            "c3QiPwoRUmVhZEFsbFJvbGVzUmVwbHkSKgoIYWxsUm9sZXMYASADKAsyGC5z",
-            "ZXJ2ZXJTZXJ2aWNlLlJvbGVGaWVsZCIhCg9SZWFkUm9sZVJlcXVlc3QSDgoG",
-            "cm9sZUlkGAEgASgFIiQKDVJlYWRSb2xlUmVwbHkSEwoLcm9sZURldGFpbHMY",
-            "ASABKAkiNQoRVXBkYXRlUm9sZVJlcXVlc3QSDgoGcm9sZUlkGAEgASgFEhAK",
-            "CHJvbGVOYW1lGAIgASgJIiYKD1VwZGF0ZVJvbGVSZXBseRITCgt1cGRhdGVk",
-            "Um9sZRgBIAEoCSJMChZDcmVhdGVUcmFkZU5vdGVSZXF1ZXN0Eg8KB2NvbnRl",
-            "bnQYASABKAkSEQoJY29tcGFueUlkGAIgASgFEg4KBnVzZXJJZBgDIAEoBSJ7",
-            "ChRDcmVhdGVUcmFkZU5vdGVSZXBseRITCgt0cmFkZU5vdGVJZBgBIAEoBRIY",
-            "ChB0cmFkZU5vdGVDb250ZW50GAIgASgJEhoKEmNvbm5lY3RlZENvbXBhbnlJ",
-            "ZBgDIAEoBRIYChB1c2VyQWRkaW5nTm90ZUlkGAQgASgFIi0KFkRlbGV0ZVRy",
-            "YWRlTm90ZVJlcXVlc3QSEwoLdHJhZGVOb3RlSWQYASABKAUiJwoURGVsZXRl",
-            "VHJhZGVOb3RlUmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIaChhSZWFkQWxsVHJh",
-            "ZGVOb3Rlc1JlcXVlc3QiUgoWUmVhZEFsbFRyYWRlTm90ZXNSZXBseRI4ChFy",
-            "ZWFkQWxsVHJhZGVOb3RlcxgBIAMoCzIdLnNlcnZlclNlcnZpY2UuVHJhZGVO",
-            "b3RlRmllbGQiKwoUUmVhZFRyYWRlTm90ZVJlcXVlc3QSEwoLdHJhZGVOb3Rl",
-            "SWQYASABKAUiLgoSUmVhZFRyYWRlTm90ZVJlcGx5EhgKEHRyYWRlTm90ZURl",
-            "dGFpbHMYASABKAkiQQoWVXBkYXRlVHJhZGVOb3RlUmVxdWVzdBITCgt0cmFk",
-            "ZU5vdGVJZBgBIAEoBRISCgpuZXdDb250ZW50GAIgASgJIjAKFFVwZGF0ZVRy",
-            "YWRlTm90ZVJlcGx5EhgKEHVwZGF0ZWRUcmFkZU5vdGUYASABKAkivgEKFENy",
-            "ZWF0ZUNvbnRhY3RSZXF1ZXN0EhEKCWNvbnRhY3RJZBgBIAEoBRIMCgRuYW1l",
+            "BiABKAkSEQoJaXNEZWxldGVkGAcgASgIIo8BCglVc2VyRmllbGQSCgoCaWQY",
+            "ASABKAUSDQoFbG9naW4YAiABKAkSEAoIcGFzc3dvcmQYAyABKAkSDgoGcm9s",
+            "ZUlEGAQgASgFEgwKBG5hbWUYBSABKAkSDwoHc3VybmFtZRgGIAEoCRITCgtk",
+            "YXRlT2ZCaXJ0aBgHIAEoCRIRCglpc0RlbGV0ZWQYCCABKAgiJwoSQ3JlYXRl",
+            "QnJhbmRSZXF1ZXN0EhEKCWJyYW5kTmFtZRgBIAEoCSI2ChBDcmVhdGVCcmFu",
+            "ZFJlcGx5Eg8KB2JyYW5kSWQYASABKAUSEQoJYnJhbmROYW1lGAIgASgJIiUK",
+            "EkRlbGV0ZUJyYW5kUmVxdWVzdBIPCgdicmFuZElkGAEgASgFIiIKEERlbGV0",
+            "ZUJyYW5kUmVwbHkSDgoGcmVzdWx0GAEgASgIIhYKFFJlYWRBbGxCcmFuZHNS",
+            "ZXF1ZXN0IkIKElJlYWRBbGxCcmFuZHNSZXBseRIsCglhbGxCcmFuZHMYASAD",
+            "KAsyGS5zZXJ2ZXJTZXJ2aWNlLkJyYW5kRmllbGQiIwoQUmVhZEJyYW5kUmVx",
+            "dWVzdBIPCgdicmFuZElkGAEgASgFIiYKDlJlYWRCcmFuZFJlcGx5EhQKDGJy",
+            "YW5kRGV0YWlscxgBIAEoCSI4ChJVcGRhdGVCcmFuZFJlcXVlc3QSDwoHYnJh",
+            "bmRJZBgBIAEoBRIRCglicmFuZE5hbWUYAiABKAkiKAoQVXBkYXRlQnJhbmRS",
+            "ZXBseRIUCgx1cGRhdGVkQnJhbmQYASABKAkiJQoRQ3JlYXRlUm9sZVJlcXVl",
+            "c3QSEAoIcm9sZU5hbWUYASABKAkiMwoPQ3JlYXRlUm9sZVJlcGx5Eg4KBnJv",
+            "bGVJZBgBIAEoBRIQCghyb2xlTmFtZRgCIAEoCSIjChFEZWxldGVSb2xlUmVx",
+            "dWVzdBIOCgZyb2xlSWQYASABKAUiIQoPRGVsZXRlUm9sZVJlcGx5Eg4KBnJl",
+            "c3VsdBgBIAEoCCIVChNSZWFkQWxsUm9sZXNSZXF1ZXN0Ij8KEVJlYWRBbGxS",
+            "b2xlc1JlcGx5EioKCGFsbFJvbGVzGAEgAygLMhguc2VydmVyU2VydmljZS5S",
+            "b2xlRmllbGQiIQoPUmVhZFJvbGVSZXF1ZXN0Eg4KBnJvbGVJZBgBIAEoBSIk",
+            "Cg1SZWFkUm9sZVJlcGx5EhMKC3JvbGVEZXRhaWxzGAEgASgJIjUKEVVwZGF0",
+            "ZVJvbGVSZXF1ZXN0Eg4KBnJvbGVJZBgBIAEoBRIQCghyb2xlTmFtZRgCIAEo",
+            "CSImCg9VcGRhdGVSb2xlUmVwbHkSEwoLdXBkYXRlZFJvbGUYASABKAkiTAoW",
+            "Q3JlYXRlVHJhZGVOb3RlUmVxdWVzdBIPCgdjb250ZW50GAEgASgJEhEKCWNv",
+            "bXBhbnlJZBgCIAEoBRIOCgZ1c2VySWQYAyABKAUiewoUQ3JlYXRlVHJhZGVO",
+            "b3RlUmVwbHkSEwoLdHJhZGVOb3RlSWQYASABKAUSGAoQdHJhZGVOb3RlQ29u",
+            "dGVudBgCIAEoCRIaChJjb25uZWN0ZWRDb21wYW55SWQYAyABKAUSGAoQdXNl",
+            "ckFkZGluZ05vdGVJZBgEIAEoBSItChZEZWxldGVUcmFkZU5vdGVSZXF1ZXN0",
+            "EhMKC3RyYWRlTm90ZUlkGAEgASgFIicKFERlbGV0ZVRyYWRlTm90ZVJlcGx5",
+            "Eg8KB21lc3NhZ2UYASABKAkiGgoYUmVhZEFsbFRyYWRlTm90ZXNSZXF1ZXN0",
+            "IlIKFlJlYWRBbGxUcmFkZU5vdGVzUmVwbHkSOAoRcmVhZEFsbFRyYWRlTm90",
+            "ZXMYASADKAsyHS5zZXJ2ZXJTZXJ2aWNlLlRyYWRlTm90ZUZpZWxkIisKFFJl",
+            "YWRUcmFkZU5vdGVSZXF1ZXN0EhMKC3RyYWRlTm90ZUlkGAEgASgFIi4KElJl",
+            "YWRUcmFkZU5vdGVSZXBseRIYChB0cmFkZU5vdGVEZXRhaWxzGAEgASgJIkEK",
+            "FlVwZGF0ZVRyYWRlTm90ZVJlcXVlc3QSEwoLdHJhZGVOb3RlSWQYASABKAUS",
+            "EgoKbmV3Q29udGVudBgCIAEoCSIwChRVcGRhdGVUcmFkZU5vdGVSZXBseRIY",
+            "ChB1cGRhdGVkVHJhZGVOb3RlGAEgASgJIr4BChRDcmVhdGVDb250YWN0UmVx",
+            "dWVzdBIRCgljb250YWN0SWQYASABKAUSDAoEbmFtZRgCIAEoCRIPCgdzdXJu",
+            "YW1lGAMgASgJEhoKEmNvbm5lY3RlZENvbXBhbnlJZBgEIAEoBRIbChN1c2Vy",
+            "QWRkaW5nQ29udGFjdElkGAUgASgFEhMKC3Bob25lTnVtYmVyGAYgASgFEhQK",
+            "DGVtYWlsQWRkcmVzcxgHIAEoCRIQCghwb3NpdGlvbhgIIAEoCSK8AQoSQ3Jl",
+            "YXRlQ29udGFjdFJlcGx5EhEKCWNvbnRhY3RJZBgBIAEoBRIMCgRuYW1lGAIg",
+            "ASgJEg8KB3N1cm5hbWUYAyABKAkSGgoSY29ubmVjdGVkQ29tcGFueUlkGAQg",
+            "ASgFEhsKE3VzZXJBZGRpbmdDb250YWN0SWQYBSABKAUSEwoLcGhvbmVOdW1i",
+            "ZXIYBiABKAUSFAoMZW1haWxBZGRyZXNzGAcgASgJEhAKCHBvc2l0aW9uGAgg",
+            "ASgJIikKFERlbGV0ZUNvbnRhY3RSZXF1ZXN0EhEKCWNvbnRhY3RJZBgBIAEo",
+            "BSIlChJEZWxldGVDb250YWN0UmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIYChZS",
+            "ZWFkQWxsQ29udGFjdHNSZXF1ZXN0IkgKFFJlYWRBbGxDb250YWN0c1JlcGx5",
+            "EjAKC2FsbENvbnRhY3RzGAEgAygLMhsuc2VydmVyU2VydmljZS5Db250YWN0",
+            "RmllbGQiIAoSUmVhZENvbnRhY3RSZXF1ZXN0EgoKAmlkGAEgASgFIioKEFJl",
+            "YWRDb250YWN0UmVwbHkSFgoOY29udGFjdERldGFpbHMYASABKAkivgEKFFVw",
+            "ZGF0ZUNvbnRhY3RSZXF1ZXN0EhEKCWNvbnRhY3RJZBgBIAEoBRIMCgRuYW1l",
             "GAIgASgJEg8KB3N1cm5hbWUYAyABKAkSGgoSY29ubmVjdGVkQ29tcGFueUlk",
             "GAQgASgFEhsKE3VzZXJBZGRpbmdDb250YWN0SWQYBSABKAUSEwoLcGhvbmVO",
-            "dW1iZXIYBiABKAkSFAoMZW1haWxBZGRyZXNzGAcgASgJEhAKCHBvc2l0aW9u",
-            "GAggASgJIrwBChJDcmVhdGVDb250YWN0UmVwbHkSEQoJY29udGFjdElkGAEg",
-            "ASgFEgwKBG5hbWUYAiABKAkSDwoHc3VybmFtZRgDIAEoCRIaChJjb25uZWN0",
-            "ZWRDb21wYW55SWQYBCABKAUSGwoTdXNlckFkZGluZ0NvbnRhY3RJZBgFIAEo",
-            "BRITCgtwaG9uZU51bWJlchgGIAEoCRIUCgxlbWFpbEFkZHJlc3MYByABKAkS",
-            "EAoIcG9zaXRpb24YCCABKAkiKQoURGVsZXRlQ29udGFjdFJlcXVlc3QSEQoJ",
-            "Y29udGFjdElkGAEgASgFIiUKEkRlbGV0ZUNvbnRhY3RSZXBseRIPCgdtZXNz",
-            "YWdlGAEgASgJIhgKFlJlYWRBbGxDb250YWN0c1JlcXVlc3QiSAoUUmVhZEFs",
-            "bENvbnRhY3RzUmVwbHkSMAoLYWxsQ29udGFjdHMYASADKAsyGy5zZXJ2ZXJT",
-            "ZXJ2aWNlLkNvbnRhY3RGaWVsZCIgChJSZWFkQ29udGFjdFJlcXVlc3QSCgoC",
-            "aWQYASABKAUiKgoQUmVhZENvbnRhY3RSZXBseRIWCg5jb250YWN0RGV0YWls",
-            "cxgBIAEoCSK+AQoUVXBkYXRlQ29udGFjdFJlcXVlc3QSEQoJY29udGFjdElk",
-            "GAEgASgFEgwKBG5hbWUYAiABKAkSDwoHc3VybmFtZRgDIAEoCRIaChJjb25u",
-            "ZWN0ZWRDb21wYW55SWQYBCABKAUSGwoTdXNlckFkZGluZ0NvbnRhY3RJZBgF",
-            "IAEoBRITCgtwaG9uZU51bWJlchgGIAEoCRIUCgxlbWFpbEFkZHJlc3MYByAB",
-            "KAkSEAoIcG9zaXRpb24YCCABKAkiLAoSVXBkYXRlQ29udGFjdFJlcGx5EhYK",
-            "DnVwZGF0ZWRDb250YWN0GAEgASgJIoUBChRDcmVhdGVDb21wYW55UmVxdWVz",
-            "dBITCgtjb21wYW55TmFtZRgBIAEoCRIPCgdicmFuZElkGAIgASgFEhsKE3Vz",
-            "ZXJBZGRpbmdDb21wYW55SWQYAyABKAUSCwoDbmlwGAQgASgJEg8KB2FkZHJl",
-            "c3MYBSABKAkSDAoEY2l0eRgGIAEoCSKWAQoSQ3JlYXRlQ29tcGFueVJlcGx5",
-            "EhEKCWNvbXBhbnlJZBgBIAEoBRITCgtjb21wYW55TmFtZRgCIAEoCRIPCgdi",
-            "cmFuZElkGAMgASgFEhsKE3VzZXJBZGRpbmdDb21wYW55SWQYBCABKAUSCwoD",
-            "bmlwGAUgASgJEg8KB2FkZHJlc3MYBiABKAkSDAoEY2l0eRgHIAEoCSIpChRE",
-            "ZWxldGVDb21wYW55UmVxdWVzdBIRCgljb21wYW55SWQYASABKAUiJQoSRGVs",
-            "ZXRlQ29tcGFueVJlcGx5Eg8KB21lc3NhZ2UYASABKAkiGQoXUmVhZEFsbENv",
-            "bXBhbmllc1JlcXVlc3QiTgoVUmVhZEFsbENvbXBhbmllc1JlcGx5EjUKEHJl",
-            "YWRBbGxDb21wYW5pZXMYASADKAsyGy5zZXJ2ZXJTZXJ2aWNlLkNvbXBhbnlG",
-            "aWVsZCInChJSZWFkQ29tcGFueVJlcXVlc3QSEQoJY29tcGFueUlkGAEgASgF",
-            "IioKEFJlYWRDb21wYW55UmVwbHkSFgoOY29tcGFueURldGFpbHMYASABKAki",
-            "pAEKFFVwZGF0ZUNvbXBhbnlSZXF1ZXN0EgoKAmlkGAEgASgFEhMKC2NvbXBh",
-            "bnlOYW1lGAIgASgJEg8KB2JyYW5kSWQYAyABKAUSGwoTdXNlckFkZGluZ0Nv",
-            "bXBhbnlJZBgEIAEoBRILCgNuaXAYBSABKAkSDwoHYWRkcmVzcxgGIAEoCRIM",
-            "CgRjaXR5GAcgASgJEhEKCWlzRGVsZXRlZBgIIAEoCCIsChJVcGRhdGVDb21w",
-            "YW55UmVwbHkSFgoOdXBkYXRlZENvbXBhbnkYASABKAkieAoRQ3JlYXRlVXNl",
-            "clJlcXVlc3QSDQoFbG9naW4YASABKAkSEAoIcGFzc3dvcmQYAiABKAkSDgoG",
-            "cm9sZUlEGAMgASgFEgwKBG5hbWUYBCABKAkSDwoHc3VybmFtZRgFIAEoCRIT",
-            "CgtkYXRlT2ZCaXJ0aBgGIAEoCSI8Cg9DcmVhdGVVc2VyUmVwbHkSCgoCaWQY",
-            "ASABKAUSDQoFbG9naW4YAiABKAkSDgoGcm9sZUlEGAMgASgFIh8KEURlbGV0",
-            "ZVVzZXJSZXF1ZXN0EgoKAmlkGAEgASgFIiIKD0RlbGV0ZVVzZXJSZXBseRIP",
-            "CgdtZXNzYWdlGAEgASgJIhUKE1JlYWRBbGxVc2Vyc1JlcXVlc3QiQwoRUmVh",
-            "ZEFsbFVzZXJzUmVwbHkSLgoMcmVhZEFsbFVzZXJzGAEgAygLMhguc2VydmVy",
-            "U2VydmljZS5Vc2VyRmllbGQiHQoPUmVhZFVzZXJSZXF1ZXN0EgoKAmlkGAEg",
-            "ASgFIiQKDVJlYWRVc2VyUmVwbHkSEwoLdXNlckRldGFpbHMYASABKAkilwEK",
-            "EVVwZGF0ZVVzZXJSZXF1ZXN0EgoKAmlkGAEgASgFEg0KBWxvZ2luGAIgASgJ",
-            "EhAKCHBhc3N3b3JkGAMgASgJEg4KBnJvbGVJRBgEIAEoBRIMCgRuYW1lGAUg",
-            "ASgJEg8KB3N1cm5hbWUYBiABKAkSEwoLZGF0ZU9mQmlydGgYByABKAkSEQoJ",
-            "aXNEZWxldGVkGAggASgIIiYKD1VwZGF0ZVVzZXJSZXBseRITCgt1cGRhdGVk",
-            "VXNlchgBIAEoCTL5FAocUHJhY293bmlhUHJvZ3JhbW93YW5pYVNlcnZlchJC",
-            "CghTYXlIZWxsbxIbLnNlcnZlclNlcnZpY2UuSGVsbG9SZXF1ZXN0Ghkuc2Vy",
-            "dmVyU2VydmljZS5IZWxsb1JlcGx5ElEKC0NyZWF0ZUJyYW5kEiEuc2VydmVy",
-            "U2VydmljZS5DcmVhdGVCcmFuZFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNlLkNy",
-            "ZWF0ZUJyYW5kUmVwbHkSUQoLRGVsZXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2aWNl",
-            "LkRlbGV0ZUJyYW5kUmVxdWVzdBofLnNlcnZlclNlcnZpY2UuRGVsZXRlQnJh",
-            "bmRSZXBseRJXCg1SZWFkQWxsQnJhbmRzEiMuc2VydmVyU2VydmljZS5SZWFk",
-            "QWxsQnJhbmRzUmVxdWVzdBohLnNlcnZlclNlcnZpY2UuUmVhZEFsbEJyYW5k",
-            "c1JlcGx5EksKCVJlYWRCcmFuZBIfLnNlcnZlclNlcnZpY2UuUmVhZEJyYW5k",
-            "UmVxdWVzdBodLnNlcnZlclNlcnZpY2UuUmVhZEJyYW5kUmVwbHkSUQoLVXBk",
-            "YXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUJyYW5kUmVxdWVzdBof",
-            "LnNlcnZlclNlcnZpY2UuVXBkYXRlQnJhbmRSZXBseRJOCgpDcmVhdGVSb2xl",
-            "EiAuc2VydmVyU2VydmljZS5DcmVhdGVSb2xlUmVxdWVzdBoeLnNlcnZlclNl",
-            "cnZpY2UuQ3JlYXRlUm9sZVJlcGx5Ek4KCkRlbGV0ZVJvbGUSIC5zZXJ2ZXJT",
-            "ZXJ2aWNlLkRlbGV0ZVJvbGVSZXF1ZXN0Gh4uc2VydmVyU2VydmljZS5EZWxl",
-            "dGVSb2xlUmVwbHkSVAoMUmVhZEFsbFJvbGVzEiIuc2VydmVyU2VydmljZS5S",
-            "ZWFkQWxsUm9sZXNSZXF1ZXN0GiAuc2VydmVyU2VydmljZS5SZWFkQWxsUm9s",
-            "ZXNSZXBseRJICghSZWFkUm9sZRIeLnNlcnZlclNlcnZpY2UuUmVhZFJvbGVS",
-            "ZXF1ZXN0Ghwuc2VydmVyU2VydmljZS5SZWFkUm9sZVJlcGx5Ek4KClVwZGF0",
-            "ZVJvbGUSIC5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVJvbGVSZXF1ZXN0Gh4uc2Vy",
-            "dmVyU2VydmljZS5VcGRhdGVSb2xlUmVwbHkSXQoPQ3JlYXRlVHJhZGVOb3Rl",
-            "EiUuc2VydmVyU2VydmljZS5DcmVhdGVUcmFkZU5vdGVSZXF1ZXN0GiMuc2Vy",
-            "dmVyU2VydmljZS5DcmVhdGVUcmFkZU5vdGVSZXBseRJdCg9EZWxldGVUcmFk",
-            "ZU5vdGUSJS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcXVlc3Qa",
-            "Iy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcGx5EmMKEVJlYWRB",
-            "bGxUcmFkZU5vdGVzEicuc2VydmVyU2VydmljZS5SZWFkQWxsVHJhZGVOb3Rl",
-            "c1JlcXVlc3QaJS5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxUcmFkZU5vdGVzUmVw",
-            "bHkSVwoNUmVhZFRyYWRlTm90ZRIjLnNlcnZlclNlcnZpY2UuUmVhZFRyYWRl",
-            "Tm90ZVJlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLlJlYWRUcmFkZU5vdGVSZXBs",
-            "eRJdCg9VcGRhdGVUcmFkZU5vdGUSJS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRy",
-            "YWRlTm90ZVJlcXVlc3QaIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRyYWRlTm90",
-            "ZVJlcGx5ElcKDUNyZWF0ZUNvbnRhY3QSIy5zZXJ2ZXJTZXJ2aWNlLkNyZWF0",
-            "ZUNvbnRhY3RSZXF1ZXN0GiEuc2VydmVyU2VydmljZS5DcmVhdGVDb250YWN0",
-            "UmVwbHkSVwoNRGVsZXRlQ29udGFjdBIjLnNlcnZlclNlcnZpY2UuRGVsZXRl",
-            "Q29udGFjdFJlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbnRhY3RS",
-            "ZXBseRJdCg9SZWFkQWxsQ29udGFjdHMSJS5zZXJ2ZXJTZXJ2aWNlLlJlYWRB",
-            "bGxDb250YWN0c1JlcXVlc3QaIy5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb250",
-            "YWN0c1JlcGx5ElEKC1JlYWRDb250YWN0EiEuc2VydmVyU2VydmljZS5SZWFk",
-            "Q29udGFjdFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNlLlJlYWRDb250YWN0UmVw",
-            "bHkSVwoNVXBkYXRlQ29udGFjdBIjLnNlcnZlclNlcnZpY2UuVXBkYXRlQ29u",
-            "dGFjdFJlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbnRhY3RSZXBs",
-            "eRJXCg1DcmVhdGVDb21wYW55EiMuc2VydmVyU2VydmljZS5DcmVhdGVDb21w",
-            "YW55UmVxdWVzdBohLnNlcnZlclNlcnZpY2UuQ3JlYXRlQ29tcGFueVJlcGx5",
-            "ElcKDURlbGV0ZUNvbXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbXBh",
-            "bnlSZXF1ZXN0GiEuc2VydmVyU2VydmljZS5EZWxldGVDb21wYW55UmVwbHkS",
-            "YAoQUmVhZEFsbENvbXBhbmllcxImLnNlcnZlclNlcnZpY2UuUmVhZEFsbENv",
-            "bXBhbmllc1JlcXVlc3QaJC5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb21wYW5p",
-            "ZXNSZXBseRJRCgtSZWFkQ29tcGFueRIhLnNlcnZlclNlcnZpY2UuUmVhZENv",
-            "bXBhbnlSZXF1ZXN0Gh8uc2VydmVyU2VydmljZS5SZWFkQ29tcGFueVJlcGx5",
-            "ElcKDVVwZGF0ZUNvbXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbXBh",
-            "bnlSZXF1ZXN0GiEuc2VydmVyU2VydmljZS5VcGRhdGVDb21wYW55UmVwbHkS",
-            "TgoKQ3JlYXRlVXNlchIgLnNlcnZlclNlcnZpY2UuQ3JlYXRlVXNlclJlcXVl",
-            "c3QaHi5zZXJ2ZXJTZXJ2aWNlLkNyZWF0ZVVzZXJSZXBseRJOCgpEZWxldGVV",
-            "c2VyEiAuc2VydmVyU2VydmljZS5EZWxldGVVc2VyUmVxdWVzdBoeLnNlcnZl",
-            "clNlcnZpY2UuRGVsZXRlVXNlclJlcGx5ElQKDFJlYWRBbGxVc2VycxIiLnNl",
-            "cnZlclNlcnZpY2UuUmVhZEFsbFVzZXJzUmVxdWVzdBogLnNlcnZlclNlcnZp",
-            "Y2UuUmVhZEFsbFVzZXJzUmVwbHkSSAoIUmVhZFVzZXISHi5zZXJ2ZXJTZXJ2",
-            "aWNlLlJlYWRVc2VyUmVxdWVzdBocLnNlcnZlclNlcnZpY2UuUmVhZFVzZXJS",
-            "ZXBseRJOCgpVcGRhdGVVc2VyEiAuc2VydmVyU2VydmljZS5VcGRhdGVVc2Vy",
-            "UmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuVXBkYXRlVXNlclJlcGx5Qh+qAhxQ",
-            "cmFjb3duaWFQcm9ncmFtb3dhbmlhU2VydmVyYgZwcm90bzM="));
+            "dW1iZXIYBiABKAUSFAoMZW1haWxBZGRyZXNzGAcgASgJEhAKCHBvc2l0aW9u",
+            "GAggASgJIiwKElVwZGF0ZUNvbnRhY3RSZXBseRIWCg51cGRhdGVkQ29udGFj",
+            "dBgBIAEoCSJ3ChRDcmVhdGVDb21wYW55UmVxdWVzdBITCgtjb21wYW55TmFt",
+            "ZRgBIAEoCRIPCgdicmFuZElkGAIgASgFEhsKE3VzZXJBZGRpbmdDb21wYW55",
+            "SWQYAyABKAUSCwoDbmlwGAQgASgJEg8KB2FkZHJlc3MYBSABKAkiiAEKEkNy",
+            "ZWF0ZUNvbXBhbnlSZXBseRIRCgljb21wYW55SWQYASABKAUSEwoLY29tcGFu",
+            "eU5hbWUYAiABKAkSDwoHYnJhbmRJZBgDIAEoBRIbChN1c2VyQWRkaW5nQ29t",
+            "cGFueUlkGAQgASgFEgsKA25pcBgFIAEoCRIPCgdhZGRyZXNzGAYgASgJIikK",
+            "FERlbGV0ZUNvbXBhbnlSZXF1ZXN0EhEKCWNvbXBhbnlJZBgBIAEoBSIlChJE",
+            "ZWxldGVDb21wYW55UmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIZChdSZWFkQWxs",
+            "Q29tcGFuaWVzUmVxdWVzdCJOChVSZWFkQWxsQ29tcGFuaWVzUmVwbHkSNQoQ",
+            "cmVhZEFsbENvbXBhbmllcxgBIAMoCzIbLnNlcnZlclNlcnZpY2UuQ29tcGFu",
+            "eUZpZWxkIicKElJlYWRDb21wYW55UmVxdWVzdBIRCgljb21wYW55SWQYASAB",
+            "KAUiKgoQUmVhZENvbXBhbnlSZXBseRIWCg5jb21wYW55RGV0YWlscxgBIAEo",
+            "CSKWAQoUVXBkYXRlQ29tcGFueVJlcXVlc3QSCgoCaWQYASABKAUSEwoLY29t",
+            "cGFueU5hbWUYAiABKAkSDwoHYnJhbmRJZBgDIAEoBRIbChN1c2VyQWRkaW5n",
+            "Q29tcGFueUlkGAQgASgFEgsKA25pcBgFIAEoCRIPCgdhZGRyZXNzGAYgASgJ",
+            "EhEKCWlzRGVsZXRlZBgHIAEoCCIsChJVcGRhdGVDb21wYW55UmVwbHkSFgoO",
+            "dXBkYXRlZENvbXBhbnkYASABKAkieAoRQ3JlYXRlVXNlclJlcXVlc3QSDQoF",
+            "bG9naW4YASABKAkSEAoIcGFzc3dvcmQYAiABKAkSDgoGcm9sZUlEGAMgASgF",
+            "EgwKBG5hbWUYBCABKAkSDwoHc3VybmFtZRgFIAEoCRITCgtkYXRlT2ZCaXJ0",
+            "aBgGIAEoCSI8Cg9DcmVhdGVVc2VyUmVwbHkSCgoCaWQYASABKAUSDQoFbG9n",
+            "aW4YAiABKAkSDgoGcm9sZUlEGAMgASgFIh8KEURlbGV0ZVVzZXJSZXF1ZXN0",
+            "EgoKAmlkGAEgASgFIiIKD0RlbGV0ZVVzZXJSZXBseRIPCgdtZXNzYWdlGAEg",
+            "ASgJIhUKE1JlYWRBbGxVc2Vyc1JlcXVlc3QiQwoRUmVhZEFsbFVzZXJzUmVw",
+            "bHkSLgoMcmVhZEFsbFVzZXJzGAEgAygLMhguc2VydmVyU2VydmljZS5Vc2Vy",
+            "RmllbGQiHQoPUmVhZFVzZXJSZXF1ZXN0EgoKAmlkGAEgASgFIiQKDVJlYWRV",
+            "c2VyUmVwbHkSEwoLdXNlckRldGFpbHMYASABKAkilwEKEVVwZGF0ZVVzZXJS",
+            "ZXF1ZXN0EgoKAmlkGAEgASgFEg0KBWxvZ2luGAIgASgJEhAKCHBhc3N3b3Jk",
+            "GAMgASgJEg4KBnJvbGVJRBgEIAEoBRIMCgRuYW1lGAUgASgJEg8KB3N1cm5h",
+            "bWUYBiABKAkSEwoLZGF0ZU9mQmlydGgYByABKAkSEQoJaXNEZWxldGVkGAgg",
+            "ASgIIiYKD1VwZGF0ZVVzZXJSZXBseRITCgt1cGRhdGVkVXNlchgBIAEoCTL5",
+            "FAocUHJhY293bmlhUHJvZ3JhbW93YW5pYVNlcnZlchJCCghTYXlIZWxsbxIb",
+            "LnNlcnZlclNlcnZpY2UuSGVsbG9SZXF1ZXN0Ghkuc2VydmVyU2VydmljZS5I",
+            "ZWxsb1JlcGx5ElEKC0NyZWF0ZUJyYW5kEiEuc2VydmVyU2VydmljZS5DcmVh",
+            "dGVCcmFuZFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNlLkNyZWF0ZUJyYW5kUmVw",
+            "bHkSUQoLRGVsZXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUJyYW5k",
+            "UmVxdWVzdBofLnNlcnZlclNlcnZpY2UuRGVsZXRlQnJhbmRSZXBseRJXCg1S",
+            "ZWFkQWxsQnJhbmRzEiMuc2VydmVyU2VydmljZS5SZWFkQWxsQnJhbmRzUmVx",
+            "dWVzdBohLnNlcnZlclNlcnZpY2UuUmVhZEFsbEJyYW5kc1JlcGx5EksKCVJl",
+            "YWRCcmFuZBIfLnNlcnZlclNlcnZpY2UuUmVhZEJyYW5kUmVxdWVzdBodLnNl",
+            "cnZlclNlcnZpY2UuUmVhZEJyYW5kUmVwbHkSUQoLVXBkYXRlQnJhbmQSIS5z",
+            "ZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUJyYW5kUmVxdWVzdBofLnNlcnZlclNlcnZp",
+            "Y2UuVXBkYXRlQnJhbmRSZXBseRJOCgpDcmVhdGVSb2xlEiAuc2VydmVyU2Vy",
+            "dmljZS5DcmVhdGVSb2xlUmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuQ3JlYXRl",
+            "Um9sZVJlcGx5Ek4KCkRlbGV0ZVJvbGUSIC5zZXJ2ZXJTZXJ2aWNlLkRlbGV0",
+            "ZVJvbGVSZXF1ZXN0Gh4uc2VydmVyU2VydmljZS5EZWxldGVSb2xlUmVwbHkS",
+            "VAoMUmVhZEFsbFJvbGVzEiIuc2VydmVyU2VydmljZS5SZWFkQWxsUm9sZXNS",
+            "ZXF1ZXN0GiAuc2VydmVyU2VydmljZS5SZWFkQWxsUm9sZXNSZXBseRJICghS",
+            "ZWFkUm9sZRIeLnNlcnZlclNlcnZpY2UuUmVhZFJvbGVSZXF1ZXN0Ghwuc2Vy",
+            "dmVyU2VydmljZS5SZWFkUm9sZVJlcGx5Ek4KClVwZGF0ZVJvbGUSIC5zZXJ2",
+            "ZXJTZXJ2aWNlLlVwZGF0ZVJvbGVSZXF1ZXN0Gh4uc2VydmVyU2VydmljZS5V",
+            "cGRhdGVSb2xlUmVwbHkSXQoPQ3JlYXRlVHJhZGVOb3RlEiUuc2VydmVyU2Vy",
+            "dmljZS5DcmVhdGVUcmFkZU5vdGVSZXF1ZXN0GiMuc2VydmVyU2VydmljZS5D",
+            "cmVhdGVUcmFkZU5vdGVSZXBseRJdCg9EZWxldGVUcmFkZU5vdGUSJS5zZXJ2",
+            "ZXJTZXJ2aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcXVlc3QaIy5zZXJ2ZXJTZXJ2",
+            "aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcGx5EmMKEVJlYWRBbGxUcmFkZU5vdGVz",
+            "Eicuc2VydmVyU2VydmljZS5SZWFkQWxsVHJhZGVOb3Rlc1JlcXVlc3QaJS5z",
+            "ZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxUcmFkZU5vdGVzUmVwbHkSVwoNUmVhZFRy",
+            "YWRlTm90ZRIjLnNlcnZlclNlcnZpY2UuUmVhZFRyYWRlTm90ZVJlcXVlc3Qa",
+            "IS5zZXJ2ZXJTZXJ2aWNlLlJlYWRUcmFkZU5vdGVSZXBseRJdCg9VcGRhdGVU",
+            "cmFkZU5vdGUSJS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRyYWRlTm90ZVJlcXVl",
+            "c3QaIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRyYWRlTm90ZVJlcGx5ElcKDUNy",
+            "ZWF0ZUNvbnRhY3QSIy5zZXJ2ZXJTZXJ2aWNlLkNyZWF0ZUNvbnRhY3RSZXF1",
+            "ZXN0GiEuc2VydmVyU2VydmljZS5DcmVhdGVDb250YWN0UmVwbHkSVwoNRGVs",
+            "ZXRlQ29udGFjdBIjLnNlcnZlclNlcnZpY2UuRGVsZXRlQ29udGFjdFJlcXVl",
+            "c3QaIS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbnRhY3RSZXBseRJdCg9SZWFk",
+            "QWxsQ29udGFjdHMSJS5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb250YWN0c1Jl",
+            "cXVlc3QaIy5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb250YWN0c1JlcGx5ElEK",
+            "C1JlYWRDb250YWN0EiEuc2VydmVyU2VydmljZS5SZWFkQ29udGFjdFJlcXVl",
+            "c3QaHy5zZXJ2ZXJTZXJ2aWNlLlJlYWRDb250YWN0UmVwbHkSVwoNVXBkYXRl",
+            "Q29udGFjdBIjLnNlcnZlclNlcnZpY2UuVXBkYXRlQ29udGFjdFJlcXVlc3Qa",
+            "IS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbnRhY3RSZXBseRJXCg1DcmVhdGVD",
+            "b21wYW55EiMuc2VydmVyU2VydmljZS5DcmVhdGVDb21wYW55UmVxdWVzdBoh",
+            "LnNlcnZlclNlcnZpY2UuQ3JlYXRlQ29tcGFueVJlcGx5ElcKDURlbGV0ZUNv",
+            "bXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbXBhbnlSZXF1ZXN0GiEu",
+            "c2VydmVyU2VydmljZS5EZWxldGVDb21wYW55UmVwbHkSYAoQUmVhZEFsbENv",
+            "bXBhbmllcxImLnNlcnZlclNlcnZpY2UuUmVhZEFsbENvbXBhbmllc1JlcXVl",
+            "c3QaJC5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb21wYW5pZXNSZXBseRJRCgtS",
+            "ZWFkQ29tcGFueRIhLnNlcnZlclNlcnZpY2UuUmVhZENvbXBhbnlSZXF1ZXN0",
+            "Gh8uc2VydmVyU2VydmljZS5SZWFkQ29tcGFueVJlcGx5ElcKDVVwZGF0ZUNv",
+            "bXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbXBhbnlSZXF1ZXN0GiEu",
+            "c2VydmVyU2VydmljZS5VcGRhdGVDb21wYW55UmVwbHkSTgoKQ3JlYXRlVXNl",
+            "chIgLnNlcnZlclNlcnZpY2UuQ3JlYXRlVXNlclJlcXVlc3QaHi5zZXJ2ZXJT",
+            "ZXJ2aWNlLkNyZWF0ZVVzZXJSZXBseRJOCgpEZWxldGVVc2VyEiAuc2VydmVy",
+            "U2VydmljZS5EZWxldGVVc2VyUmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuRGVs",
+            "ZXRlVXNlclJlcGx5ElQKDFJlYWRBbGxVc2VycxIiLnNlcnZlclNlcnZpY2Uu",
+            "UmVhZEFsbFVzZXJzUmVxdWVzdBogLnNlcnZlclNlcnZpY2UuUmVhZEFsbFVz",
+            "ZXJzUmVwbHkSSAoIUmVhZFVzZXISHi5zZXJ2ZXJTZXJ2aWNlLlJlYWRVc2Vy",
+            "UmVxdWVzdBocLnNlcnZlclNlcnZpY2UuUmVhZFVzZXJSZXBseRJOCgpVcGRh",
+            "dGVVc2VyEiAuc2VydmVyU2VydmljZS5VcGRhdGVVc2VyUmVxdWVzdBoeLnNl",
+            "cnZlclNlcnZpY2UuVXBkYXRlVXNlclJlcGx5Qh+qAhxQcmFjb3duaWFQcm9n",
+            "cmFtb3dhbmlhU2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -195,7 +194,7 @@ namespace PracowniaProgramowaniaServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.RoleField), global::PracowniaProgramowaniaServer.RoleField.Parser, new[]{ "Id", "RoleName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.TradeNoteField), global::PracowniaProgramowaniaServer.TradeNoteField.Parser, new[]{ "Id", "Content", "ConnectedCompanyId", "UserAddingNoteId", "IsDeleted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ContactField), global::PracowniaProgramowaniaServer.ContactField.Parser, new[]{ "Id", "Name", "ConnectedCompanyId", "UserAddingContactId", "Surname", "PhoneNumber", "EmailAddress", "Position", "IsDeleted" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CompanyField), global::PracowniaProgramowaniaServer.CompanyField.Parser, new[]{ "Id", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "City", "IsDeleted" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CompanyField), global::PracowniaProgramowaniaServer.CompanyField.Parser, new[]{ "Id", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "IsDeleted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UserField), global::PracowniaProgramowaniaServer.UserField.Parser, new[]{ "Id", "Login", "Password", "RoleID", "Name", "Surname", "DateOfBirth", "IsDeleted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateBrandRequest), global::PracowniaProgramowaniaServer.CreateBrandRequest.Parser, new[]{ "BrandName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateBrandReply), global::PracowniaProgramowaniaServer.CreateBrandReply.Parser, new[]{ "BrandId", "BrandName" }, null, null, null, null),
@@ -237,15 +236,15 @@ namespace PracowniaProgramowaniaServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadContactReply), global::PracowniaProgramowaniaServer.ReadContactReply.Parser, new[]{ "ContactDetails" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateContactRequest), global::PracowniaProgramowaniaServer.UpdateContactRequest.Parser, new[]{ "ContactId", "Name", "Surname", "ConnectedCompanyId", "UserAddingContactId", "PhoneNumber", "EmailAddress", "Position" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateContactReply), global::PracowniaProgramowaniaServer.UpdateContactReply.Parser, new[]{ "UpdatedContact" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyRequest), global::PracowniaProgramowaniaServer.CreateCompanyRequest.Parser, new[]{ "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "City" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyReply), global::PracowniaProgramowaniaServer.CreateCompanyReply.Parser, new[]{ "CompanyId", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "City" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyRequest), global::PracowniaProgramowaniaServer.CreateCompanyRequest.Parser, new[]{ "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyReply), global::PracowniaProgramowaniaServer.CreateCompanyReply.Parser, new[]{ "CompanyId", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteCompanyRequest), global::PracowniaProgramowaniaServer.DeleteCompanyRequest.Parser, new[]{ "CompanyId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteCompanyReply), global::PracowniaProgramowaniaServer.DeleteCompanyReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest), global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllCompaniesReply), global::PracowniaProgramowaniaServer.ReadAllCompaniesReply.Parser, new[]{ "ReadAllCompanies" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadCompanyRequest), global::PracowniaProgramowaniaServer.ReadCompanyRequest.Parser, new[]{ "CompanyId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadCompanyReply), global::PracowniaProgramowaniaServer.ReadCompanyReply.Parser, new[]{ "CompanyDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateCompanyRequest), global::PracowniaProgramowaniaServer.UpdateCompanyRequest.Parser, new[]{ "Id", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "City", "IsDeleted" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateCompanyRequest), global::PracowniaProgramowaniaServer.UpdateCompanyRequest.Parser, new[]{ "Id", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "IsDeleted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateCompanyReply), global::PracowniaProgramowaniaServer.UpdateCompanyReply.Parser, new[]{ "UpdatedCompany" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateUserRequest), global::PracowniaProgramowaniaServer.CreateUserRequest.Parser, new[]{ "Login", "Password", "RoleID", "Name", "Surname", "DateOfBirth" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateUserReply), global::PracowniaProgramowaniaServer.CreateUserReply.Parser, new[]{ "Id", "Login", "RoleID" }, null, null, null, null),
@@ -1181,12 +1180,12 @@ namespace PracowniaProgramowaniaServer {
 
     /// <summary>Field number for the "phoneNumber" field.</summary>
     public const int PhoneNumberFieldNumber = 6;
-    private string phoneNumber_ = "";
+    private int phoneNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PhoneNumber {
+    public int PhoneNumber {
       get { return phoneNumber_; }
       set {
-        phoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        phoneNumber_ = value;
       }
     }
 
@@ -1256,7 +1255,7 @@ namespace PracowniaProgramowaniaServer {
       if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
       if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
       if (Surname.Length != 0) hash ^= Surname.GetHashCode();
-      if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
+      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
       if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
       if (Position.Length != 0) hash ^= Position.GetHashCode();
       if (IsDeleted != false) hash ^= IsDeleted.GetHashCode();
@@ -1293,9 +1292,9 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(42);
         output.WriteString(Surname);
       }
-      if (PhoneNumber.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(PhoneNumber);
+      if (PhoneNumber != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         output.WriteRawTag(58);
@@ -1332,8 +1331,8 @@ namespace PracowniaProgramowaniaServer {
       if (Surname.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
       }
-      if (PhoneNumber.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
+      if (PhoneNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
@@ -1370,7 +1369,7 @@ namespace PracowniaProgramowaniaServer {
       if (other.Surname.Length != 0) {
         Surname = other.Surname;
       }
-      if (other.PhoneNumber.Length != 0) {
+      if (other.PhoneNumber != 0) {
         PhoneNumber = other.PhoneNumber;
       }
       if (other.EmailAddress.Length != 0) {
@@ -1413,8 +1412,8 @@ namespace PracowniaProgramowaniaServer {
             Surname = input.ReadString();
             break;
           }
-          case 50: {
-            PhoneNumber = input.ReadString();
+          case 48: {
+            PhoneNumber = input.ReadInt32();
             break;
           }
           case 58: {
@@ -1466,7 +1465,6 @@ namespace PracowniaProgramowaniaServer {
       userAddingCompanyId_ = other.userAddingCompanyId_;
       nip_ = other.nip_;
       address_ = other.address_;
-      city_ = other.city_;
       isDeleted_ = other.isDeleted_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1542,19 +1540,8 @@ namespace PracowniaProgramowaniaServer {
       }
     }
 
-    /// <summary>Field number for the "city" field.</summary>
-    public const int CityFieldNumber = 7;
-    private string city_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string City {
-      get { return city_; }
-      set {
-        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "isDeleted" field.</summary>
-    public const int IsDeletedFieldNumber = 8;
+    public const int IsDeletedFieldNumber = 7;
     private bool isDeleted_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsDeleted {
@@ -1583,7 +1570,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
       if (Nip != other.Nip) return false;
       if (Address != other.Address) return false;
-      if (City != other.City) return false;
       if (IsDeleted != other.IsDeleted) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1597,7 +1583,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
       if (Nip.Length != 0) hash ^= Nip.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
-      if (City.Length != 0) hash ^= City.GetHashCode();
       if (IsDeleted != false) hash ^= IsDeleted.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1636,12 +1621,8 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(50);
         output.WriteString(Address);
       }
-      if (City.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(City);
-      }
       if (IsDeleted != false) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(56);
         output.WriteBool(IsDeleted);
       }
       if (_unknownFields != null) {
@@ -1669,9 +1650,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
-      }
-      if (City.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
       }
       if (IsDeleted != false) {
         size += 1 + 1;
@@ -1704,9 +1682,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
-      }
-      if (other.City.Length != 0) {
-        City = other.City;
       }
       if (other.IsDeleted != false) {
         IsDeleted = other.IsDeleted;
@@ -1746,11 +1721,7 @@ namespace PracowniaProgramowaniaServer {
             Address = input.ReadString();
             break;
           }
-          case 58: {
-            City = input.ReadString();
-            break;
-          }
-          case 64: {
+          case 56: {
             IsDeleted = input.ReadBool();
             break;
           }
@@ -2122,9 +2093,6 @@ namespace PracowniaProgramowaniaServer {
     /// <summary>Field number for the "brandName" field.</summary>
     public const int BrandNameFieldNumber = 1;
     private string brandName_ = "";
-    /// <summary>
-    /// checemy mieæ nazwê Brandu
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string BrandName {
       get { return brandName_; }
@@ -2255,9 +2223,6 @@ namespace PracowniaProgramowaniaServer {
     /// <summary>Field number for the "brandId" field.</summary>
     public const int BrandIdFieldNumber = 1;
     private int brandId_;
-    /// <summary>
-    /// zwracamy ID i Name
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int BrandId {
       get { return brandId_; }
@@ -6237,12 +6202,12 @@ namespace PracowniaProgramowaniaServer {
 
     /// <summary>Field number for the "phoneNumber" field.</summary>
     public const int PhoneNumberFieldNumber = 6;
-    private string phoneNumber_ = "";
+    private int phoneNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PhoneNumber {
+    public int PhoneNumber {
       get { return phoneNumber_; }
       set {
-        phoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        phoneNumber_ = value;
       }
     }
 
@@ -6300,7 +6265,7 @@ namespace PracowniaProgramowaniaServer {
       if (Surname.Length != 0) hash ^= Surname.GetHashCode();
       if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
       if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
-      if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
+      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
       if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
       if (Position.Length != 0) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
@@ -6336,9 +6301,9 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(40);
         output.WriteInt32(UserAddingContactId);
       }
-      if (PhoneNumber.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(PhoneNumber);
+      if (PhoneNumber != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         output.WriteRawTag(58);
@@ -6371,8 +6336,8 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingContactId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingContactId);
       }
-      if (PhoneNumber.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
+      if (PhoneNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
@@ -6406,7 +6371,7 @@ namespace PracowniaProgramowaniaServer {
       if (other.UserAddingContactId != 0) {
         UserAddingContactId = other.UserAddingContactId;
       }
-      if (other.PhoneNumber.Length != 0) {
+      if (other.PhoneNumber != 0) {
         PhoneNumber = other.PhoneNumber;
       }
       if (other.EmailAddress.Length != 0) {
@@ -6446,8 +6411,8 @@ namespace PracowniaProgramowaniaServer {
             UserAddingContactId = input.ReadInt32();
             break;
           }
-          case 50: {
-            PhoneNumber = input.ReadString();
+          case 48: {
+            PhoneNumber = input.ReadInt32();
             break;
           }
           case 58: {
@@ -6562,12 +6527,12 @@ namespace PracowniaProgramowaniaServer {
 
     /// <summary>Field number for the "phoneNumber" field.</summary>
     public const int PhoneNumberFieldNumber = 6;
-    private string phoneNumber_ = "";
+    private int phoneNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PhoneNumber {
+    public int PhoneNumber {
       get { return phoneNumber_; }
       set {
-        phoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        phoneNumber_ = value;
       }
     }
 
@@ -6625,7 +6590,7 @@ namespace PracowniaProgramowaniaServer {
       if (Surname.Length != 0) hash ^= Surname.GetHashCode();
       if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
       if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
-      if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
+      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
       if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
       if (Position.Length != 0) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
@@ -6661,9 +6626,9 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(40);
         output.WriteInt32(UserAddingContactId);
       }
-      if (PhoneNumber.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(PhoneNumber);
+      if (PhoneNumber != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         output.WriteRawTag(58);
@@ -6696,8 +6661,8 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingContactId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingContactId);
       }
-      if (PhoneNumber.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
+      if (PhoneNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
@@ -6731,7 +6696,7 @@ namespace PracowniaProgramowaniaServer {
       if (other.UserAddingContactId != 0) {
         UserAddingContactId = other.UserAddingContactId;
       }
-      if (other.PhoneNumber.Length != 0) {
+      if (other.PhoneNumber != 0) {
         PhoneNumber = other.PhoneNumber;
       }
       if (other.EmailAddress.Length != 0) {
@@ -6771,8 +6736,8 @@ namespace PracowniaProgramowaniaServer {
             UserAddingContactId = input.ReadInt32();
             break;
           }
-          case 50: {
-            PhoneNumber = input.ReadString();
+          case 48: {
+            PhoneNumber = input.ReadInt32();
             break;
           }
           case 58: {
@@ -7625,12 +7590,12 @@ namespace PracowniaProgramowaniaServer {
 
     /// <summary>Field number for the "phoneNumber" field.</summary>
     public const int PhoneNumberFieldNumber = 6;
-    private string phoneNumber_ = "";
+    private int phoneNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PhoneNumber {
+    public int PhoneNumber {
       get { return phoneNumber_; }
       set {
-        phoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        phoneNumber_ = value;
       }
     }
 
@@ -7688,7 +7653,7 @@ namespace PracowniaProgramowaniaServer {
       if (Surname.Length != 0) hash ^= Surname.GetHashCode();
       if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
       if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
-      if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
+      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
       if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
       if (Position.Length != 0) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
@@ -7724,9 +7689,9 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(40);
         output.WriteInt32(UserAddingContactId);
       }
-      if (PhoneNumber.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(PhoneNumber);
+      if (PhoneNumber != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         output.WriteRawTag(58);
@@ -7759,8 +7724,8 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingContactId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingContactId);
       }
-      if (PhoneNumber.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
+      if (PhoneNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
       }
       if (EmailAddress.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
@@ -7794,7 +7759,7 @@ namespace PracowniaProgramowaniaServer {
       if (other.UserAddingContactId != 0) {
         UserAddingContactId = other.UserAddingContactId;
       }
-      if (other.PhoneNumber.Length != 0) {
+      if (other.PhoneNumber != 0) {
         PhoneNumber = other.PhoneNumber;
       }
       if (other.EmailAddress.Length != 0) {
@@ -7834,8 +7799,8 @@ namespace PracowniaProgramowaniaServer {
             UserAddingContactId = input.ReadInt32();
             break;
           }
-          case 50: {
-            PhoneNumber = input.ReadString();
+          case 48: {
+            PhoneNumber = input.ReadInt32();
             break;
           }
           case 58: {
@@ -8011,7 +7976,6 @@ namespace PracowniaProgramowaniaServer {
       userAddingCompanyId_ = other.userAddingCompanyId_;
       nip_ = other.nip_;
       address_ = other.address_;
-      city_ = other.city_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8075,17 +8039,6 @@ namespace PracowniaProgramowaniaServer {
       }
     }
 
-    /// <summary>Field number for the "city" field.</summary>
-    public const int CityFieldNumber = 6;
-    private string city_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string City {
-      get { return city_; }
-      set {
-        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CreateCompanyRequest);
@@ -8104,7 +8057,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
       if (Nip != other.Nip) return false;
       if (Address != other.Address) return false;
-      if (City != other.City) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8116,7 +8068,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
       if (Nip.Length != 0) hash ^= Nip.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
-      if (City.Length != 0) hash ^= City.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8150,10 +8101,6 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(42);
         output.WriteString(Address);
       }
-      if (City.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(City);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8176,9 +8123,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
-      }
-      if (City.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8205,9 +8149,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
-      }
-      if (other.City.Length != 0) {
-        City = other.City;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8238,10 +8179,6 @@ namespace PracowniaProgramowaniaServer {
           }
           case 42: {
             Address = input.ReadString();
-            break;
-          }
-          case 50: {
-            City = input.ReadString();
             break;
           }
         }
@@ -8281,7 +8218,6 @@ namespace PracowniaProgramowaniaServer {
       userAddingCompanyId_ = other.userAddingCompanyId_;
       nip_ = other.nip_;
       address_ = other.address_;
-      city_ = other.city_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8356,17 +8292,6 @@ namespace PracowniaProgramowaniaServer {
       }
     }
 
-    /// <summary>Field number for the "city" field.</summary>
-    public const int CityFieldNumber = 7;
-    private string city_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string City {
-      get { return city_; }
-      set {
-        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CreateCompanyReply);
@@ -8386,7 +8311,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
       if (Nip != other.Nip) return false;
       if (Address != other.Address) return false;
-      if (City != other.City) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8399,7 +8323,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
       if (Nip.Length != 0) hash ^= Nip.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
-      if (City.Length != 0) hash ^= City.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8437,10 +8360,6 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(50);
         output.WriteString(Address);
       }
-      if (City.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(City);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8466,9 +8385,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
-      }
-      if (City.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8498,9 +8414,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
-      }
-      if (other.City.Length != 0) {
-        City = other.City;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8535,10 +8448,6 @@ namespace PracowniaProgramowaniaServer {
           }
           case 50: {
             Address = input.ReadString();
-            break;
-          }
-          case 58: {
-            City = input.ReadString();
             break;
           }
         }
@@ -9316,7 +9225,6 @@ namespace PracowniaProgramowaniaServer {
       userAddingCompanyId_ = other.userAddingCompanyId_;
       nip_ = other.nip_;
       address_ = other.address_;
-      city_ = other.city_;
       isDeleted_ = other.isDeleted_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -9392,19 +9300,8 @@ namespace PracowniaProgramowaniaServer {
       }
     }
 
-    /// <summary>Field number for the "city" field.</summary>
-    public const int CityFieldNumber = 7;
-    private string city_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string City {
-      get { return city_; }
-      set {
-        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "isDeleted" field.</summary>
-    public const int IsDeletedFieldNumber = 8;
+    public const int IsDeletedFieldNumber = 7;
     private bool isDeleted_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsDeleted {
@@ -9433,7 +9330,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
       if (Nip != other.Nip) return false;
       if (Address != other.Address) return false;
-      if (City != other.City) return false;
       if (IsDeleted != other.IsDeleted) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -9447,7 +9343,6 @@ namespace PracowniaProgramowaniaServer {
       if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
       if (Nip.Length != 0) hash ^= Nip.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
-      if (City.Length != 0) hash ^= City.GetHashCode();
       if (IsDeleted != false) hash ^= IsDeleted.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -9486,12 +9381,8 @@ namespace PracowniaProgramowaniaServer {
         output.WriteRawTag(50);
         output.WriteString(Address);
       }
-      if (City.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(City);
-      }
       if (IsDeleted != false) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(56);
         output.WriteBool(IsDeleted);
       }
       if (_unknownFields != null) {
@@ -9519,9 +9410,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
-      }
-      if (City.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
       }
       if (IsDeleted != false) {
         size += 1 + 1;
@@ -9554,9 +9442,6 @@ namespace PracowniaProgramowaniaServer {
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
-      }
-      if (other.City.Length != 0) {
-        City = other.City;
       }
       if (other.IsDeleted != false) {
         IsDeleted = other.IsDeleted;
@@ -9596,11 +9481,7 @@ namespace PracowniaProgramowaniaServer {
             Address = input.ReadString();
             break;
           }
-          case 58: {
-            City = input.ReadString();
-            break;
-          }
-          case 64: {
+          case 56: {
             IsDeleted = input.ReadBool();
             break;
           }

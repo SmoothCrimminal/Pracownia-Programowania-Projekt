@@ -25,8 +25,8 @@ namespace CRUD.Contact
                 var contact = context.Contacts.Find(contactId);
                 if (contact != null)
                 {
-                    return $"{contact.Id} {contact.Imie} {contact.Nazwisko} {contact.FirmaPowiazana} {contact.IdUżytkownika} " +
-                        $"{contact.Telefon} {contact.Mail} {contact.Stanowisko} {contact.IsDeleted}";
+                    return $"{contact.Id} {contact.Name} {contact.Surname} {contact.CompanyId} {contact.UserId} " +
+                        $"{contact.PhoneNumber} {contact.Mail} {contact.Position} {contact.IsDeleted}";
                 }
 
                 return "Contact not found";

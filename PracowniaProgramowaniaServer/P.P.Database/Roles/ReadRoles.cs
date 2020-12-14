@@ -24,7 +24,7 @@ namespace CRUD.Roles
                 var role = context.Roles.Find(roleId);
                 if (role != null)
                 {
-                    return $"{role.Id} {role.NazwaRoli}";
+                    return $"{role.Id} {role.RoleName}";
                 }
 
                 return "Role not found";

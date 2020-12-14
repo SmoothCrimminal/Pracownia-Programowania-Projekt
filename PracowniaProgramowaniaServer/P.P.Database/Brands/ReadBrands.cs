@@ -25,7 +25,7 @@ namespace CRUD.Brands
                 var brand = context.Brands.Find(brandId);
                 if (brand != null)
                 {
-                    return $"{brand.Id} {brand.NazwaBranzy}";
+                    return $"{brand.Id} {brand.BrandName}";
                 }
 
                 return "Brand not found";

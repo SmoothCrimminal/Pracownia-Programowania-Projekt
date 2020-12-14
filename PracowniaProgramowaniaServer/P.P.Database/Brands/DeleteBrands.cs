@@ -7,9 +7,9 @@ namespace CRUD.Brands
 {
     public class DeleteBrands
     {
-        public bool DeleteBrand(int brandId) // metoda modelu Brand tworząca obiekt typu Brand
+        public bool DeleteBrand(int brandId) 
         {
-            using (var context = new ProjektPPContext()) // używamy using ponieważ okres istnienia obiektu jest ograniczony do pojedynczej metody
+            using (var context = new ProjektPPContext()) 
             {
                 var brand = context.Brands.Find(brandId);
                 if (brand != null)

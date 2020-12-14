@@ -21,7 +21,7 @@ namespace P.P.Database.Models
         public virtual DbSet<Company> Companies { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<TradeNote> TradeNotes { get; set; }
+        public virtual DbSet<Tradenote> Tradenotes { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -37,194 +37,139 @@ namespace P.P.Database.Models
         {
             modelBuilder.Entity<Brand>(entity =>
             {
-                entity.Property(e => e.Id).HasColumnName("id");
+                entity.ToTable("BRANDS");
 
-                entity.Property(e => e.NazwaBranzy)
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("nazwaBranzy");
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.BrandName)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Company>(entity =>
             {
-                entity.Property(e => e.Id).HasColumnName("id");
+                entity.ToTable("COMPANIES");
 
-                entity.Property(e => e.Adres)
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("adres");
+                entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.IdBranży).HasColumnName("idBranży");
+                entity.Property(e => e.Address)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
-                entity.Property(e => e.IdUżytkownika).HasColumnName("idUżytkownika");
+                entity.Property(e => e.BrandId).HasColumnName("BrandID");
+
+                entity.Property(e => e.CompanyName)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
 
-                entity.Property(e => e.Miasto)
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("miasto");
-
-                entity.Property(e => e.NazwaFirmy)
+                entity.Property(e => e.Nip)
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false)
-                    .HasColumnName("nazwaFirmy");
+                    .HasColumnName("NIP");
 
-                entity.Property(e => e.Nip)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("nip");
-
-                entity.HasOne(d => d.IdBranżyNavigation)
-                    .WithMany(p => p.Companies)
-                    .HasForeignKey(d => d.IdBranży)
-                    .HasConstraintName("FK__Companies__idBra__44FF419A");
-
-                entity.HasOne(d => d.IdUżytkownikaNavigation)
-                    .WithMany(p => p.Companies)
-                    .HasForeignKey(d => d.IdUżytkownika)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Companies__idUży__45F365D3");
+                entity.Property(e => e.UserId).HasColumnName("UserID");
             });
 
             modelBuilder.Entity<Contact>(entity =>
             {
-                entity.ToTable("Contact");
+                entity.ToTable("CONTACTS");
 
-                entity.HasIndex(e => e.Telefon, "UQ__Contact__237247E205ECF31D")
-                    .IsUnique();
+                entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.Id).HasColumnName("id");
-
-                entity.Property(e => e.FirmaPowiazana).HasColumnName("firmaPowiazana");
-
-                entity.Property(e => e.IdUżytkownika).HasColumnName("idUżytkownika");
-
-                entity.Property(e => e.Imie)
-                    .IsRequired()
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("imie");
+                entity.Property(e => e.CompanyId).HasColumnName("CompanyID");
 
                 entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
 
                 entity.Property(e => e.Mail)
-                    .HasMaxLength(20)
-                    .IsUnicode(false)
-                    .HasColumnName("mail");
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
-                entity.Property(e => e.Nazwisko)
+                entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("nazwisko");
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
-                entity.Property(e => e.Stanowisko)
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("stanowisko");
+                entity.Property(e => e.Position)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
-                entity.Property(e => e.Telefon)
-                    .HasMaxLength(11)
-                    .IsUnicode(false)
-                    .HasColumnName("telefon");
+                entity.Property(e => e.Surname)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
-                entity.HasOne(d => d.FirmaPowiazanaNavigation)
-                    .WithMany(p => p.Contacts)
-                    .HasForeignKey(d => d.FirmaPowiazana)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Contact__firmaPo__48CFD27E");
-
-                entity.HasOne(d => d.IdUżytkownikaNavigation)
-                    .WithMany(p => p.Contacts)
-                    .HasForeignKey(d => d.IdUżytkownika)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Contact__idUżytk__49C3F6B7");
+                entity.Property(e => e.UserId).HasColumnName("UserID");
             });
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.Property(e => e.Id).HasColumnName("id");
+                entity.ToTable("ROLES");
 
-                entity.Property(e => e.NazwaRoli)
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("nazwaRoli");
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.RoleName)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TradeNote>(entity =>
+            modelBuilder.Entity<Tradenote>(entity =>
             {
-                entity.ToTable("TradeNote");
+                entity.ToTable("TRADENOTES");
 
-                entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.Id)
+                    .ValueGeneratedNever()
+                    .HasColumnName("ID");
 
-                entity.Property(e => e.FirmaPowiazana).HasColumnName("firmaPowiazana");
+                entity.Property(e => e.CompanyId).HasColumnName("CompanyID");
 
-                entity.Property(e => e.IdUżytkownika).HasColumnName("idUżytkownika");
+                entity.Property(e => e.Content)
+                    .IsRequired()
+                    .IsUnicode(false);
 
                 entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
 
-                entity.Property(e => e.Tresc)
-                    .HasMaxLength(300)
-                    .IsUnicode(false)
-                    .HasColumnName("tresc");
-
-                entity.HasOne(d => d.FirmaPowiazanaNavigation)
-                    .WithMany(p => p.TradeNotes)
-                    .HasForeignKey(d => d.FirmaPowiazana)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__TradeNote__firma__4CA06362");
-
-                entity.HasOne(d => d.IdUżytkownikaNavigation)
-                    .WithMany(p => p.TradeNotes)
-                    .HasForeignKey(d => d.IdUżytkownika)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__TradeNote__idUży__4D94879B");
+                entity.Property(e => e.UserId).HasColumnName("UserID");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasIndex(e => e.Login, "UQ__Users__820B28668F21B8D9")
-                    .IsUnique();
+                entity.ToTable("USERS");
 
-                entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.DateOfBirth)
-                    .HasColumnType("datetime")
-                    .HasColumnName("dateOfBirth");
-
-                entity.Property(e => e.IdRoli).HasColumnName("id_roli");
-
-                entity.Property(e => e.Imie)
-                    .IsRequired()
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("imie");
+                entity.Property(e => e.DateOfBirth).HasColumnType("datetime");
 
                 entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
 
                 entity.Property(e => e.Login)
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("_login");
-
-                entity.Property(e => e.Nazwisko)
                     .IsRequired()
-                    .HasMaxLength(30)
-                    .IsUnicode(false)
-                    .HasColumnName("nazwisko");
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.PasswordMd5)
-                    .HasMaxLength(30)
+                    .IsRequired()
                     .IsUnicode(false)
-                    .HasColumnName("passwordMd5");
+                    .HasColumnName("PasswordMD5");
 
-                entity.HasOne(d => d.IdRoliNavigation)
-                    .WithMany(p => p.Users)
-                    .HasForeignKey(d => d.IdRoli)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Users__id_roli__4222D4EF");
+                entity.Property(e => e.RoleId).HasColumnName("RoleID");
+
+                entity.Property(e => e.Surname)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

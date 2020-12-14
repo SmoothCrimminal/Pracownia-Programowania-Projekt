@@ -8,11 +8,11 @@ namespace CRUD.TradeNote
 {
     public class ReadTradeNote
     {
-        public List<P.P.Database.Models.TradeNote> readAllTradeNotes()
+        public List<P.P.Database.Models.Tradenote> readAllTradeNotes()
         {
             using (var context = new ProjektPPContext())
             {
-                var allTradeNotes = context.TradeNotes.ToList();
+                var allTradeNotes = context.Tradenotes.ToList();
                 return allTradeNotes;
 
             }
@@ -22,10 +22,10 @@ namespace CRUD.TradeNote
         {
             using (var context = new ProjektPPContext())
             {
-                var tradeNote = context.TradeNotes.Find(tradeNoteId);
+                var tradeNote = context.Tradenotes.Find(tradeNoteId);
                 if (tradeNote != null)
                 {
-                    return $"{tradeNote.Id} {tradeNote.Tresc} {tradeNote.FirmaPowiazana} {tradeNote.IdUżytkownika} {tradeNote.IsDeleted}";
+                    return $"{tradeNote.Id} {tradeNote.Content} {tradeNote.CompanyId} {tradeNote.UserId} {tradeNote.IsDeleted}";
                 }
 
                 return "Trade Note not found";

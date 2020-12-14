@@ -25,8 +25,8 @@ namespace CRUD.Companies
                 var company = context.Companies.Find(companyId);
                 if (company != null)
                 {
-                    return $"{company.Id} {company.NazwaFirmy} {company.IdBranży} {company.IdUżytkownika} {company.Nip} " +
-                        $"{company.Adres} {company.Miasto} {company.IsDeleted}";
+                    return $"{company.Id} {company.CompanyName} {company.BrandId} {company.UserId} {company.Nip} " +
+                        $"{company.Address} {company.IsDeleted}";
                 }
 
                 return "Company not found";

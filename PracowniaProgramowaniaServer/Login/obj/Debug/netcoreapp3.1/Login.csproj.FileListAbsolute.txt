@@ -1,0 +1,15 @@
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\Login.deps.json
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\Login.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\Login.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\P.P.Database.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\System.ServiceModel.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\System.IdentityModel.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\System.IdentityModel.Selectors.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\bin\Debug\netcoreapp3.1\P.P.Database.pdb
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.csprojAssemblyReference.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.AssemblyInfoInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.AssemblyInfo.cs
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.csproj.CoreCompileInputs.cache
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.csproj.CopyComplete
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.dll
+C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\Login\obj\Debug\netcoreapp3.1\Login.pdb

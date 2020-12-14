@@ -11,7 +11,7 @@ namespace PracowniaProgramowaniaServer.Logic
         public Brand CreateBrand(string brandName) // metoda przyjmuje string name
         {
             var dbCreateBrand = new CreateBrands(); // tworzy obiekt CreateBrands
-            return dbCreateBrand.CreateBrand(new Brand() { NazwaBranzy = brandName }); // zwraca instancję obiektu z nazwą podaną w stringu brandName
+            return dbCreateBrand.CreateBrand(new Brand() { BrandName = brandName }); // zwraca instancję obiektu z nazwą podaną w stringu brandName
         }
 
         public bool DeleteBrand(int brandId)

@@ -8,10 +8,10 @@ namespace PracowniaProgramowaniaServer.Logic
 {
     public class TradeNotesLogic
     {
-        public TradeNote CreateTradeNote(string content, int companyId, int userId)
+        public Tradenote CreateTradeNote(string content, int companyId, int userId)
         {
             var dbCreateTradeNote = new CreateTradeNote();
-            return dbCreateTradeNote.CreateNote(new TradeNote() { Tresc = content, FirmaPowiazana = companyId, IdUżytkownika = userId, IsDeleted = false });
+            return dbCreateTradeNote.CreateNote(new Tradenote() { Content = content, CompanyId = companyId, UserId = userId, IsDeleted = false });
         }
 
         public string DeleteTradeNote(int tradeNoteid)
@@ -20,7 +20,7 @@ namespace PracowniaProgramowaniaServer.Logic
             return dbDeleteTradeNote.DeleteNote(tradeNoteid);
         }
 
-        public List<TradeNote> ReadAllTradeNotes()
+        public List<Tradenote> ReadAllTradeNotes()
         {
             var dbReadAllTradeNotes = new ReadTradeNote();
             return dbReadAllTradeNotes.readAllTradeNotes();

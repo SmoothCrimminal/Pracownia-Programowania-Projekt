@@ -7,7 +7,7 @@ namespace CRUD.Companies
 {
     public class UpdateCompanies
     {
-        public string UpdateCompany(int companyId, string companyName="", string nip = "", string address = "", string city = "")
+        public string UpdateCompany(int companyId, string companyName="", string nip = "", string address = "")
         {
             using (var context = new ProjektPPContext())
             {
@@ -15,17 +15,15 @@ namespace CRUD.Companies
                 if ((companyToUpdate != null) && ((bool)companyToUpdate.IsDeleted == false))
                 {
                     if (companyName != "")
-                        companyToUpdate.NazwaFirmy = companyName;
+                        companyToUpdate.CompanyName = companyName;
                     if (nip != "")
                         companyToUpdate.Nip = nip;
                     if (address != "")
-                        companyToUpdate.Adres = address;
-                    if (city != "")
-                        companyToUpdate.Miasto = city;
+                        companyToUpdate.Address = address;
 
                     context.SaveChanges();
-                    return $"{companyToUpdate.Id} {companyToUpdate.NazwaFirmy} {companyToUpdate.IdBranży} {companyToUpdate.IdUżytkownika} " +
-                        $"{companyToUpdate.Nip} {companyToUpdate.Adres} {companyToUpdate.Miasto}";
+                    return $"{companyToUpdate.Id} {companyToUpdate.CompanyName} {companyToUpdate.BrandId} {companyToUpdate.UserId} " +
+                        $"{companyToUpdate.Nip} {companyToUpdate.Address}";
                 }
 
                 return "Company with such id not found in database or has been deleted";
