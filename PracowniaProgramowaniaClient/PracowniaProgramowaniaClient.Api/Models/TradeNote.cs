@@ -13,7 +13,5 @@ namespace P.P.Database.Models
         public int FirmaPowiazana { get; set; }
         public int IdUżytkownika { get; set; }
 
-        public virtual Company FirmaPowiazanaNavigation { get; set; }
-        public virtual User IdUżytkownikaNavigation { get; set; }
     }
 }

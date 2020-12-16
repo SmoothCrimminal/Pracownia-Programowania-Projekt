@@ -49,142 +49,125 @@ namespace PracowniaProgramowaniaServer {
             "ZXF1ZXN0IkIKElJlYWRBbGxCcmFuZHNSZXBseRIsCglhbGxCcmFuZHMYASAD",
             "KAsyGS5zZXJ2ZXJTZXJ2aWNlLkJyYW5kRmllbGQiIwoQUmVhZEJyYW5kUmVx",
             "dWVzdBIPCgdicmFuZElkGAEgASgFIiYKDlJlYWRCcmFuZFJlcGx5EhQKDGJy",
-            "YW5kRGV0YWlscxgBIAEoCSI4ChJVcGRhdGVCcmFuZFJlcXVlc3QSDwoHYnJh",
-            "bmRJZBgBIAEoBRIRCglicmFuZE5hbWUYAiABKAkiKAoQVXBkYXRlQnJhbmRS",
-            "ZXBseRIUCgx1cGRhdGVkQnJhbmQYASABKAkiJQoRQ3JlYXRlUm9sZVJlcXVl",
-            "c3QSEAoIcm9sZU5hbWUYASABKAkiMwoPQ3JlYXRlUm9sZVJlcGx5Eg4KBnJv",
-            "bGVJZBgBIAEoBRIQCghyb2xlTmFtZRgCIAEoCSIjChFEZWxldGVSb2xlUmVx",
-            "dWVzdBIOCgZyb2xlSWQYASABKAUiIQoPRGVsZXRlUm9sZVJlcGx5Eg4KBnJl",
-            "c3VsdBgBIAEoCCIVChNSZWFkQWxsUm9sZXNSZXF1ZXN0Ij8KEVJlYWRBbGxS",
-            "b2xlc1JlcGx5EioKCGFsbFJvbGVzGAEgAygLMhguc2VydmVyU2VydmljZS5S",
-            "b2xlRmllbGQiIQoPUmVhZFJvbGVSZXF1ZXN0Eg4KBnJvbGVJZBgBIAEoBSIk",
-            "Cg1SZWFkUm9sZVJlcGx5EhMKC3JvbGVEZXRhaWxzGAEgASgJIjUKEVVwZGF0",
-            "ZVJvbGVSZXF1ZXN0Eg4KBnJvbGVJZBgBIAEoBRIQCghyb2xlTmFtZRgCIAEo",
-            "CSImCg9VcGRhdGVSb2xlUmVwbHkSEwoLdXBkYXRlZFJvbGUYASABKAkiTAoW",
-            "Q3JlYXRlVHJhZGVOb3RlUmVxdWVzdBIPCgdjb250ZW50GAEgASgJEhEKCWNv",
-            "bXBhbnlJZBgCIAEoBRIOCgZ1c2VySWQYAyABKAUiewoUQ3JlYXRlVHJhZGVO",
-            "b3RlUmVwbHkSEwoLdHJhZGVOb3RlSWQYASABKAUSGAoQdHJhZGVOb3RlQ29u",
-            "dGVudBgCIAEoCRIaChJjb25uZWN0ZWRDb21wYW55SWQYAyABKAUSGAoQdXNl",
-            "ckFkZGluZ05vdGVJZBgEIAEoBSItChZEZWxldGVUcmFkZU5vdGVSZXF1ZXN0",
-            "EhMKC3RyYWRlTm90ZUlkGAEgASgFIicKFERlbGV0ZVRyYWRlTm90ZVJlcGx5",
-            "Eg8KB21lc3NhZ2UYASABKAkiGgoYUmVhZEFsbFRyYWRlTm90ZXNSZXF1ZXN0",
-            "IlIKFlJlYWRBbGxUcmFkZU5vdGVzUmVwbHkSOAoRcmVhZEFsbFRyYWRlTm90",
-            "ZXMYASADKAsyHS5zZXJ2ZXJTZXJ2aWNlLlRyYWRlTm90ZUZpZWxkIisKFFJl",
-            "YWRUcmFkZU5vdGVSZXF1ZXN0EhMKC3RyYWRlTm90ZUlkGAEgASgFIi4KElJl",
-            "YWRUcmFkZU5vdGVSZXBseRIYChB0cmFkZU5vdGVEZXRhaWxzGAEgASgJIkEK",
-            "FlVwZGF0ZVRyYWRlTm90ZVJlcXVlc3QSEwoLdHJhZGVOb3RlSWQYASABKAUS",
-            "EgoKbmV3Q29udGVudBgCIAEoCSIwChRVcGRhdGVUcmFkZU5vdGVSZXBseRIY",
-            "ChB1cGRhdGVkVHJhZGVOb3RlGAEgASgJIr4BChRDcmVhdGVDb250YWN0UmVx",
-            "dWVzdBIRCgljb250YWN0SWQYASABKAUSDAoEbmFtZRgCIAEoCRIPCgdzdXJu",
-            "YW1lGAMgASgJEhoKEmNvbm5lY3RlZENvbXBhbnlJZBgEIAEoBRIbChN1c2Vy",
-            "QWRkaW5nQ29udGFjdElkGAUgASgFEhMKC3Bob25lTnVtYmVyGAYgASgFEhQK",
-            "DGVtYWlsQWRkcmVzcxgHIAEoCRIQCghwb3NpdGlvbhgIIAEoCSK8AQoSQ3Jl",
-            "YXRlQ29udGFjdFJlcGx5EhEKCWNvbnRhY3RJZBgBIAEoBRIMCgRuYW1lGAIg",
-            "ASgJEg8KB3N1cm5hbWUYAyABKAkSGgoSY29ubmVjdGVkQ29tcGFueUlkGAQg",
-            "ASgFEhsKE3VzZXJBZGRpbmdDb250YWN0SWQYBSABKAUSEwoLcGhvbmVOdW1i",
-            "ZXIYBiABKAUSFAoMZW1haWxBZGRyZXNzGAcgASgJEhAKCHBvc2l0aW9uGAgg",
-            "ASgJIikKFERlbGV0ZUNvbnRhY3RSZXF1ZXN0EhEKCWNvbnRhY3RJZBgBIAEo",
-            "BSIlChJEZWxldGVDb250YWN0UmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIYChZS",
-            "ZWFkQWxsQ29udGFjdHNSZXF1ZXN0IkgKFFJlYWRBbGxDb250YWN0c1JlcGx5",
-            "EjAKC2FsbENvbnRhY3RzGAEgAygLMhsuc2VydmVyU2VydmljZS5Db250YWN0",
-            "RmllbGQiIAoSUmVhZENvbnRhY3RSZXF1ZXN0EgoKAmlkGAEgASgFIioKEFJl",
-            "YWRDb250YWN0UmVwbHkSFgoOY29udGFjdERldGFpbHMYASABKAkivgEKFFVw",
-            "ZGF0ZUNvbnRhY3RSZXF1ZXN0EhEKCWNvbnRhY3RJZBgBIAEoBRIMCgRuYW1l",
-            "GAIgASgJEg8KB3N1cm5hbWUYAyABKAkSGgoSY29ubmVjdGVkQ29tcGFueUlk",
-            "GAQgASgFEhsKE3VzZXJBZGRpbmdDb250YWN0SWQYBSABKAUSEwoLcGhvbmVO",
-            "dW1iZXIYBiABKAUSFAoMZW1haWxBZGRyZXNzGAcgASgJEhAKCHBvc2l0aW9u",
-            "GAggASgJIiwKElVwZGF0ZUNvbnRhY3RSZXBseRIWCg51cGRhdGVkQ29udGFj",
-            "dBgBIAEoCSJ3ChRDcmVhdGVDb21wYW55UmVxdWVzdBITCgtjb21wYW55TmFt",
-            "ZRgBIAEoCRIPCgdicmFuZElkGAIgASgFEhsKE3VzZXJBZGRpbmdDb21wYW55",
-            "SWQYAyABKAUSCwoDbmlwGAQgASgJEg8KB2FkZHJlc3MYBSABKAkiiAEKEkNy",
-            "ZWF0ZUNvbXBhbnlSZXBseRIRCgljb21wYW55SWQYASABKAUSEwoLY29tcGFu",
-            "eU5hbWUYAiABKAkSDwoHYnJhbmRJZBgDIAEoBRIbChN1c2VyQWRkaW5nQ29t",
-            "cGFueUlkGAQgASgFEgsKA25pcBgFIAEoCRIPCgdhZGRyZXNzGAYgASgJIikK",
-            "FERlbGV0ZUNvbXBhbnlSZXF1ZXN0EhEKCWNvbXBhbnlJZBgBIAEoBSIlChJE",
-            "ZWxldGVDb21wYW55UmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIZChdSZWFkQWxs",
-            "Q29tcGFuaWVzUmVxdWVzdCJOChVSZWFkQWxsQ29tcGFuaWVzUmVwbHkSNQoQ",
-            "cmVhZEFsbENvbXBhbmllcxgBIAMoCzIbLnNlcnZlclNlcnZpY2UuQ29tcGFu",
-            "eUZpZWxkIicKElJlYWRDb21wYW55UmVxdWVzdBIRCgljb21wYW55SWQYASAB",
-            "KAUiKgoQUmVhZENvbXBhbnlSZXBseRIWCg5jb21wYW55RGV0YWlscxgBIAEo",
-            "CSKWAQoUVXBkYXRlQ29tcGFueVJlcXVlc3QSCgoCaWQYASABKAUSEwoLY29t",
-            "cGFueU5hbWUYAiABKAkSDwoHYnJhbmRJZBgDIAEoBRIbChN1c2VyQWRkaW5n",
-            "Q29tcGFueUlkGAQgASgFEgsKA25pcBgFIAEoCRIPCgdhZGRyZXNzGAYgASgJ",
-            "EhEKCWlzRGVsZXRlZBgHIAEoCCIsChJVcGRhdGVDb21wYW55UmVwbHkSFgoO",
-            "dXBkYXRlZENvbXBhbnkYASABKAkieAoRQ3JlYXRlVXNlclJlcXVlc3QSDQoF",
-            "bG9naW4YASABKAkSEAoIcGFzc3dvcmQYAiABKAkSDgoGcm9sZUlEGAMgASgF",
-            "EgwKBG5hbWUYBCABKAkSDwoHc3VybmFtZRgFIAEoCRITCgtkYXRlT2ZCaXJ0",
-            "aBgGIAEoCSI8Cg9DcmVhdGVVc2VyUmVwbHkSCgoCaWQYASABKAUSDQoFbG9n",
-            "aW4YAiABKAkSDgoGcm9sZUlEGAMgASgFIh8KEURlbGV0ZVVzZXJSZXF1ZXN0",
-            "EgoKAmlkGAEgASgFIiIKD0RlbGV0ZVVzZXJSZXBseRIPCgdtZXNzYWdlGAEg",
-            "ASgJIhUKE1JlYWRBbGxVc2Vyc1JlcXVlc3QiQwoRUmVhZEFsbFVzZXJzUmVw",
-            "bHkSLgoMcmVhZEFsbFVzZXJzGAEgAygLMhguc2VydmVyU2VydmljZS5Vc2Vy",
-            "RmllbGQiHQoPUmVhZFVzZXJSZXF1ZXN0EgoKAmlkGAEgASgFIiQKDVJlYWRV",
-            "c2VyUmVwbHkSEwoLdXNlckRldGFpbHMYASABKAkilwEKEVVwZGF0ZVVzZXJS",
-            "ZXF1ZXN0EgoKAmlkGAEgASgFEg0KBWxvZ2luGAIgASgJEhAKCHBhc3N3b3Jk",
-            "GAMgASgJEg4KBnJvbGVJRBgEIAEoBRIMCgRuYW1lGAUgASgJEg8KB3N1cm5h",
-            "bWUYBiABKAkSEwoLZGF0ZU9mQmlydGgYByABKAkSEQoJaXNEZWxldGVkGAgg",
-            "ASgIIiYKD1VwZGF0ZVVzZXJSZXBseRITCgt1cGRhdGVkVXNlchgBIAEoCTL5",
-            "FAocUHJhY293bmlhUHJvZ3JhbW93YW5pYVNlcnZlchJCCghTYXlIZWxsbxIb",
-            "LnNlcnZlclNlcnZpY2UuSGVsbG9SZXF1ZXN0Ghkuc2VydmVyU2VydmljZS5I",
-            "ZWxsb1JlcGx5ElEKC0NyZWF0ZUJyYW5kEiEuc2VydmVyU2VydmljZS5DcmVh",
-            "dGVCcmFuZFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNlLkNyZWF0ZUJyYW5kUmVw",
-            "bHkSUQoLRGVsZXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUJyYW5k",
-            "UmVxdWVzdBofLnNlcnZlclNlcnZpY2UuRGVsZXRlQnJhbmRSZXBseRJXCg1S",
-            "ZWFkQWxsQnJhbmRzEiMuc2VydmVyU2VydmljZS5SZWFkQWxsQnJhbmRzUmVx",
-            "dWVzdBohLnNlcnZlclNlcnZpY2UuUmVhZEFsbEJyYW5kc1JlcGx5EksKCVJl",
-            "YWRCcmFuZBIfLnNlcnZlclNlcnZpY2UuUmVhZEJyYW5kUmVxdWVzdBodLnNl",
-            "cnZlclNlcnZpY2UuUmVhZEJyYW5kUmVwbHkSUQoLVXBkYXRlQnJhbmQSIS5z",
-            "ZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUJyYW5kUmVxdWVzdBofLnNlcnZlclNlcnZp",
-            "Y2UuVXBkYXRlQnJhbmRSZXBseRJOCgpDcmVhdGVSb2xlEiAuc2VydmVyU2Vy",
-            "dmljZS5DcmVhdGVSb2xlUmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuQ3JlYXRl",
-            "Um9sZVJlcGx5Ek4KCkRlbGV0ZVJvbGUSIC5zZXJ2ZXJTZXJ2aWNlLkRlbGV0",
-            "ZVJvbGVSZXF1ZXN0Gh4uc2VydmVyU2VydmljZS5EZWxldGVSb2xlUmVwbHkS",
-            "VAoMUmVhZEFsbFJvbGVzEiIuc2VydmVyU2VydmljZS5SZWFkQWxsUm9sZXNS",
-            "ZXF1ZXN0GiAuc2VydmVyU2VydmljZS5SZWFkQWxsUm9sZXNSZXBseRJICghS",
-            "ZWFkUm9sZRIeLnNlcnZlclNlcnZpY2UuUmVhZFJvbGVSZXF1ZXN0Ghwuc2Vy",
-            "dmVyU2VydmljZS5SZWFkUm9sZVJlcGx5Ek4KClVwZGF0ZVJvbGUSIC5zZXJ2",
-            "ZXJTZXJ2aWNlLlVwZGF0ZVJvbGVSZXF1ZXN0Gh4uc2VydmVyU2VydmljZS5V",
-            "cGRhdGVSb2xlUmVwbHkSXQoPQ3JlYXRlVHJhZGVOb3RlEiUuc2VydmVyU2Vy",
-            "dmljZS5DcmVhdGVUcmFkZU5vdGVSZXF1ZXN0GiMuc2VydmVyU2VydmljZS5D",
-            "cmVhdGVUcmFkZU5vdGVSZXBseRJdCg9EZWxldGVUcmFkZU5vdGUSJS5zZXJ2",
-            "ZXJTZXJ2aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcXVlc3QaIy5zZXJ2ZXJTZXJ2",
-            "aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcGx5EmMKEVJlYWRBbGxUcmFkZU5vdGVz",
-            "Eicuc2VydmVyU2VydmljZS5SZWFkQWxsVHJhZGVOb3Rlc1JlcXVlc3QaJS5z",
-            "ZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxUcmFkZU5vdGVzUmVwbHkSVwoNUmVhZFRy",
-            "YWRlTm90ZRIjLnNlcnZlclNlcnZpY2UuUmVhZFRyYWRlTm90ZVJlcXVlc3Qa",
-            "IS5zZXJ2ZXJTZXJ2aWNlLlJlYWRUcmFkZU5vdGVSZXBseRJdCg9VcGRhdGVU",
-            "cmFkZU5vdGUSJS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRyYWRlTm90ZVJlcXVl",
-            "c3QaIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRyYWRlTm90ZVJlcGx5ElcKDUNy",
-            "ZWF0ZUNvbnRhY3QSIy5zZXJ2ZXJTZXJ2aWNlLkNyZWF0ZUNvbnRhY3RSZXF1",
-            "ZXN0GiEuc2VydmVyU2VydmljZS5DcmVhdGVDb250YWN0UmVwbHkSVwoNRGVs",
-            "ZXRlQ29udGFjdBIjLnNlcnZlclNlcnZpY2UuRGVsZXRlQ29udGFjdFJlcXVl",
-            "c3QaIS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbnRhY3RSZXBseRJdCg9SZWFk",
-            "QWxsQ29udGFjdHMSJS5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb250YWN0c1Jl",
-            "cXVlc3QaIy5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb250YWN0c1JlcGx5ElEK",
-            "C1JlYWRDb250YWN0EiEuc2VydmVyU2VydmljZS5SZWFkQ29udGFjdFJlcXVl",
-            "c3QaHy5zZXJ2ZXJTZXJ2aWNlLlJlYWRDb250YWN0UmVwbHkSVwoNVXBkYXRl",
-            "Q29udGFjdBIjLnNlcnZlclNlcnZpY2UuVXBkYXRlQ29udGFjdFJlcXVlc3Qa",
-            "IS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbnRhY3RSZXBseRJXCg1DcmVhdGVD",
-            "b21wYW55EiMuc2VydmVyU2VydmljZS5DcmVhdGVDb21wYW55UmVxdWVzdBoh",
-            "LnNlcnZlclNlcnZpY2UuQ3JlYXRlQ29tcGFueVJlcGx5ElcKDURlbGV0ZUNv",
-            "bXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbXBhbnlSZXF1ZXN0GiEu",
-            "c2VydmVyU2VydmljZS5EZWxldGVDb21wYW55UmVwbHkSYAoQUmVhZEFsbENv",
-            "bXBhbmllcxImLnNlcnZlclNlcnZpY2UuUmVhZEFsbENvbXBhbmllc1JlcXVl",
-            "c3QaJC5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb21wYW5pZXNSZXBseRJRCgtS",
-            "ZWFkQ29tcGFueRIhLnNlcnZlclNlcnZpY2UuUmVhZENvbXBhbnlSZXF1ZXN0",
-            "Gh8uc2VydmVyU2VydmljZS5SZWFkQ29tcGFueVJlcGx5ElcKDVVwZGF0ZUNv",
-            "bXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbXBhbnlSZXF1ZXN0GiEu",
-            "c2VydmVyU2VydmljZS5VcGRhdGVDb21wYW55UmVwbHkSTgoKQ3JlYXRlVXNl",
-            "chIgLnNlcnZlclNlcnZpY2UuQ3JlYXRlVXNlclJlcXVlc3QaHi5zZXJ2ZXJT",
-            "ZXJ2aWNlLkNyZWF0ZVVzZXJSZXBseRJOCgpEZWxldGVVc2VyEiAuc2VydmVy",
-            "U2VydmljZS5EZWxldGVVc2VyUmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuRGVs",
-            "ZXRlVXNlclJlcGx5ElQKDFJlYWRBbGxVc2VycxIiLnNlcnZlclNlcnZpY2Uu",
-            "UmVhZEFsbFVzZXJzUmVxdWVzdBogLnNlcnZlclNlcnZpY2UuUmVhZEFsbFVz",
-            "ZXJzUmVwbHkSSAoIUmVhZFVzZXISHi5zZXJ2ZXJTZXJ2aWNlLlJlYWRVc2Vy",
-            "UmVxdWVzdBocLnNlcnZlclNlcnZpY2UuUmVhZFVzZXJSZXBseRJOCgpVcGRh",
-            "dGVVc2VyEiAuc2VydmVyU2VydmljZS5VcGRhdGVVc2VyUmVxdWVzdBoeLnNl",
-            "cnZlclNlcnZpY2UuVXBkYXRlVXNlclJlcGx5Qh+qAhxQcmFjb3duaWFQcm9n",
-            "cmFtb3dhbmlhU2VydmVyYgZwcm90bzM="));
+            "YW5kRGV0YWlscxgBIAEoCSJEChJVcGRhdGVCcmFuZFJlcXVlc3QSLgoLdXBk",
+            "YXRlQnJhbmQYASABKAsyGS5zZXJ2ZXJTZXJ2aWNlLkJyYW5kRmllbGQiKAoQ",
+            "VXBkYXRlQnJhbmRSZXBseRIUCgx1cGRhdGVkQnJhbmQYASABKAkiJQoRQ3Jl",
+            "YXRlUm9sZVJlcXVlc3QSEAoIcm9sZU5hbWUYASABKAkiMwoPQ3JlYXRlUm9s",
+            "ZVJlcGx5Eg4KBnJvbGVJZBgBIAEoBRIQCghyb2xlTmFtZRgCIAEoCSIjChFE",
+            "ZWxldGVSb2xlUmVxdWVzdBIOCgZyb2xlSWQYASABKAUiIQoPRGVsZXRlUm9s",
+            "ZVJlcGx5Eg4KBnJlc3VsdBgBIAEoCCIVChNSZWFkQWxsUm9sZXNSZXF1ZXN0",
+            "Ij8KEVJlYWRBbGxSb2xlc1JlcGx5EioKCGFsbFJvbGVzGAEgAygLMhguc2Vy",
+            "dmVyU2VydmljZS5Sb2xlRmllbGQiIQoPUmVhZFJvbGVSZXF1ZXN0Eg4KBnJv",
+            "bGVJZBgBIAEoBSIkCg1SZWFkUm9sZVJlcGx5EhMKC3JvbGVEZXRhaWxzGAEg",
+            "ASgJIjsKEVVwZGF0ZVJvbGVSZXF1ZXN0EiYKBHJvbGUYASABKAsyGC5zZXJ2",
+            "ZXJTZXJ2aWNlLlJvbGVGaWVsZCImCg9VcGRhdGVSb2xlUmVwbHkSEwoLdXBk",
+            "YXRlZFJvbGUYASABKAkiSgoWQ3JlYXRlVHJhZGVOb3RlUmVxdWVzdBIwCgl0",
+            "cmFkZU5vdGUYASABKAsyHS5zZXJ2ZXJTZXJ2aWNlLlRyYWRlTm90ZUZpZWxk",
+            "IkYKFENyZWF0ZVRyYWRlTm90ZVJlcGx5Ei4KB25ld05vdGUYASABKAsyHS5z",
+            "ZXJ2ZXJTZXJ2aWNlLlRyYWRlTm90ZUZpZWxkIi0KFkRlbGV0ZVRyYWRlTm90",
+            "ZVJlcXVlc3QSEwoLdHJhZGVOb3RlSWQYASABKAUiJwoURGVsZXRlVHJhZGVO",
+            "b3RlUmVwbHkSDwoHbWVzc2FnZRgBIAEoCSIaChhSZWFkQWxsVHJhZGVOb3Rl",
+            "c1JlcXVlc3QiUgoWUmVhZEFsbFRyYWRlTm90ZXNSZXBseRI4ChFyZWFkQWxs",
+            "VHJhZGVOb3RlcxgBIAMoCzIdLnNlcnZlclNlcnZpY2UuVHJhZGVOb3RlRmll",
+            "bGQiKwoUUmVhZFRyYWRlTm90ZVJlcXVlc3QSEwoLdHJhZGVOb3RlSWQYASAB",
+            "KAUiLgoSUmVhZFRyYWRlTm90ZVJlcGx5EhgKEHRyYWRlTm90ZURldGFpbHMY",
+            "ASABKAkiSgoWVXBkYXRlVHJhZGVOb3RlUmVxdWVzdBIwCgl0cmFkZU5vdGUY",
+            "ASABKAsyHS5zZXJ2ZXJTZXJ2aWNlLlRyYWRlTm90ZUZpZWxkIjAKFFVwZGF0",
+            "ZVRyYWRlTm90ZVJlcGx5EhgKEHVwZGF0ZWRUcmFkZU5vdGUYASABKAkiRAoU",
+            "Q3JlYXRlQ29udGFjdFJlcXVlc3QSLAoHY29udGFjdBgBIAEoCzIbLnNlcnZl",
+            "clNlcnZpY2UuQ29udGFjdEZpZWxkIkUKEkNyZWF0ZUNvbnRhY3RSZXBseRIv",
+            "CgpuZXdDb250YWN0GAEgASgLMhsuc2VydmVyU2VydmljZS5Db250YWN0Rmll",
+            "bGQiKQoURGVsZXRlQ29udGFjdFJlcXVlc3QSEQoJY29udGFjdElkGAEgASgF",
+            "IiUKEkRlbGV0ZUNvbnRhY3RSZXBseRIPCgdtZXNzYWdlGAEgASgJIhgKFlJl",
+            "YWRBbGxDb250YWN0c1JlcXVlc3QiSAoUUmVhZEFsbENvbnRhY3RzUmVwbHkS",
+            "MAoLYWxsQ29udGFjdHMYASADKAsyGy5zZXJ2ZXJTZXJ2aWNlLkNvbnRhY3RG",
+            "aWVsZCIgChJSZWFkQ29udGFjdFJlcXVlc3QSCgoCaWQYASABKAUiKgoQUmVh",
+            "ZENvbnRhY3RSZXBseRIWCg5jb250YWN0RGV0YWlscxgBIAEoCSJEChRVcGRh",
+            "dGVDb250YWN0UmVxdWVzdBIsCgdjb250YWN0GAEgASgLMhsuc2VydmVyU2Vy",
+            "dmljZS5Db250YWN0RmllbGQiLAoSVXBkYXRlQ29udGFjdFJlcGx5EhYKDnVw",
+            "ZGF0ZWRDb250YWN0GAEgASgJIkQKFENyZWF0ZUNvbXBhbnlSZXF1ZXN0EiwK",
+            "B2NvbXBhbnkYASABKAsyGy5zZXJ2ZXJTZXJ2aWNlLkNvbXBhbnlGaWVsZCJF",
+            "ChJDcmVhdGVDb21wYW55UmVwbHkSLwoKbmV3Q29tcGFueRgBIAEoCzIbLnNl",
+            "cnZlclNlcnZpY2UuQ29tcGFueUZpZWxkIikKFERlbGV0ZUNvbXBhbnlSZXF1",
+            "ZXN0EhEKCWNvbXBhbnlJZBgBIAEoBSIlChJEZWxldGVDb21wYW55UmVwbHkS",
+            "DwoHbWVzc2FnZRgBIAEoCSIZChdSZWFkQWxsQ29tcGFuaWVzUmVxdWVzdCJO",
+            "ChVSZWFkQWxsQ29tcGFuaWVzUmVwbHkSNQoQcmVhZEFsbENvbXBhbmllcxgB",
+            "IAMoCzIbLnNlcnZlclNlcnZpY2UuQ29tcGFueUZpZWxkIicKElJlYWRDb21w",
+            "YW55UmVxdWVzdBIRCgljb21wYW55SWQYASABKAUiKgoQUmVhZENvbXBhbnlS",
+            "ZXBseRIWCg5jb21wYW55RGV0YWlscxgBIAEoCSJEChRVcGRhdGVDb21wYW55",
+            "UmVxdWVzdBIsCgdjb21wYW55GAEgASgLMhsuc2VydmVyU2VydmljZS5Db21w",
+            "YW55RmllbGQiLAoSVXBkYXRlQ29tcGFueVJlcGx5EhYKDnVwZGF0ZWRDb21w",
+            "YW55GAEgASgJIjsKEUNyZWF0ZVVzZXJSZXF1ZXN0EiYKBHVzZXIYASABKAsy",
+            "GC5zZXJ2ZXJTZXJ2aWNlLlVzZXJGaWVsZCI8Cg9DcmVhdGVVc2VyUmVwbHkS",
+            "KQoHbmV3VXNlchgBIAEoCzIYLnNlcnZlclNlcnZpY2UuVXNlckZpZWxkIh8K",
+            "EURlbGV0ZVVzZXJSZXF1ZXN0EgoKAmlkGAEgASgFIiIKD0RlbGV0ZVVzZXJS",
+            "ZXBseRIPCgdtZXNzYWdlGAEgASgJIhUKE1JlYWRBbGxVc2Vyc1JlcXVlc3Qi",
+            "QwoRUmVhZEFsbFVzZXJzUmVwbHkSLgoMcmVhZEFsbFVzZXJzGAEgAygLMhgu",
+            "c2VydmVyU2VydmljZS5Vc2VyRmllbGQiHQoPUmVhZFVzZXJSZXF1ZXN0EgoK",
+            "AmlkGAEgASgFIiQKDVJlYWRVc2VyUmVwbHkSEwoLdXNlckRldGFpbHMYASAB",
+            "KAkiOwoRVXBkYXRlVXNlclJlcXVlc3QSJgoEdXNlchgBIAEoCzIYLnNlcnZl",
+            "clNlcnZpY2UuVXNlckZpZWxkIiYKD1VwZGF0ZVVzZXJSZXBseRITCgt1cGRh",
+            "dGVkVXNlchgBIAEoCTL5FAocUHJhY293bmlhUHJvZ3JhbW93YW5pYVNlcnZl",
+            "chJCCghTYXlIZWxsbxIbLnNlcnZlclNlcnZpY2UuSGVsbG9SZXF1ZXN0Ghku",
+            "c2VydmVyU2VydmljZS5IZWxsb1JlcGx5ElEKC0NyZWF0ZUJyYW5kEiEuc2Vy",
+            "dmVyU2VydmljZS5DcmVhdGVCcmFuZFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNl",
+            "LkNyZWF0ZUJyYW5kUmVwbHkSUQoLRGVsZXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2",
+            "aWNlLkRlbGV0ZUJyYW5kUmVxdWVzdBofLnNlcnZlclNlcnZpY2UuRGVsZXRl",
+            "QnJhbmRSZXBseRJXCg1SZWFkQWxsQnJhbmRzEiMuc2VydmVyU2VydmljZS5S",
+            "ZWFkQWxsQnJhbmRzUmVxdWVzdBohLnNlcnZlclNlcnZpY2UuUmVhZEFsbEJy",
+            "YW5kc1JlcGx5EksKCVJlYWRCcmFuZBIfLnNlcnZlclNlcnZpY2UuUmVhZEJy",
+            "YW5kUmVxdWVzdBodLnNlcnZlclNlcnZpY2UuUmVhZEJyYW5kUmVwbHkSUQoL",
+            "VXBkYXRlQnJhbmQSIS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUJyYW5kUmVxdWVz",
+            "dBofLnNlcnZlclNlcnZpY2UuVXBkYXRlQnJhbmRSZXBseRJOCgpDcmVhdGVS",
+            "b2xlEiAuc2VydmVyU2VydmljZS5DcmVhdGVSb2xlUmVxdWVzdBoeLnNlcnZl",
+            "clNlcnZpY2UuQ3JlYXRlUm9sZVJlcGx5Ek4KCkRlbGV0ZVJvbGUSIC5zZXJ2",
+            "ZXJTZXJ2aWNlLkRlbGV0ZVJvbGVSZXF1ZXN0Gh4uc2VydmVyU2VydmljZS5E",
+            "ZWxldGVSb2xlUmVwbHkSVAoMUmVhZEFsbFJvbGVzEiIuc2VydmVyU2Vydmlj",
+            "ZS5SZWFkQWxsUm9sZXNSZXF1ZXN0GiAuc2VydmVyU2VydmljZS5SZWFkQWxs",
+            "Um9sZXNSZXBseRJICghSZWFkUm9sZRIeLnNlcnZlclNlcnZpY2UuUmVhZFJv",
+            "bGVSZXF1ZXN0Ghwuc2VydmVyU2VydmljZS5SZWFkUm9sZVJlcGx5Ek4KClVw",
+            "ZGF0ZVJvbGUSIC5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVJvbGVSZXF1ZXN0Gh4u",
+            "c2VydmVyU2VydmljZS5VcGRhdGVSb2xlUmVwbHkSXQoPQ3JlYXRlVHJhZGVO",
+            "b3RlEiUuc2VydmVyU2VydmljZS5DcmVhdGVUcmFkZU5vdGVSZXF1ZXN0GiMu",
+            "c2VydmVyU2VydmljZS5DcmVhdGVUcmFkZU5vdGVSZXBseRJdCg9EZWxldGVU",
+            "cmFkZU5vdGUSJS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcXVl",
+            "c3QaIy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZVRyYWRlTm90ZVJlcGx5EmMKEVJl",
+            "YWRBbGxUcmFkZU5vdGVzEicuc2VydmVyU2VydmljZS5SZWFkQWxsVHJhZGVO",
+            "b3Rlc1JlcXVlc3QaJS5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxUcmFkZU5vdGVz",
+            "UmVwbHkSVwoNUmVhZFRyYWRlTm90ZRIjLnNlcnZlclNlcnZpY2UuUmVhZFRy",
+            "YWRlTm90ZVJlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLlJlYWRUcmFkZU5vdGVS",
+            "ZXBseRJdCg9VcGRhdGVUcmFkZU5vdGUSJS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0",
+            "ZVRyYWRlTm90ZVJlcXVlc3QaIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZVRyYWRl",
+            "Tm90ZVJlcGx5ElcKDUNyZWF0ZUNvbnRhY3QSIy5zZXJ2ZXJTZXJ2aWNlLkNy",
+            "ZWF0ZUNvbnRhY3RSZXF1ZXN0GiEuc2VydmVyU2VydmljZS5DcmVhdGVDb250",
+            "YWN0UmVwbHkSVwoNRGVsZXRlQ29udGFjdBIjLnNlcnZlclNlcnZpY2UuRGVs",
+            "ZXRlQ29udGFjdFJlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNvbnRh",
+            "Y3RSZXBseRJdCg9SZWFkQWxsQ29udGFjdHMSJS5zZXJ2ZXJTZXJ2aWNlLlJl",
+            "YWRBbGxDb250YWN0c1JlcXVlc3QaIy5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxD",
+            "b250YWN0c1JlcGx5ElEKC1JlYWRDb250YWN0EiEuc2VydmVyU2VydmljZS5S",
+            "ZWFkQ29udGFjdFJlcXVlc3QaHy5zZXJ2ZXJTZXJ2aWNlLlJlYWRDb250YWN0",
+            "UmVwbHkSVwoNVXBkYXRlQ29udGFjdBIjLnNlcnZlclNlcnZpY2UuVXBkYXRl",
+            "Q29udGFjdFJlcXVlc3QaIS5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNvbnRhY3RS",
+            "ZXBseRJXCg1DcmVhdGVDb21wYW55EiMuc2VydmVyU2VydmljZS5DcmVhdGVD",
+            "b21wYW55UmVxdWVzdBohLnNlcnZlclNlcnZpY2UuQ3JlYXRlQ29tcGFueVJl",
+            "cGx5ElcKDURlbGV0ZUNvbXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLkRlbGV0ZUNv",
+            "bXBhbnlSZXF1ZXN0GiEuc2VydmVyU2VydmljZS5EZWxldGVDb21wYW55UmVw",
+            "bHkSYAoQUmVhZEFsbENvbXBhbmllcxImLnNlcnZlclNlcnZpY2UuUmVhZEFs",
+            "bENvbXBhbmllc1JlcXVlc3QaJC5zZXJ2ZXJTZXJ2aWNlLlJlYWRBbGxDb21w",
+            "YW5pZXNSZXBseRJRCgtSZWFkQ29tcGFueRIhLnNlcnZlclNlcnZpY2UuUmVh",
+            "ZENvbXBhbnlSZXF1ZXN0Gh8uc2VydmVyU2VydmljZS5SZWFkQ29tcGFueVJl",
+            "cGx5ElcKDVVwZGF0ZUNvbXBhbnkSIy5zZXJ2ZXJTZXJ2aWNlLlVwZGF0ZUNv",
+            "bXBhbnlSZXF1ZXN0GiEuc2VydmVyU2VydmljZS5VcGRhdGVDb21wYW55UmVw",
+            "bHkSTgoKQ3JlYXRlVXNlchIgLnNlcnZlclNlcnZpY2UuQ3JlYXRlVXNlclJl",
+            "cXVlc3QaHi5zZXJ2ZXJTZXJ2aWNlLkNyZWF0ZVVzZXJSZXBseRJOCgpEZWxl",
+            "dGVVc2VyEiAuc2VydmVyU2VydmljZS5EZWxldGVVc2VyUmVxdWVzdBoeLnNl",
+            "cnZlclNlcnZpY2UuRGVsZXRlVXNlclJlcGx5ElQKDFJlYWRBbGxVc2VycxIi",
+            "LnNlcnZlclNlcnZpY2UuUmVhZEFsbFVzZXJzUmVxdWVzdBogLnNlcnZlclNl",
+            "cnZpY2UuUmVhZEFsbFVzZXJzUmVwbHkSSAoIUmVhZFVzZXISHi5zZXJ2ZXJT",
+            "ZXJ2aWNlLlJlYWRVc2VyUmVxdWVzdBocLnNlcnZlclNlcnZpY2UuUmVhZFVz",
+            "ZXJSZXBseRJOCgpVcGRhdGVVc2VyEiAuc2VydmVyU2VydmljZS5VcGRhdGVV",
+            "c2VyUmVxdWVzdBoeLnNlcnZlclNlcnZpY2UuVXBkYXRlVXNlclJlcGx5Qh+q",
+            "AhxQcmFjb3duaWFQcm9ncmFtb3dhbmlhU2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -204,7 +187,7 @@ namespace PracowniaProgramowaniaServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllBrandsReply), global::PracowniaProgramowaniaServer.ReadAllBrandsReply.Parser, new[]{ "AllBrands" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadBrandRequest), global::PracowniaProgramowaniaServer.ReadBrandRequest.Parser, new[]{ "BrandId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadBrandReply), global::PracowniaProgramowaniaServer.ReadBrandReply.Parser, new[]{ "BrandDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateBrandRequest), global::PracowniaProgramowaniaServer.UpdateBrandRequest.Parser, new[]{ "BrandId", "BrandName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateBrandRequest), global::PracowniaProgramowaniaServer.UpdateBrandRequest.Parser, new[]{ "UpdateBrand" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateBrandReply), global::PracowniaProgramowaniaServer.UpdateBrandReply.Parser, new[]{ "UpdatedBrand" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateRoleRequest), global::PracowniaProgramowaniaServer.CreateRoleRequest.Parser, new[]{ "RoleName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateRoleReply), global::PracowniaProgramowaniaServer.CreateRoleReply.Parser, new[]{ "RoleId", "RoleName" }, null, null, null, null),
@@ -214,47 +197,47 @@ namespace PracowniaProgramowaniaServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllRolesReply), global::PracowniaProgramowaniaServer.ReadAllRolesReply.Parser, new[]{ "AllRoles" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadRoleRequest), global::PracowniaProgramowaniaServer.ReadRoleRequest.Parser, new[]{ "RoleId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadRoleReply), global::PracowniaProgramowaniaServer.ReadRoleReply.Parser, new[]{ "RoleDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateRoleRequest), global::PracowniaProgramowaniaServer.UpdateRoleRequest.Parser, new[]{ "RoleId", "RoleName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateRoleRequest), global::PracowniaProgramowaniaServer.UpdateRoleRequest.Parser, new[]{ "Role" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateRoleReply), global::PracowniaProgramowaniaServer.UpdateRoleReply.Parser, new[]{ "UpdatedRole" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateTradeNoteRequest), global::PracowniaProgramowaniaServer.CreateTradeNoteRequest.Parser, new[]{ "Content", "CompanyId", "UserId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateTradeNoteReply), global::PracowniaProgramowaniaServer.CreateTradeNoteReply.Parser, new[]{ "TradeNoteId", "TradeNoteContent", "ConnectedCompanyId", "UserAddingNoteId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateTradeNoteRequest), global::PracowniaProgramowaniaServer.CreateTradeNoteRequest.Parser, new[]{ "TradeNote" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateTradeNoteReply), global::PracowniaProgramowaniaServer.CreateTradeNoteReply.Parser, new[]{ "NewNote" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest), global::PracowniaProgramowaniaServer.DeleteTradeNoteRequest.Parser, new[]{ "TradeNoteId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteTradeNoteReply), global::PracowniaProgramowaniaServer.DeleteTradeNoteReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest), global::PracowniaProgramowaniaServer.ReadAllTradeNotesRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply), global::PracowniaProgramowaniaServer.ReadAllTradeNotesReply.Parser, new[]{ "ReadAllTradeNotes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadTradeNoteRequest), global::PracowniaProgramowaniaServer.ReadTradeNoteRequest.Parser, new[]{ "TradeNoteId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadTradeNoteReply), global::PracowniaProgramowaniaServer.ReadTradeNoteReply.Parser, new[]{ "TradeNoteDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest), global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest.Parser, new[]{ "TradeNoteId", "NewContent" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest), global::PracowniaProgramowaniaServer.UpdateTradeNoteRequest.Parser, new[]{ "TradeNote" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateTradeNoteReply), global::PracowniaProgramowaniaServer.UpdateTradeNoteReply.Parser, new[]{ "UpdatedTradeNote" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateContactRequest), global::PracowniaProgramowaniaServer.CreateContactRequest.Parser, new[]{ "ContactId", "Name", "Surname", "ConnectedCompanyId", "UserAddingContactId", "PhoneNumber", "EmailAddress", "Position" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateContactReply), global::PracowniaProgramowaniaServer.CreateContactReply.Parser, new[]{ "ContactId", "Name", "Surname", "ConnectedCompanyId", "UserAddingContactId", "PhoneNumber", "EmailAddress", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateContactRequest), global::PracowniaProgramowaniaServer.CreateContactRequest.Parser, new[]{ "Contact" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateContactReply), global::PracowniaProgramowaniaServer.CreateContactReply.Parser, new[]{ "NewContact" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteContactRequest), global::PracowniaProgramowaniaServer.DeleteContactRequest.Parser, new[]{ "ContactId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteContactReply), global::PracowniaProgramowaniaServer.DeleteContactReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllContactsRequest), global::PracowniaProgramowaniaServer.ReadAllContactsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllContactsReply), global::PracowniaProgramowaniaServer.ReadAllContactsReply.Parser, new[]{ "AllContacts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadContactRequest), global::PracowniaProgramowaniaServer.ReadContactRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadContactReply), global::PracowniaProgramowaniaServer.ReadContactReply.Parser, new[]{ "ContactDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateContactRequest), global::PracowniaProgramowaniaServer.UpdateContactRequest.Parser, new[]{ "ContactId", "Name", "Surname", "ConnectedCompanyId", "UserAddingContactId", "PhoneNumber", "EmailAddress", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateContactRequest), global::PracowniaProgramowaniaServer.UpdateContactRequest.Parser, new[]{ "Contact" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateContactReply), global::PracowniaProgramowaniaServer.UpdateContactReply.Parser, new[]{ "UpdatedContact" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyRequest), global::PracowniaProgramowaniaServer.CreateCompanyRequest.Parser, new[]{ "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyReply), global::PracowniaProgramowaniaServer.CreateCompanyReply.Parser, new[]{ "CompanyId", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyRequest), global::PracowniaProgramowaniaServer.CreateCompanyRequest.Parser, new[]{ "Company" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateCompanyReply), global::PracowniaProgramowaniaServer.CreateCompanyReply.Parser, new[]{ "NewCompany" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteCompanyRequest), global::PracowniaProgramowaniaServer.DeleteCompanyRequest.Parser, new[]{ "CompanyId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteCompanyReply), global::PracowniaProgramowaniaServer.DeleteCompanyReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest), global::PracowniaProgramowaniaServer.ReadAllCompaniesRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllCompaniesReply), global::PracowniaProgramowaniaServer.ReadAllCompaniesReply.Parser, new[]{ "ReadAllCompanies" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadCompanyRequest), global::PracowniaProgramowaniaServer.ReadCompanyRequest.Parser, new[]{ "CompanyId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadCompanyReply), global::PracowniaProgramowaniaServer.ReadCompanyReply.Parser, new[]{ "CompanyDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateCompanyRequest), global::PracowniaProgramowaniaServer.UpdateCompanyRequest.Parser, new[]{ "Id", "CompanyName", "BrandId", "UserAddingCompanyId", "Nip", "Address", "IsDeleted" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateCompanyRequest), global::PracowniaProgramowaniaServer.UpdateCompanyRequest.Parser, new[]{ "Company" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateCompanyReply), global::PracowniaProgramowaniaServer.UpdateCompanyReply.Parser, new[]{ "UpdatedCompany" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateUserRequest), global::PracowniaProgramowaniaServer.CreateUserRequest.Parser, new[]{ "Login", "Password", "RoleID", "Name", "Surname", "DateOfBirth" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateUserReply), global::PracowniaProgramowaniaServer.CreateUserReply.Parser, new[]{ "Id", "Login", "RoleID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateUserRequest), global::PracowniaProgramowaniaServer.CreateUserRequest.Parser, new[]{ "User" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.CreateUserReply), global::PracowniaProgramowaniaServer.CreateUserReply.Parser, new[]{ "NewUser" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteUserRequest), global::PracowniaProgramowaniaServer.DeleteUserRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.DeleteUserReply), global::PracowniaProgramowaniaServer.DeleteUserReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllUsersRequest), global::PracowniaProgramowaniaServer.ReadAllUsersRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadAllUsersReply), global::PracowniaProgramowaniaServer.ReadAllUsersReply.Parser, new[]{ "ReadAllUsers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadUserRequest), global::PracowniaProgramowaniaServer.ReadUserRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.ReadUserReply), global::PracowniaProgramowaniaServer.ReadUserReply.Parser, new[]{ "UserDetails" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateUserRequest), global::PracowniaProgramowaniaServer.UpdateUserRequest.Parser, new[]{ "Id", "Login", "Password", "RoleID", "Name", "Surname", "DateOfBirth", "IsDeleted" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateUserRequest), global::PracowniaProgramowaniaServer.UpdateUserRequest.Parser, new[]{ "User" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PracowniaProgramowaniaServer.UpdateUserReply), global::PracowniaProgramowaniaServer.UpdateUserReply.Parser, new[]{ "UpdatedUser" }, null, null, null, null)
           }));
     }
@@ -3105,8 +3088,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateBrandRequest(UpdateBrandRequest other) : this() {
-      brandId_ = other.brandId_;
-      brandName_ = other.brandName_;
+      updateBrand_ = other.updateBrand_ != null ? other.updateBrand_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3115,25 +3097,14 @@ namespace PracowniaProgramowaniaServer {
       return new UpdateBrandRequest(this);
     }
 
-    /// <summary>Field number for the "brandId" field.</summary>
-    public const int BrandIdFieldNumber = 1;
-    private int brandId_;
+    /// <summary>Field number for the "updateBrand" field.</summary>
+    public const int UpdateBrandFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.BrandField updateBrand_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BrandId {
-      get { return brandId_; }
+    public global::PracowniaProgramowaniaServer.BrandField UpdateBrand {
+      get { return updateBrand_; }
       set {
-        brandId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "brandName" field.</summary>
-    public const int BrandNameFieldNumber = 2;
-    private string brandName_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string BrandName {
-      get { return brandName_; }
-      set {
-        brandName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        updateBrand_ = value;
       }
     }
 
@@ -3150,16 +3121,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (BrandId != other.BrandId) return false;
-      if (BrandName != other.BrandName) return false;
+      if (!object.Equals(UpdateBrand, other.UpdateBrand)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (BrandId != 0) hash ^= BrandId.GetHashCode();
-      if (BrandName.Length != 0) hash ^= BrandName.GetHashCode();
+      if (updateBrand_ != null) hash ^= UpdateBrand.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3173,13 +3142,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (BrandId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(BrandId);
-      }
-      if (BrandName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(BrandName);
+      if (updateBrand_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UpdateBrand);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3189,11 +3154,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (BrandId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BrandId);
-      }
-      if (BrandName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(BrandName);
+      if (updateBrand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateBrand);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3206,11 +3168,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.BrandId != 0) {
-        BrandId = other.BrandId;
-      }
-      if (other.BrandName.Length != 0) {
-        BrandName = other.BrandName;
+      if (other.updateBrand_ != null) {
+        if (updateBrand_ == null) {
+          UpdateBrand = new global::PracowniaProgramowaniaServer.BrandField();
+        }
+        UpdateBrand.MergeFrom(other.UpdateBrand);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3223,12 +3185,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            BrandId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            BrandName = input.ReadString();
+          case 10: {
+            if (updateBrand_ == null) {
+              UpdateBrand = new global::PracowniaProgramowaniaServer.BrandField();
+            }
+            input.ReadMessage(UpdateBrand);
             break;
           }
         }
@@ -3403,9 +3364,6 @@ namespace PracowniaProgramowaniaServer {
     /// <summary>Field number for the "roleName" field.</summary>
     public const int RoleNameFieldNumber = 1;
     private string roleName_ = "";
-    /// <summary>
-    /// checemy mieæ nazwê Brandu
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string RoleName {
       get { return roleName_; }
@@ -3536,9 +3494,6 @@ namespace PracowniaProgramowaniaServer {
     /// <summary>Field number for the "roleId" field.</summary>
     public const int RoleIdFieldNumber = 1;
     private int roleId_;
-    /// <summary>
-    /// zwracamy ID i Name
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RoleId {
       get { return roleId_; }
@@ -4421,8 +4376,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateRoleRequest(UpdateRoleRequest other) : this() {
-      roleId_ = other.roleId_;
-      roleName_ = other.roleName_;
+      role_ = other.role_ != null ? other.role_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4431,25 +4385,14 @@ namespace PracowniaProgramowaniaServer {
       return new UpdateRoleRequest(this);
     }
 
-    /// <summary>Field number for the "roleId" field.</summary>
-    public const int RoleIdFieldNumber = 1;
-    private int roleId_;
+    /// <summary>Field number for the "role" field.</summary>
+    public const int RoleFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.RoleField role_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int RoleId {
-      get { return roleId_; }
+    public global::PracowniaProgramowaniaServer.RoleField Role {
+      get { return role_; }
       set {
-        roleId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "roleName" field.</summary>
-    public const int RoleNameFieldNumber = 2;
-    private string roleName_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string RoleName {
-      get { return roleName_; }
-      set {
-        roleName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        role_ = value;
       }
     }
 
@@ -4466,16 +4409,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (RoleId != other.RoleId) return false;
-      if (RoleName != other.RoleName) return false;
+      if (!object.Equals(Role, other.Role)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (RoleId != 0) hash ^= RoleId.GetHashCode();
-      if (RoleName.Length != 0) hash ^= RoleName.GetHashCode();
+      if (role_ != null) hash ^= Role.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4489,13 +4430,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (RoleId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RoleId);
-      }
-      if (RoleName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(RoleName);
+      if (role_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Role);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4505,11 +4442,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (RoleId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoleId);
-      }
-      if (RoleName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoleName);
+      if (role_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Role);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4522,11 +4456,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.RoleId != 0) {
-        RoleId = other.RoleId;
-      }
-      if (other.RoleName.Length != 0) {
-        RoleName = other.RoleName;
+      if (other.role_ != null) {
+        if (role_ == null) {
+          Role = new global::PracowniaProgramowaniaServer.RoleField();
+        }
+        Role.MergeFrom(other.Role);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4539,12 +4473,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            RoleId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            RoleName = input.ReadString();
+          case 10: {
+            if (role_ == null) {
+              Role = new global::PracowniaProgramowaniaServer.RoleField();
+            }
+            input.ReadMessage(Role);
             break;
           }
         }
@@ -4707,9 +4640,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateTradeNoteRequest(CreateTradeNoteRequest other) : this() {
-      content_ = other.content_;
-      companyId_ = other.companyId_;
-      userId_ = other.userId_;
+      tradeNote_ = other.tradeNote_ != null ? other.tradeNote_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4718,36 +4649,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateTradeNoteRequest(this);
     }
 
-    /// <summary>Field number for the "content" field.</summary>
-    public const int ContentFieldNumber = 1;
-    private string content_ = "";
+    /// <summary>Field number for the "tradeNote" field.</summary>
+    public const int TradeNoteFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.TradeNoteField tradeNote_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Content {
-      get { return content_; }
+    public global::PracowniaProgramowaniaServer.TradeNoteField TradeNote {
+      get { return tradeNote_; }
       set {
-        content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "companyId" field.</summary>
-    public const int CompanyIdFieldNumber = 2;
-    private int companyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CompanyId {
-      get { return companyId_; }
-      set {
-        companyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userId" field.</summary>
-    public const int UserIdFieldNumber = 3;
-    private int userId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserId {
-      get { return userId_; }
-      set {
-        userId_ = value;
+        tradeNote_ = value;
       }
     }
 
@@ -4764,18 +4673,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Content != other.Content) return false;
-      if (CompanyId != other.CompanyId) return false;
-      if (UserId != other.UserId) return false;
+      if (!object.Equals(TradeNote, other.TradeNote)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Content.Length != 0) hash ^= Content.GetHashCode();
-      if (CompanyId != 0) hash ^= CompanyId.GetHashCode();
-      if (UserId != 0) hash ^= UserId.GetHashCode();
+      if (tradeNote_ != null) hash ^= TradeNote.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4789,17 +4694,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Content.Length != 0) {
+      if (tradeNote_ != null) {
         output.WriteRawTag(10);
-        output.WriteString(Content);
-      }
-      if (CompanyId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(CompanyId);
-      }
-      if (UserId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(UserId);
+        output.WriteMessage(TradeNote);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4809,14 +4706,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Content.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
-      }
-      if (CompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompanyId);
-      }
-      if (UserId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      if (tradeNote_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TradeNote);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4829,14 +4720,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.Content.Length != 0) {
-        Content = other.Content;
-      }
-      if (other.CompanyId != 0) {
-        CompanyId = other.CompanyId;
-      }
-      if (other.UserId != 0) {
-        UserId = other.UserId;
+      if (other.tradeNote_ != null) {
+        if (tradeNote_ == null) {
+          TradeNote = new global::PracowniaProgramowaniaServer.TradeNoteField();
+        }
+        TradeNote.MergeFrom(other.TradeNote);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4850,15 +4738,10 @@ namespace PracowniaProgramowaniaServer {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Content = input.ReadString();
-            break;
-          }
-          case 16: {
-            CompanyId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            UserId = input.ReadInt32();
+            if (tradeNote_ == null) {
+              TradeNote = new global::PracowniaProgramowaniaServer.TradeNoteField();
+            }
+            input.ReadMessage(TradeNote);
             break;
           }
         }
@@ -4892,10 +4775,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateTradeNoteReply(CreateTradeNoteReply other) : this() {
-      tradeNoteId_ = other.tradeNoteId_;
-      tradeNoteContent_ = other.tradeNoteContent_;
-      connectedCompanyId_ = other.connectedCompanyId_;
-      userAddingNoteId_ = other.userAddingNoteId_;
+      newNote_ = other.newNote_ != null ? other.newNote_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4904,47 +4784,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateTradeNoteReply(this);
     }
 
-    /// <summary>Field number for the "tradeNoteId" field.</summary>
-    public const int TradeNoteIdFieldNumber = 1;
-    private int tradeNoteId_;
+    /// <summary>Field number for the "newNote" field.</summary>
+    public const int NewNoteFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.TradeNoteField newNote_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TradeNoteId {
-      get { return tradeNoteId_; }
+    public global::PracowniaProgramowaniaServer.TradeNoteField NewNote {
+      get { return newNote_; }
       set {
-        tradeNoteId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "tradeNoteContent" field.</summary>
-    public const int TradeNoteContentFieldNumber = 2;
-    private string tradeNoteContent_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string TradeNoteContent {
-      get { return tradeNoteContent_; }
-      set {
-        tradeNoteContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "connectedCompanyId" field.</summary>
-    public const int ConnectedCompanyIdFieldNumber = 3;
-    private int connectedCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ConnectedCompanyId {
-      get { return connectedCompanyId_; }
-      set {
-        connectedCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingNoteId" field.</summary>
-    public const int UserAddingNoteIdFieldNumber = 4;
-    private int userAddingNoteId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingNoteId {
-      get { return userAddingNoteId_; }
-      set {
-        userAddingNoteId_ = value;
+        newNote_ = value;
       }
     }
 
@@ -4961,20 +4808,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TradeNoteId != other.TradeNoteId) return false;
-      if (TradeNoteContent != other.TradeNoteContent) return false;
-      if (ConnectedCompanyId != other.ConnectedCompanyId) return false;
-      if (UserAddingNoteId != other.UserAddingNoteId) return false;
+      if (!object.Equals(NewNote, other.NewNote)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (TradeNoteId != 0) hash ^= TradeNoteId.GetHashCode();
-      if (TradeNoteContent.Length != 0) hash ^= TradeNoteContent.GetHashCode();
-      if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
-      if (UserAddingNoteId != 0) hash ^= UserAddingNoteId.GetHashCode();
+      if (newNote_ != null) hash ^= NewNote.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4988,21 +4829,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (TradeNoteId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(TradeNoteId);
-      }
-      if (TradeNoteContent.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(TradeNoteContent);
-      }
-      if (ConnectedCompanyId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(ConnectedCompanyId);
-      }
-      if (UserAddingNoteId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(UserAddingNoteId);
+      if (newNote_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NewNote);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -5012,17 +4841,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (TradeNoteId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TradeNoteId);
-      }
-      if (TradeNoteContent.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TradeNoteContent);
-      }
-      if (ConnectedCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ConnectedCompanyId);
-      }
-      if (UserAddingNoteId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingNoteId);
+      if (newNote_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NewNote);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5035,17 +4855,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.TradeNoteId != 0) {
-        TradeNoteId = other.TradeNoteId;
-      }
-      if (other.TradeNoteContent.Length != 0) {
-        TradeNoteContent = other.TradeNoteContent;
-      }
-      if (other.ConnectedCompanyId != 0) {
-        ConnectedCompanyId = other.ConnectedCompanyId;
-      }
-      if (other.UserAddingNoteId != 0) {
-        UserAddingNoteId = other.UserAddingNoteId;
+      if (other.newNote_ != null) {
+        if (newNote_ == null) {
+          NewNote = new global::PracowniaProgramowaniaServer.TradeNoteField();
+        }
+        NewNote.MergeFrom(other.NewNote);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5058,20 +4872,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            TradeNoteId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            TradeNoteContent = input.ReadString();
-            break;
-          }
-          case 24: {
-            ConnectedCompanyId = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            UserAddingNoteId = input.ReadInt32();
+          case 10: {
+            if (newNote_ == null) {
+              NewNote = new global::PracowniaProgramowaniaServer.TradeNoteField();
+            }
+            input.ReadMessage(NewNote);
             break;
           }
         }
@@ -5843,8 +5648,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateTradeNoteRequest(UpdateTradeNoteRequest other) : this() {
-      tradeNoteId_ = other.tradeNoteId_;
-      newContent_ = other.newContent_;
+      tradeNote_ = other.tradeNote_ != null ? other.tradeNote_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5853,25 +5657,14 @@ namespace PracowniaProgramowaniaServer {
       return new UpdateTradeNoteRequest(this);
     }
 
-    /// <summary>Field number for the "tradeNoteId" field.</summary>
-    public const int TradeNoteIdFieldNumber = 1;
-    private int tradeNoteId_;
+    /// <summary>Field number for the "tradeNote" field.</summary>
+    public const int TradeNoteFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.TradeNoteField tradeNote_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TradeNoteId {
-      get { return tradeNoteId_; }
+    public global::PracowniaProgramowaniaServer.TradeNoteField TradeNote {
+      get { return tradeNote_; }
       set {
-        tradeNoteId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "newContent" field.</summary>
-    public const int NewContentFieldNumber = 2;
-    private string newContent_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string NewContent {
-      get { return newContent_; }
-      set {
-        newContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        tradeNote_ = value;
       }
     }
 
@@ -5888,16 +5681,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TradeNoteId != other.TradeNoteId) return false;
-      if (NewContent != other.NewContent) return false;
+      if (!object.Equals(TradeNote, other.TradeNote)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (TradeNoteId != 0) hash ^= TradeNoteId.GetHashCode();
-      if (NewContent.Length != 0) hash ^= NewContent.GetHashCode();
+      if (tradeNote_ != null) hash ^= TradeNote.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5911,13 +5702,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (TradeNoteId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(TradeNoteId);
-      }
-      if (NewContent.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(NewContent);
+      if (tradeNote_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TradeNote);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -5927,11 +5714,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (TradeNoteId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TradeNoteId);
-      }
-      if (NewContent.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(NewContent);
+      if (tradeNote_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TradeNote);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5944,11 +5728,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.TradeNoteId != 0) {
-        TradeNoteId = other.TradeNoteId;
-      }
-      if (other.NewContent.Length != 0) {
-        NewContent = other.NewContent;
+      if (other.tradeNote_ != null) {
+        if (tradeNote_ == null) {
+          TradeNote = new global::PracowniaProgramowaniaServer.TradeNoteField();
+        }
+        TradeNote.MergeFrom(other.TradeNote);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5961,12 +5745,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            TradeNoteId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            NewContent = input.ReadString();
+          case 10: {
+            if (tradeNote_ == null) {
+              TradeNote = new global::PracowniaProgramowaniaServer.TradeNoteField();
+            }
+            input.ReadMessage(TradeNote);
             break;
           }
         }
@@ -6129,14 +5912,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateContactRequest(CreateContactRequest other) : this() {
-      contactId_ = other.contactId_;
-      name_ = other.name_;
-      surname_ = other.surname_;
-      connectedCompanyId_ = other.connectedCompanyId_;
-      userAddingContactId_ = other.userAddingContactId_;
-      phoneNumber_ = other.phoneNumber_;
-      emailAddress_ = other.emailAddress_;
-      position_ = other.position_;
+      contact_ = other.contact_ != null ? other.contact_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6145,91 +5921,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateContactRequest(this);
     }
 
-    /// <summary>Field number for the "contactId" field.</summary>
-    public const int ContactIdFieldNumber = 1;
-    private int contactId_;
+    /// <summary>Field number for the "contact" field.</summary>
+    public const int ContactFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.ContactField contact_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ContactId {
-      get { return contactId_; }
+    public global::PracowniaProgramowaniaServer.ContactField Contact {
+      get { return contact_; }
       set {
-        contactId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "surname" field.</summary>
-    public const int SurnameFieldNumber = 3;
-    private string surname_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Surname {
-      get { return surname_; }
-      set {
-        surname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "connectedCompanyId" field.</summary>
-    public const int ConnectedCompanyIdFieldNumber = 4;
-    private int connectedCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ConnectedCompanyId {
-      get { return connectedCompanyId_; }
-      set {
-        connectedCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingContactId" field.</summary>
-    public const int UserAddingContactIdFieldNumber = 5;
-    private int userAddingContactId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingContactId {
-      get { return userAddingContactId_; }
-      set {
-        userAddingContactId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "phoneNumber" field.</summary>
-    public const int PhoneNumberFieldNumber = 6;
-    private int phoneNumber_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PhoneNumber {
-      get { return phoneNumber_; }
-      set {
-        phoneNumber_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "emailAddress" field.</summary>
-    public const int EmailAddressFieldNumber = 7;
-    private string emailAddress_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string EmailAddress {
-      get { return emailAddress_; }
-      set {
-        emailAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 8;
-    private string position_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Position {
-      get { return position_; }
-      set {
-        position_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        contact_ = value;
       }
     }
 
@@ -6246,28 +5945,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ContactId != other.ContactId) return false;
-      if (Name != other.Name) return false;
-      if (Surname != other.Surname) return false;
-      if (ConnectedCompanyId != other.ConnectedCompanyId) return false;
-      if (UserAddingContactId != other.UserAddingContactId) return false;
-      if (PhoneNumber != other.PhoneNumber) return false;
-      if (EmailAddress != other.EmailAddress) return false;
-      if (Position != other.Position) return false;
+      if (!object.Equals(Contact, other.Contact)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ContactId != 0) hash ^= ContactId.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Surname.Length != 0) hash ^= Surname.GetHashCode();
-      if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
-      if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
-      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
-      if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
-      if (Position.Length != 0) hash ^= Position.GetHashCode();
+      if (contact_ != null) hash ^= Contact.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6281,37 +5966,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ContactId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ContactId);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (Surname.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Surname);
-      }
-      if (ConnectedCompanyId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ConnectedCompanyId);
-      }
-      if (UserAddingContactId != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(UserAddingContactId);
-      }
-      if (PhoneNumber != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(PhoneNumber);
-      }
-      if (EmailAddress.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(EmailAddress);
-      }
-      if (Position.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(Position);
+      if (contact_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Contact);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -6321,29 +5978,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ContactId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContactId);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Surname.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
-      }
-      if (ConnectedCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ConnectedCompanyId);
-      }
-      if (UserAddingContactId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingContactId);
-      }
-      if (PhoneNumber != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
-      }
-      if (EmailAddress.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
-      }
-      if (Position.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Position);
+      if (contact_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Contact);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -6356,29 +5992,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.ContactId != 0) {
-        ContactId = other.ContactId;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Surname.Length != 0) {
-        Surname = other.Surname;
-      }
-      if (other.ConnectedCompanyId != 0) {
-        ConnectedCompanyId = other.ConnectedCompanyId;
-      }
-      if (other.UserAddingContactId != 0) {
-        UserAddingContactId = other.UserAddingContactId;
-      }
-      if (other.PhoneNumber != 0) {
-        PhoneNumber = other.PhoneNumber;
-      }
-      if (other.EmailAddress.Length != 0) {
-        EmailAddress = other.EmailAddress;
-      }
-      if (other.Position.Length != 0) {
-        Position = other.Position;
+      if (other.contact_ != null) {
+        if (contact_ == null) {
+          Contact = new global::PracowniaProgramowaniaServer.ContactField();
+        }
+        Contact.MergeFrom(other.Contact);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -6391,36 +6009,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ContactId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Surname = input.ReadString();
-            break;
-          }
-          case 32: {
-            ConnectedCompanyId = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            UserAddingContactId = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            PhoneNumber = input.ReadInt32();
-            break;
-          }
-          case 58: {
-            EmailAddress = input.ReadString();
-            break;
-          }
-          case 66: {
-            Position = input.ReadString();
+          case 10: {
+            if (contact_ == null) {
+              Contact = new global::PracowniaProgramowaniaServer.ContactField();
+            }
+            input.ReadMessage(Contact);
             break;
           }
         }
@@ -6454,14 +6047,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateContactReply(CreateContactReply other) : this() {
-      contactId_ = other.contactId_;
-      name_ = other.name_;
-      surname_ = other.surname_;
-      connectedCompanyId_ = other.connectedCompanyId_;
-      userAddingContactId_ = other.userAddingContactId_;
-      phoneNumber_ = other.phoneNumber_;
-      emailAddress_ = other.emailAddress_;
-      position_ = other.position_;
+      newContact_ = other.newContact_ != null ? other.newContact_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -6470,91 +6056,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateContactReply(this);
     }
 
-    /// <summary>Field number for the "contactId" field.</summary>
-    public const int ContactIdFieldNumber = 1;
-    private int contactId_;
+    /// <summary>Field number for the "newContact" field.</summary>
+    public const int NewContactFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.ContactField newContact_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ContactId {
-      get { return contactId_; }
+    public global::PracowniaProgramowaniaServer.ContactField NewContact {
+      get { return newContact_; }
       set {
-        contactId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "surname" field.</summary>
-    public const int SurnameFieldNumber = 3;
-    private string surname_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Surname {
-      get { return surname_; }
-      set {
-        surname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "connectedCompanyId" field.</summary>
-    public const int ConnectedCompanyIdFieldNumber = 4;
-    private int connectedCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ConnectedCompanyId {
-      get { return connectedCompanyId_; }
-      set {
-        connectedCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingContactId" field.</summary>
-    public const int UserAddingContactIdFieldNumber = 5;
-    private int userAddingContactId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingContactId {
-      get { return userAddingContactId_; }
-      set {
-        userAddingContactId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "phoneNumber" field.</summary>
-    public const int PhoneNumberFieldNumber = 6;
-    private int phoneNumber_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PhoneNumber {
-      get { return phoneNumber_; }
-      set {
-        phoneNumber_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "emailAddress" field.</summary>
-    public const int EmailAddressFieldNumber = 7;
-    private string emailAddress_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string EmailAddress {
-      get { return emailAddress_; }
-      set {
-        emailAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 8;
-    private string position_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Position {
-      get { return position_; }
-      set {
-        position_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        newContact_ = value;
       }
     }
 
@@ -6571,28 +6080,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ContactId != other.ContactId) return false;
-      if (Name != other.Name) return false;
-      if (Surname != other.Surname) return false;
-      if (ConnectedCompanyId != other.ConnectedCompanyId) return false;
-      if (UserAddingContactId != other.UserAddingContactId) return false;
-      if (PhoneNumber != other.PhoneNumber) return false;
-      if (EmailAddress != other.EmailAddress) return false;
-      if (Position != other.Position) return false;
+      if (!object.Equals(NewContact, other.NewContact)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ContactId != 0) hash ^= ContactId.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Surname.Length != 0) hash ^= Surname.GetHashCode();
-      if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
-      if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
-      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
-      if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
-      if (Position.Length != 0) hash ^= Position.GetHashCode();
+      if (newContact_ != null) hash ^= NewContact.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6606,37 +6101,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ContactId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ContactId);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (Surname.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Surname);
-      }
-      if (ConnectedCompanyId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ConnectedCompanyId);
-      }
-      if (UserAddingContactId != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(UserAddingContactId);
-      }
-      if (PhoneNumber != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(PhoneNumber);
-      }
-      if (EmailAddress.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(EmailAddress);
-      }
-      if (Position.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(Position);
+      if (newContact_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NewContact);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -6646,29 +6113,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ContactId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContactId);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Surname.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
-      }
-      if (ConnectedCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ConnectedCompanyId);
-      }
-      if (UserAddingContactId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingContactId);
-      }
-      if (PhoneNumber != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
-      }
-      if (EmailAddress.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
-      }
-      if (Position.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Position);
+      if (newContact_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NewContact);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -6681,29 +6127,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.ContactId != 0) {
-        ContactId = other.ContactId;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Surname.Length != 0) {
-        Surname = other.Surname;
-      }
-      if (other.ConnectedCompanyId != 0) {
-        ConnectedCompanyId = other.ConnectedCompanyId;
-      }
-      if (other.UserAddingContactId != 0) {
-        UserAddingContactId = other.UserAddingContactId;
-      }
-      if (other.PhoneNumber != 0) {
-        PhoneNumber = other.PhoneNumber;
-      }
-      if (other.EmailAddress.Length != 0) {
-        EmailAddress = other.EmailAddress;
-      }
-      if (other.Position.Length != 0) {
-        Position = other.Position;
+      if (other.newContact_ != null) {
+        if (newContact_ == null) {
+          NewContact = new global::PracowniaProgramowaniaServer.ContactField();
+        }
+        NewContact.MergeFrom(other.NewContact);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -6716,36 +6144,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ContactId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Surname = input.ReadString();
-            break;
-          }
-          case 32: {
-            ConnectedCompanyId = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            UserAddingContactId = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            PhoneNumber = input.ReadInt32();
-            break;
-          }
-          case 58: {
-            EmailAddress = input.ReadString();
-            break;
-          }
-          case 66: {
-            Position = input.ReadString();
+          case 10: {
+            if (newContact_ == null) {
+              NewContact = new global::PracowniaProgramowaniaServer.ContactField();
+            }
+            input.ReadMessage(NewContact);
             break;
           }
         }
@@ -7517,14 +6920,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateContactRequest(UpdateContactRequest other) : this() {
-      contactId_ = other.contactId_;
-      name_ = other.name_;
-      surname_ = other.surname_;
-      connectedCompanyId_ = other.connectedCompanyId_;
-      userAddingContactId_ = other.userAddingContactId_;
-      phoneNumber_ = other.phoneNumber_;
-      emailAddress_ = other.emailAddress_;
-      position_ = other.position_;
+      contact_ = other.contact_ != null ? other.contact_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -7533,91 +6929,14 @@ namespace PracowniaProgramowaniaServer {
       return new UpdateContactRequest(this);
     }
 
-    /// <summary>Field number for the "contactId" field.</summary>
-    public const int ContactIdFieldNumber = 1;
-    private int contactId_;
+    /// <summary>Field number for the "contact" field.</summary>
+    public const int ContactFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.ContactField contact_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ContactId {
-      get { return contactId_; }
+    public global::PracowniaProgramowaniaServer.ContactField Contact {
+      get { return contact_; }
       set {
-        contactId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "surname" field.</summary>
-    public const int SurnameFieldNumber = 3;
-    private string surname_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Surname {
-      get { return surname_; }
-      set {
-        surname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "connectedCompanyId" field.</summary>
-    public const int ConnectedCompanyIdFieldNumber = 4;
-    private int connectedCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ConnectedCompanyId {
-      get { return connectedCompanyId_; }
-      set {
-        connectedCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingContactId" field.</summary>
-    public const int UserAddingContactIdFieldNumber = 5;
-    private int userAddingContactId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingContactId {
-      get { return userAddingContactId_; }
-      set {
-        userAddingContactId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "phoneNumber" field.</summary>
-    public const int PhoneNumberFieldNumber = 6;
-    private int phoneNumber_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PhoneNumber {
-      get { return phoneNumber_; }
-      set {
-        phoneNumber_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "emailAddress" field.</summary>
-    public const int EmailAddressFieldNumber = 7;
-    private string emailAddress_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string EmailAddress {
-      get { return emailAddress_; }
-      set {
-        emailAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 8;
-    private string position_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Position {
-      get { return position_; }
-      set {
-        position_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        contact_ = value;
       }
     }
 
@@ -7634,28 +6953,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ContactId != other.ContactId) return false;
-      if (Name != other.Name) return false;
-      if (Surname != other.Surname) return false;
-      if (ConnectedCompanyId != other.ConnectedCompanyId) return false;
-      if (UserAddingContactId != other.UserAddingContactId) return false;
-      if (PhoneNumber != other.PhoneNumber) return false;
-      if (EmailAddress != other.EmailAddress) return false;
-      if (Position != other.Position) return false;
+      if (!object.Equals(Contact, other.Contact)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ContactId != 0) hash ^= ContactId.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Surname.Length != 0) hash ^= Surname.GetHashCode();
-      if (ConnectedCompanyId != 0) hash ^= ConnectedCompanyId.GetHashCode();
-      if (UserAddingContactId != 0) hash ^= UserAddingContactId.GetHashCode();
-      if (PhoneNumber != 0) hash ^= PhoneNumber.GetHashCode();
-      if (EmailAddress.Length != 0) hash ^= EmailAddress.GetHashCode();
-      if (Position.Length != 0) hash ^= Position.GetHashCode();
+      if (contact_ != null) hash ^= Contact.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7669,37 +6974,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ContactId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ContactId);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
-      if (Surname.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Surname);
-      }
-      if (ConnectedCompanyId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ConnectedCompanyId);
-      }
-      if (UserAddingContactId != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(UserAddingContactId);
-      }
-      if (PhoneNumber != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(PhoneNumber);
-      }
-      if (EmailAddress.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(EmailAddress);
-      }
-      if (Position.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(Position);
+      if (contact_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Contact);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -7709,29 +6986,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ContactId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContactId);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Surname.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
-      }
-      if (ConnectedCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ConnectedCompanyId);
-      }
-      if (UserAddingContactId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingContactId);
-      }
-      if (PhoneNumber != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PhoneNumber);
-      }
-      if (EmailAddress.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(EmailAddress);
-      }
-      if (Position.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Position);
+      if (contact_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Contact);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7744,29 +7000,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.ContactId != 0) {
-        ContactId = other.ContactId;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Surname.Length != 0) {
-        Surname = other.Surname;
-      }
-      if (other.ConnectedCompanyId != 0) {
-        ConnectedCompanyId = other.ConnectedCompanyId;
-      }
-      if (other.UserAddingContactId != 0) {
-        UserAddingContactId = other.UserAddingContactId;
-      }
-      if (other.PhoneNumber != 0) {
-        PhoneNumber = other.PhoneNumber;
-      }
-      if (other.EmailAddress.Length != 0) {
-        EmailAddress = other.EmailAddress;
-      }
-      if (other.Position.Length != 0) {
-        Position = other.Position;
+      if (other.contact_ != null) {
+        if (contact_ == null) {
+          Contact = new global::PracowniaProgramowaniaServer.ContactField();
+        }
+        Contact.MergeFrom(other.Contact);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -7779,36 +7017,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ContactId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Surname = input.ReadString();
-            break;
-          }
-          case 32: {
-            ConnectedCompanyId = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            UserAddingContactId = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            PhoneNumber = input.ReadInt32();
-            break;
-          }
-          case 58: {
-            EmailAddress = input.ReadString();
-            break;
-          }
-          case 66: {
-            Position = input.ReadString();
+          case 10: {
+            if (contact_ == null) {
+              Contact = new global::PracowniaProgramowaniaServer.ContactField();
+            }
+            input.ReadMessage(Contact);
             break;
           }
         }
@@ -7971,11 +7184,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateCompanyRequest(CreateCompanyRequest other) : this() {
-      companyName_ = other.companyName_;
-      brandId_ = other.brandId_;
-      userAddingCompanyId_ = other.userAddingCompanyId_;
-      nip_ = other.nip_;
-      address_ = other.address_;
+      company_ = other.company_ != null ? other.company_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -7984,58 +7193,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateCompanyRequest(this);
     }
 
-    /// <summary>Field number for the "companyName" field.</summary>
-    public const int CompanyNameFieldNumber = 1;
-    private string companyName_ = "";
+    /// <summary>Field number for the "company" field.</summary>
+    public const int CompanyFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.CompanyField company_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string CompanyName {
-      get { return companyName_; }
+    public global::PracowniaProgramowaniaServer.CompanyField Company {
+      get { return company_; }
       set {
-        companyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "brandId" field.</summary>
-    public const int BrandIdFieldNumber = 2;
-    private int brandId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BrandId {
-      get { return brandId_; }
-      set {
-        brandId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingCompanyId" field.</summary>
-    public const int UserAddingCompanyIdFieldNumber = 3;
-    private int userAddingCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingCompanyId {
-      get { return userAddingCompanyId_; }
-      set {
-        userAddingCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "nip" field.</summary>
-    public const int NipFieldNumber = 4;
-    private string nip_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Nip {
-      get { return nip_; }
-      set {
-        nip_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "address" field.</summary>
-    public const int AddressFieldNumber = 5;
-    private string address_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Address {
-      get { return address_; }
-      set {
-        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        company_ = value;
       }
     }
 
@@ -8052,22 +7217,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (CompanyName != other.CompanyName) return false;
-      if (BrandId != other.BrandId) return false;
-      if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
-      if (Nip != other.Nip) return false;
-      if (Address != other.Address) return false;
+      if (!object.Equals(Company, other.Company)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
-      if (BrandId != 0) hash ^= BrandId.GetHashCode();
-      if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
-      if (Nip.Length != 0) hash ^= Nip.GetHashCode();
-      if (Address.Length != 0) hash ^= Address.GetHashCode();
+      if (company_ != null) hash ^= Company.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8081,25 +7238,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (CompanyName.Length != 0) {
+      if (company_ != null) {
         output.WriteRawTag(10);
-        output.WriteString(CompanyName);
-      }
-      if (BrandId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BrandId);
-      }
-      if (UserAddingCompanyId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(UserAddingCompanyId);
-      }
-      if (Nip.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Nip);
-      }
-      if (Address.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Address);
+        output.WriteMessage(Company);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -8109,20 +7250,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (CompanyName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyName);
-      }
-      if (BrandId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BrandId);
-      }
-      if (UserAddingCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingCompanyId);
-      }
-      if (Nip.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nip);
-      }
-      if (Address.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
+      if (company_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Company);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8135,20 +7264,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.CompanyName.Length != 0) {
-        CompanyName = other.CompanyName;
-      }
-      if (other.BrandId != 0) {
-        BrandId = other.BrandId;
-      }
-      if (other.UserAddingCompanyId != 0) {
-        UserAddingCompanyId = other.UserAddingCompanyId;
-      }
-      if (other.Nip.Length != 0) {
-        Nip = other.Nip;
-      }
-      if (other.Address.Length != 0) {
-        Address = other.Address;
+      if (other.company_ != null) {
+        if (company_ == null) {
+          Company = new global::PracowniaProgramowaniaServer.CompanyField();
+        }
+        Company.MergeFrom(other.Company);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8162,23 +7282,10 @@ namespace PracowniaProgramowaniaServer {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            CompanyName = input.ReadString();
-            break;
-          }
-          case 16: {
-            BrandId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            UserAddingCompanyId = input.ReadInt32();
-            break;
-          }
-          case 34: {
-            Nip = input.ReadString();
-            break;
-          }
-          case 42: {
-            Address = input.ReadString();
+            if (company_ == null) {
+              Company = new global::PracowniaProgramowaniaServer.CompanyField();
+            }
+            input.ReadMessage(Company);
             break;
           }
         }
@@ -8212,12 +7319,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateCompanyReply(CreateCompanyReply other) : this() {
-      companyId_ = other.companyId_;
-      companyName_ = other.companyName_;
-      brandId_ = other.brandId_;
-      userAddingCompanyId_ = other.userAddingCompanyId_;
-      nip_ = other.nip_;
-      address_ = other.address_;
+      newCompany_ = other.newCompany_ != null ? other.newCompany_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8226,69 +7328,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateCompanyReply(this);
     }
 
-    /// <summary>Field number for the "companyId" field.</summary>
-    public const int CompanyIdFieldNumber = 1;
-    private int companyId_;
+    /// <summary>Field number for the "newCompany" field.</summary>
+    public const int NewCompanyFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.CompanyField newCompany_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CompanyId {
-      get { return companyId_; }
+    public global::PracowniaProgramowaniaServer.CompanyField NewCompany {
+      get { return newCompany_; }
       set {
-        companyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "companyName" field.</summary>
-    public const int CompanyNameFieldNumber = 2;
-    private string companyName_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string CompanyName {
-      get { return companyName_; }
-      set {
-        companyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "brandId" field.</summary>
-    public const int BrandIdFieldNumber = 3;
-    private int brandId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BrandId {
-      get { return brandId_; }
-      set {
-        brandId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingCompanyId" field.</summary>
-    public const int UserAddingCompanyIdFieldNumber = 4;
-    private int userAddingCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingCompanyId {
-      get { return userAddingCompanyId_; }
-      set {
-        userAddingCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "nip" field.</summary>
-    public const int NipFieldNumber = 5;
-    private string nip_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Nip {
-      get { return nip_; }
-      set {
-        nip_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "address" field.</summary>
-    public const int AddressFieldNumber = 6;
-    private string address_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Address {
-      get { return address_; }
-      set {
-        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        newCompany_ = value;
       }
     }
 
@@ -8305,24 +7352,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (CompanyId != other.CompanyId) return false;
-      if (CompanyName != other.CompanyName) return false;
-      if (BrandId != other.BrandId) return false;
-      if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
-      if (Nip != other.Nip) return false;
-      if (Address != other.Address) return false;
+      if (!object.Equals(NewCompany, other.NewCompany)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (CompanyId != 0) hash ^= CompanyId.GetHashCode();
-      if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
-      if (BrandId != 0) hash ^= BrandId.GetHashCode();
-      if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
-      if (Nip.Length != 0) hash ^= Nip.GetHashCode();
-      if (Address.Length != 0) hash ^= Address.GetHashCode();
+      if (newCompany_ != null) hash ^= NewCompany.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8336,29 +7373,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (CompanyId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(CompanyId);
-      }
-      if (CompanyName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CompanyName);
-      }
-      if (BrandId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(BrandId);
-      }
-      if (UserAddingCompanyId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(UserAddingCompanyId);
-      }
-      if (Nip.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Nip);
-      }
-      if (Address.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Address);
+      if (newCompany_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NewCompany);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -8368,23 +7385,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (CompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompanyId);
-      }
-      if (CompanyName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyName);
-      }
-      if (BrandId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BrandId);
-      }
-      if (UserAddingCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingCompanyId);
-      }
-      if (Nip.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nip);
-      }
-      if (Address.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
+      if (newCompany_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NewCompany);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8397,23 +7399,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.CompanyId != 0) {
-        CompanyId = other.CompanyId;
-      }
-      if (other.CompanyName.Length != 0) {
-        CompanyName = other.CompanyName;
-      }
-      if (other.BrandId != 0) {
-        BrandId = other.BrandId;
-      }
-      if (other.UserAddingCompanyId != 0) {
-        UserAddingCompanyId = other.UserAddingCompanyId;
-      }
-      if (other.Nip.Length != 0) {
-        Nip = other.Nip;
-      }
-      if (other.Address.Length != 0) {
-        Address = other.Address;
+      if (other.newCompany_ != null) {
+        if (newCompany_ == null) {
+          NewCompany = new global::PracowniaProgramowaniaServer.CompanyField();
+        }
+        NewCompany.MergeFrom(other.NewCompany);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8426,28 +7416,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            CompanyId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            CompanyName = input.ReadString();
-            break;
-          }
-          case 24: {
-            BrandId = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            UserAddingCompanyId = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            Nip = input.ReadString();
-            break;
-          }
-          case 50: {
-            Address = input.ReadString();
+          case 10: {
+            if (newCompany_ == null) {
+              NewCompany = new global::PracowniaProgramowaniaServer.CompanyField();
+            }
+            input.ReadMessage(NewCompany);
             break;
           }
         }
@@ -9219,13 +8192,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateCompanyRequest(UpdateCompanyRequest other) : this() {
-      id_ = other.id_;
-      companyName_ = other.companyName_;
-      brandId_ = other.brandId_;
-      userAddingCompanyId_ = other.userAddingCompanyId_;
-      nip_ = other.nip_;
-      address_ = other.address_;
-      isDeleted_ = other.isDeleted_;
+      company_ = other.company_ != null ? other.company_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9234,80 +8201,14 @@ namespace PracowniaProgramowaniaServer {
       return new UpdateCompanyRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "company" field.</summary>
+    public const int CompanyFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.CompanyField company_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
+    public global::PracowniaProgramowaniaServer.CompanyField Company {
+      get { return company_; }
       set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "companyName" field.</summary>
-    public const int CompanyNameFieldNumber = 2;
-    private string companyName_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string CompanyName {
-      get { return companyName_; }
-      set {
-        companyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "brandId" field.</summary>
-    public const int BrandIdFieldNumber = 3;
-    private int brandId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BrandId {
-      get { return brandId_; }
-      set {
-        brandId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userAddingCompanyId" field.</summary>
-    public const int UserAddingCompanyIdFieldNumber = 4;
-    private int userAddingCompanyId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserAddingCompanyId {
-      get { return userAddingCompanyId_; }
-      set {
-        userAddingCompanyId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "nip" field.</summary>
-    public const int NipFieldNumber = 5;
-    private string nip_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Nip {
-      get { return nip_; }
-      set {
-        nip_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "address" field.</summary>
-    public const int AddressFieldNumber = 6;
-    private string address_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Address {
-      get { return address_; }
-      set {
-        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "isDeleted" field.</summary>
-    public const int IsDeletedFieldNumber = 7;
-    private bool isDeleted_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsDeleted {
-      get { return isDeleted_; }
-      set {
-        isDeleted_ = value;
+        company_ = value;
       }
     }
 
@@ -9324,26 +8225,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (CompanyName != other.CompanyName) return false;
-      if (BrandId != other.BrandId) return false;
-      if (UserAddingCompanyId != other.UserAddingCompanyId) return false;
-      if (Nip != other.Nip) return false;
-      if (Address != other.Address) return false;
-      if (IsDeleted != other.IsDeleted) return false;
+      if (!object.Equals(Company, other.Company)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
-      if (BrandId != 0) hash ^= BrandId.GetHashCode();
-      if (UserAddingCompanyId != 0) hash ^= UserAddingCompanyId.GetHashCode();
-      if (Nip.Length != 0) hash ^= Nip.GetHashCode();
-      if (Address.Length != 0) hash ^= Address.GetHashCode();
-      if (IsDeleted != false) hash ^= IsDeleted.GetHashCode();
+      if (company_ != null) hash ^= Company.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9357,33 +8246,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (CompanyName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CompanyName);
-      }
-      if (BrandId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(BrandId);
-      }
-      if (UserAddingCompanyId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(UserAddingCompanyId);
-      }
-      if (Nip.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Nip);
-      }
-      if (Address.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Address);
-      }
-      if (IsDeleted != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(IsDeleted);
+      if (company_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Company);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -9393,26 +8258,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (CompanyName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyName);
-      }
-      if (BrandId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BrandId);
-      }
-      if (UserAddingCompanyId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAddingCompanyId);
-      }
-      if (Nip.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nip);
-      }
-      if (Address.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
-      }
-      if (IsDeleted != false) {
-        size += 1 + 1;
+      if (company_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Company);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -9425,26 +8272,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.CompanyName.Length != 0) {
-        CompanyName = other.CompanyName;
-      }
-      if (other.BrandId != 0) {
-        BrandId = other.BrandId;
-      }
-      if (other.UserAddingCompanyId != 0) {
-        UserAddingCompanyId = other.UserAddingCompanyId;
-      }
-      if (other.Nip.Length != 0) {
-        Nip = other.Nip;
-      }
-      if (other.Address.Length != 0) {
-        Address = other.Address;
-      }
-      if (other.IsDeleted != false) {
-        IsDeleted = other.IsDeleted;
+      if (other.company_ != null) {
+        if (company_ == null) {
+          Company = new global::PracowniaProgramowaniaServer.CompanyField();
+        }
+        Company.MergeFrom(other.Company);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -9457,32 +8289,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            CompanyName = input.ReadString();
-            break;
-          }
-          case 24: {
-            BrandId = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            UserAddingCompanyId = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            Nip = input.ReadString();
-            break;
-          }
-          case 50: {
-            Address = input.ReadString();
-            break;
-          }
-          case 56: {
-            IsDeleted = input.ReadBool();
+          case 10: {
+            if (company_ == null) {
+              Company = new global::PracowniaProgramowaniaServer.CompanyField();
+            }
+            input.ReadMessage(Company);
             break;
           }
         }
@@ -9645,12 +8456,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateUserRequest(CreateUserRequest other) : this() {
-      login_ = other.login_;
-      password_ = other.password_;
-      roleID_ = other.roleID_;
-      name_ = other.name_;
-      surname_ = other.surname_;
-      dateOfBirth_ = other.dateOfBirth_;
+      user_ = other.user_ != null ? other.user_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9659,69 +8465,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateUserRequest(this);
     }
 
-    /// <summary>Field number for the "login" field.</summary>
-    public const int LoginFieldNumber = 1;
-    private string login_ = "";
+    /// <summary>Field number for the "user" field.</summary>
+    public const int UserFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.UserField user_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Login {
-      get { return login_; }
+    public global::PracowniaProgramowaniaServer.UserField User {
+      get { return user_; }
       set {
-        login_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "password" field.</summary>
-    public const int PasswordFieldNumber = 2;
-    private string password_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Password {
-      get { return password_; }
-      set {
-        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "roleID" field.</summary>
-    public const int RoleIDFieldNumber = 3;
-    private int roleID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int RoleID {
-      get { return roleID_; }
-      set {
-        roleID_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 4;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "surname" field.</summary>
-    public const int SurnameFieldNumber = 5;
-    private string surname_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Surname {
-      get { return surname_; }
-      set {
-        surname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "dateOfBirth" field.</summary>
-    public const int DateOfBirthFieldNumber = 6;
-    private string dateOfBirth_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string DateOfBirth {
-      get { return dateOfBirth_; }
-      set {
-        dateOfBirth_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        user_ = value;
       }
     }
 
@@ -9738,24 +8489,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Login != other.Login) return false;
-      if (Password != other.Password) return false;
-      if (RoleID != other.RoleID) return false;
-      if (Name != other.Name) return false;
-      if (Surname != other.Surname) return false;
-      if (DateOfBirth != other.DateOfBirth) return false;
+      if (!object.Equals(User, other.User)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Login.Length != 0) hash ^= Login.GetHashCode();
-      if (Password.Length != 0) hash ^= Password.GetHashCode();
-      if (RoleID != 0) hash ^= RoleID.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Surname.Length != 0) hash ^= Surname.GetHashCode();
-      if (DateOfBirth.Length != 0) hash ^= DateOfBirth.GetHashCode();
+      if (user_ != null) hash ^= User.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9769,29 +8510,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Login.Length != 0) {
+      if (user_ != null) {
         output.WriteRawTag(10);
-        output.WriteString(Login);
-      }
-      if (Password.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Password);
-      }
-      if (RoleID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(RoleID);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Name);
-      }
-      if (Surname.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Surname);
-      }
-      if (DateOfBirth.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(DateOfBirth);
+        output.WriteMessage(User);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -9801,23 +8522,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Login.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Login);
-      }
-      if (Password.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
-      }
-      if (RoleID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoleID);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Surname.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
-      }
-      if (DateOfBirth.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DateOfBirth);
+      if (user_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(User);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -9830,23 +8536,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.Login.Length != 0) {
-        Login = other.Login;
-      }
-      if (other.Password.Length != 0) {
-        Password = other.Password;
-      }
-      if (other.RoleID != 0) {
-        RoleID = other.RoleID;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Surname.Length != 0) {
-        Surname = other.Surname;
-      }
-      if (other.DateOfBirth.Length != 0) {
-        DateOfBirth = other.DateOfBirth;
+      if (other.user_ != null) {
+        if (user_ == null) {
+          User = new global::PracowniaProgramowaniaServer.UserField();
+        }
+        User.MergeFrom(other.User);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -9860,27 +8554,10 @@ namespace PracowniaProgramowaniaServer {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Login = input.ReadString();
-            break;
-          }
-          case 18: {
-            Password = input.ReadString();
-            break;
-          }
-          case 24: {
-            RoleID = input.ReadInt32();
-            break;
-          }
-          case 34: {
-            Name = input.ReadString();
-            break;
-          }
-          case 42: {
-            Surname = input.ReadString();
-            break;
-          }
-          case 50: {
-            DateOfBirth = input.ReadString();
+            if (user_ == null) {
+              User = new global::PracowniaProgramowaniaServer.UserField();
+            }
+            input.ReadMessage(User);
             break;
           }
         }
@@ -9914,9 +8591,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateUserReply(CreateUserReply other) : this() {
-      id_ = other.id_;
-      login_ = other.login_;
-      roleID_ = other.roleID_;
+      newUser_ = other.newUser_ != null ? other.newUser_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9925,36 +8600,14 @@ namespace PracowniaProgramowaniaServer {
       return new CreateUserReply(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "newUser" field.</summary>
+    public const int NewUserFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.UserField newUser_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
+    public global::PracowniaProgramowaniaServer.UserField NewUser {
+      get { return newUser_; }
       set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "login" field.</summary>
-    public const int LoginFieldNumber = 2;
-    private string login_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Login {
-      get { return login_; }
-      set {
-        login_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "roleID" field.</summary>
-    public const int RoleIDFieldNumber = 3;
-    private int roleID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int RoleID {
-      get { return roleID_; }
-      set {
-        roleID_ = value;
+        newUser_ = value;
       }
     }
 
@@ -9971,18 +8624,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (Login != other.Login) return false;
-      if (RoleID != other.RoleID) return false;
+      if (!object.Equals(NewUser, other.NewUser)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (Login.Length != 0) hash ^= Login.GetHashCode();
-      if (RoleID != 0) hash ^= RoleID.GetHashCode();
+      if (newUser_ != null) hash ^= NewUser.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9996,17 +8645,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Login.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Login);
-      }
-      if (RoleID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(RoleID);
+      if (newUser_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NewUser);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -10016,14 +8657,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (Login.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Login);
-      }
-      if (RoleID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoleID);
+      if (newUser_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NewUser);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10036,14 +8671,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.Login.Length != 0) {
-        Login = other.Login;
-      }
-      if (other.RoleID != 0) {
-        RoleID = other.RoleID;
+      if (other.newUser_ != null) {
+        if (newUser_ == null) {
+          NewUser = new global::PracowniaProgramowaniaServer.UserField();
+        }
+        NewUser.MergeFrom(other.NewUser);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -10056,16 +8688,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Login = input.ReadString();
-            break;
-          }
-          case 24: {
-            RoleID = input.ReadInt32();
+          case 10: {
+            if (newUser_ == null) {
+              NewUser = new global::PracowniaProgramowaniaServer.UserField();
+            }
+            input.ReadMessage(NewUser);
             break;
           }
         }
@@ -10837,14 +9464,7 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UpdateUserRequest(UpdateUserRequest other) : this() {
-      id_ = other.id_;
-      login_ = other.login_;
-      password_ = other.password_;
-      roleID_ = other.roleID_;
-      name_ = other.name_;
-      surname_ = other.surname_;
-      dateOfBirth_ = other.dateOfBirth_;
-      isDeleted_ = other.isDeleted_;
+      user_ = other.user_ != null ? other.user_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10853,91 +9473,14 @@ namespace PracowniaProgramowaniaServer {
       return new UpdateUserRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "user" field.</summary>
+    public const int UserFieldNumber = 1;
+    private global::PracowniaProgramowaniaServer.UserField user_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
+    public global::PracowniaProgramowaniaServer.UserField User {
+      get { return user_; }
       set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "login" field.</summary>
-    public const int LoginFieldNumber = 2;
-    private string login_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Login {
-      get { return login_; }
-      set {
-        login_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "password" field.</summary>
-    public const int PasswordFieldNumber = 3;
-    private string password_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Password {
-      get { return password_; }
-      set {
-        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "roleID" field.</summary>
-    public const int RoleIDFieldNumber = 4;
-    private int roleID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int RoleID {
-      get { return roleID_; }
-      set {
-        roleID_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 5;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "surname" field.</summary>
-    public const int SurnameFieldNumber = 6;
-    private string surname_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Surname {
-      get { return surname_; }
-      set {
-        surname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "dateOfBirth" field.</summary>
-    public const int DateOfBirthFieldNumber = 7;
-    private string dateOfBirth_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string DateOfBirth {
-      get { return dateOfBirth_; }
-      set {
-        dateOfBirth_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "isDeleted" field.</summary>
-    public const int IsDeletedFieldNumber = 8;
-    private bool isDeleted_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsDeleted {
-      get { return isDeleted_; }
-      set {
-        isDeleted_ = value;
+        user_ = value;
       }
     }
 
@@ -10954,28 +9497,14 @@ namespace PracowniaProgramowaniaServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Id != other.Id) return false;
-      if (Login != other.Login) return false;
-      if (Password != other.Password) return false;
-      if (RoleID != other.RoleID) return false;
-      if (Name != other.Name) return false;
-      if (Surname != other.Surname) return false;
-      if (DateOfBirth != other.DateOfBirth) return false;
-      if (IsDeleted != other.IsDeleted) return false;
+      if (!object.Equals(User, other.User)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (Login.Length != 0) hash ^= Login.GetHashCode();
-      if (Password.Length != 0) hash ^= Password.GetHashCode();
-      if (RoleID != 0) hash ^= RoleID.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Surname.Length != 0) hash ^= Surname.GetHashCode();
-      if (DateOfBirth.Length != 0) hash ^= DateOfBirth.GetHashCode();
-      if (IsDeleted != false) hash ^= IsDeleted.GetHashCode();
+      if (user_ != null) hash ^= User.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10989,37 +9518,9 @@ namespace PracowniaProgramowaniaServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Login.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Login);
-      }
-      if (Password.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Password);
-      }
-      if (RoleID != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(RoleID);
-      }
-      if (Name.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Name);
-      }
-      if (Surname.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Surname);
-      }
-      if (DateOfBirth.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(DateOfBirth);
-      }
-      if (IsDeleted != false) {
-        output.WriteRawTag(64);
-        output.WriteBool(IsDeleted);
+      if (user_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(User);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -11029,29 +9530,8 @@ namespace PracowniaProgramowaniaServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (Login.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Login);
-      }
-      if (Password.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
-      }
-      if (RoleID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoleID);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Surname.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
-      }
-      if (DateOfBirth.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DateOfBirth);
-      }
-      if (IsDeleted != false) {
-        size += 1 + 1;
+      if (user_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(User);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11064,29 +9544,11 @@ namespace PracowniaProgramowaniaServer {
       if (other == null) {
         return;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.Login.Length != 0) {
-        Login = other.Login;
-      }
-      if (other.Password.Length != 0) {
-        Password = other.Password;
-      }
-      if (other.RoleID != 0) {
-        RoleID = other.RoleID;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.Surname.Length != 0) {
-        Surname = other.Surname;
-      }
-      if (other.DateOfBirth.Length != 0) {
-        DateOfBirth = other.DateOfBirth;
-      }
-      if (other.IsDeleted != false) {
-        IsDeleted = other.IsDeleted;
+      if (other.user_ != null) {
+        if (user_ == null) {
+          User = new global::PracowniaProgramowaniaServer.UserField();
+        }
+        User.MergeFrom(other.User);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -11099,36 +9561,11 @@ namespace PracowniaProgramowaniaServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Login = input.ReadString();
-            break;
-          }
-          case 26: {
-            Password = input.ReadString();
-            break;
-          }
-          case 32: {
-            RoleID = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            Name = input.ReadString();
-            break;
-          }
-          case 50: {
-            Surname = input.ReadString();
-            break;
-          }
-          case 58: {
-            DateOfBirth = input.ReadString();
-            break;
-          }
-          case 64: {
-            IsDeleted = input.ReadBool();
+          case 10: {
+            if (user_ == null) {
+              User = new global::PracowniaProgramowaniaServer.UserField();
+            }
+            input.ReadMessage(User);
             break;
           }
         }

@@ -17,7 +17,5 @@ namespace P.P.Database.Models
         public int IdUżytkownika { get; set; }
         public bool? IsDeleted { get; set; }
 
-        public virtual Company FirmaPowiazanaNavigation { get; set; }
-        public virtual User IdUżytkownikaNavigation { get; set; }
     }
 }

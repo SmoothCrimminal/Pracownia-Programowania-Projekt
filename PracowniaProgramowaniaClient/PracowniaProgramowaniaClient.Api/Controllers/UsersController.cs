@@ -25,17 +25,17 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             _serverServiceAddress = configuration.GetValue<string>("ServerServiceAddress");
         }
 
-        [HttpGet]
-        [Route("create/{login} {password} {roleId} {name} {surname} {dateOfBirth}")]
-        public User CreateUser(string login, string password, int roleId, string name, string surname, string dateOfBirth)
+        [HttpPost]
+        [Route("create")]
+        public User CreateUser(UserField user)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.CreateUser(login, password, roleId, name, surname, dateOfBirth);
+            var reply = remote.CreateUser(user);
             return new User()
             {
-                Id = reply.Id,
-                Login = reply.Login,
-                IdRoli = reply.RoleID
+                Id = reply.NewUser.Id,
+                Login = reply.NewUser.Login,
+                IdRoli = reply.NewUser.RoleID,
             };
         }
 
@@ -69,12 +69,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             return reply.UserDetails;
         }
 
-        [HttpGet]
-        [Route("update/{userId} {login} {password} {name} {surname} {dateOfBirth}")]
-        public string UpdateUser(int userId, string login, string password, string name, string surname, string dateOfBirth)
+        [HttpPost]
+        [Route("update")]
+        public string UpdateUser(UserField user)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateUser(userId, login, password, name, surname, dateOfBirth);
+            var reply = remote.UpdateUser(user);
             return reply.UpdatedUser;
         }
     }

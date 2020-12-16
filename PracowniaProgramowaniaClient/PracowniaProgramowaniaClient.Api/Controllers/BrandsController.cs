@@ -28,7 +28,7 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
         }
 
         [HttpGet] 
-        [Route("create/{brandName}")] // mapowanie metody createBrand na create/"brandName"
+        [Route("create/{brandName}")] 
         public Brand CreateBrand(string brandName)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
@@ -69,12 +69,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             return reply.BrandDetails;
         }
 
-        [HttpGet]
-        [Route("update/{brandId} {brandName}")]
-        public string UpdateBrand(int brandId, string brandName)
+        [HttpPost]
+        [Route("update")]
+        public string UpdateBrand(BrandField brand)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateBrand(brandId, brandName);
+            var reply = remote.UpdateBrand(brand);
             return reply.UpdatedBrand;
             
         }

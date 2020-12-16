@@ -25,23 +25,22 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             _serverServiceAddress = configuration.GetValue<string>("ServerServiceAddress");
         }
 
-        [HttpGet]
-        [Route("create/{name} {surname} {connectedCompanyId} {userAddingContactID} {phoneNumber} {email} {position}")]
-        public Contact CreateContact(string name, string surname, int connectedCompanyId, int userId,
-            int phoneNumber, string email, string position)
+        [HttpPost]
+        [Route("create")]
+        public Contact CreateContact(ContactField contact)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.CreateContact(name, surname, connectedCompanyId, userId, phoneNumber, email, position);
+            var reply = remote.CreateContact(contact);
             return new Contact()
             {
-               Id = reply.ContactId,
-               Imie = reply.Name,
-               Nazwisko = reply.Surname,
-               FirmaPowiazana = reply.ConnectedCompanyId,
-               IdUżytkownika = reply.UserAddingContactId,
-               Telefon = reply.PhoneNumber,
-               Mail = reply.EmailAddress,
-               Stanowisko = reply.Position
+               Id = reply.NewContact.Id,
+               Imie = reply.NewContact.Name,
+               Nazwisko = reply.NewContact.Surname,
+               FirmaPowiazana = reply.NewContact.ConnectedCompanyId,
+               IdUżytkownika = reply.NewContact.UserAddingContactId,
+               Telefon = reply.NewContact.PhoneNumber,
+               Mail = reply.NewContact.EmailAddress,
+               Stanowisko = reply.NewContact.Position
             };
         }
 
@@ -75,12 +74,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             return reply.ContactDetails;
         }
 
-        [HttpGet]
-        [Route("update/{contactId} {name} {surname} {phoneNumber} {position} {mail}")]
-        public string UpdateContact(int contactId, string name, string surname, int phoneNumber, string position, string mail)
+        [HttpPost]
+        [Route("update")]
+        public string UpdateContact(ContactField contact)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateContact(contactId, name, surname, phoneNumber, position, mail);
+            var reply = remote.UpdateContact(contact);
             return reply.UpdatedContact;
         }
     }

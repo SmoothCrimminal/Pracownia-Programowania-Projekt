@@ -66,12 +66,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             return reply.RoleDetails;
         }
 
-        [HttpGet]
-        [Route("update/{roleId} {roleName}")]
-        public string UpdateRole(int roleId, string roleName)
+        [HttpPost]
+        [Route("update")]
+        public string UpdateRole(RoleField role)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateRole(roleId, roleName);
+            var reply = remote.UpdateRole(role);
             return reply.UpdatedRole;
 
         }

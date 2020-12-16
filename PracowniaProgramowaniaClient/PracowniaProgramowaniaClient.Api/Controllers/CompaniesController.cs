@@ -26,19 +26,19 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             _serverServiceAddress = configuration.GetValue<string>("ServerServiceAddress");
         }
 
-        [HttpGet]
-        [Route("create/{companyName} {brandId} {userId} {nip} {address} {city}")]
-        public Company CreateCompany(string companyName, int brandId, int userId, string nip, string address, string city)
+        [HttpPost]
+        [Route("create")]
+        public Company CreateCompany(CompanyField company)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.CreateCompany(companyName, brandId, userId, nip, address);
+            var reply = remote.CreateCompany(company);
             return new Company()
             {
-                Id = reply.CompanyId,
-                NazwaFirmy = reply.CompanyName,
-                IdBranży = reply.BrandId,
-                Nip = reply.Nip,
-                Adres = reply.Address
+                Id = reply.NewCompany.Id,
+                NazwaFirmy = reply.NewCompany.CompanyName,
+                IdBranży = reply.NewCompany.BrandId,
+                Nip = reply.NewCompany.Nip,
+                Adres = reply.NewCompany.Address
             };
         }
 
@@ -72,12 +72,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             return reply.CompanyDetails;
         }
 
-        [HttpGet]
-        [Route("update/{companyId} {companyName} {nip} {address} {city}")]
-        public string UpdateCompany(int companyId, string companyName, string nip, string address, string city)
+        [HttpPost]
+        [Route("update")]
+        public string UpdateCompany(CompanyField company)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateCompany(companyId, companyName, nip, address);
+            var reply = remote.UpdateCompany(company);
             return reply.UpdatedCompany;
         }
     }

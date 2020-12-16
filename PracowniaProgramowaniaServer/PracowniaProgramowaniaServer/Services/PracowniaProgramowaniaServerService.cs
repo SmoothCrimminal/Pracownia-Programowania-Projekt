@@ -74,7 +74,7 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateBrandReply> UpdateBrand(UpdateBrandRequest request, ServerCallContext context)
         {
             var brandsLogic = new BrandsLogic();
-            var updateBrand = brandsLogic.UpdateBrand(request.BrandId, request.BrandName);
+            var updateBrand = brandsLogic.UpdateBrand(request.UpdateBrand.Id, request.UpdateBrand.BrandName);
             return Task.FromResult(new UpdateBrandReply()
             {
                 UpdatedBrand = updateBrand
@@ -85,12 +85,12 @@ namespace PracowniaProgramowaniaServer
 
         public override Task<CreateRoleReply> CreateRole(CreateRoleRequest request, ServerCallContext context)
         {
-            var rolesLogic = new RolesLogic(); // obiekt klasy brandsLogic
-            var newRole = rolesLogic.CreateRole(request.RoleName); // tworzymy zmienn¹ newBrand typu BrandsLogic której przypisujemy z requesta BrandName
+            var rolesLogic = new RolesLogic(); 
+            var newRole = rolesLogic.CreateRole(request.RoleName);
             return Task.FromResult(new CreateRoleReply()
             {
                 RoleId = newRole.Id,
-                RoleName = newRole.RoleName   // zwracamy w odpowiedzi ID i NazwêBran¿y
+                RoleName = newRole.RoleName 
             });
 
         }
@@ -133,7 +133,7 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateRoleReply> UpdateRole(UpdateRoleRequest request, ServerCallContext context)
         {
             var rolesLogic = new RolesLogic();
-            var updateRole = rolesLogic.UpdateRole(request.RoleId, request.RoleName);
+            var updateRole = rolesLogic.UpdateRole(request.Role.Id, request.Role.RoleName);
             return Task.FromResult(new UpdateRoleReply()
             {
                 UpdatedRole = updateRole
@@ -144,13 +144,15 @@ namespace PracowniaProgramowaniaServer
         public override Task<CreateTradeNoteReply> CreateTradeNote(CreateTradeNoteRequest request, ServerCallContext context)
         {
             var tradeNotesLogic = new TradeNotesLogic();
-            var newTradeNote = tradeNotesLogic.CreateTradeNote(request.Content, request.CompanyId, request.UserId);
+            var newTradeNote = tradeNotesLogic.CreateTradeNote(request.TradeNote.Content, request.TradeNote.ConnectedCompanyId, request.TradeNote.UserAddingNoteId);
+            TradeNoteField tradeNote = new TradeNoteField();
+            tradeNote.Id = newTradeNote.Id;
+            tradeNote.Content = newTradeNote.Content;
+            tradeNote.ConnectedCompanyId = newTradeNote.CompanyId;
+            tradeNote.UserAddingNoteId = newTradeNote.UserId;
             return Task.FromResult(new CreateTradeNoteReply()
             {
-                TradeNoteId = newTradeNote.Id,
-                TradeNoteContent = newTradeNote.Content,
-                ConnectedCompanyId = newTradeNote.CompanyId,
-                UserAddingNoteId = newTradeNote.UserId
+                NewNote = tradeNote
             });
         }
 
@@ -191,7 +193,7 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateTradeNoteReply> UpdateTradeNote(UpdateTradeNoteRequest request, ServerCallContext context)
         {
             var tradeNotesLogic = new TradeNotesLogic();
-            var updateTradeNote = tradeNotesLogic.UpdateTradeNote(request.TradeNoteId, request.NewContent);
+            var updateTradeNote = tradeNotesLogic.UpdateTradeNote(request.TradeNote.Id, request.TradeNote.Content);
             return Task.FromResult(new UpdateTradeNoteReply()
             {
                 UpdatedTradeNote = updateTradeNote
@@ -203,17 +205,21 @@ namespace PracowniaProgramowaniaServer
         public override Task<CreateContactReply> CreateContact(CreateContactRequest request, ServerCallContext context) 
         {
             var contactsLogic = new ContactsLogic();
-            var createContact = contactsLogic.CreateContact(request.Name, request.Surname, request.ConnectedCompanyId, request.UserAddingContactId,
-                request.PhoneNumber, request.EmailAddress, request.Position);
+            var newContact = contactsLogic.CreateContact(request.Contact.Name, request.Contact.Surname,
+                request.Contact.ConnectedCompanyId, request.Contact.UserAddingContactId, request.Contact.PhoneNumber,
+                request.Contact.EmailAddress, request.Contact.Position);
+            ContactField contact = new ContactField();
+            contact.Name = newContact.Name;
+            contact.Surname = newContact.Surname;
+            contact.ConnectedCompanyId = newContact.CompanyId;
+            contact.UserAddingContactId = newContact.UserId;
+            contact.PhoneNumber = newContact.PhoneNumber;
+            contact.EmailAddress = newContact.Mail;
+            contact.Position = newContact.Position;
+
             return Task.FromResult(new CreateContactReply()
             {
-                Name = createContact.Name,
-                Surname = createContact.Surname,
-                ConnectedCompanyId = createContact.CompanyId,
-                UserAddingContactId = createContact.UserId,
-                PhoneNumber = createContact.PhoneNumber,
-                EmailAddress = createContact.Mail,
-                Position = createContact.Position
+                NewContact = contact
             });
         
         }
@@ -266,8 +272,9 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateContactReply> UpdateContact(UpdateContactRequest request, ServerCallContext context)
         {
             var contactsLogic = new ContactsLogic();
-            var updateContact = contactsLogic.UpdateContact(request.ContactId, request.Name, request.Surname, request.PhoneNumber, request.Position,
-                request.EmailAddress);
+            var updateContact = contactsLogic.UpdateContact(request.Contact.Id, request.Contact.Name, request.Contact.Surname,
+                request.Contact.PhoneNumber, request.Contact.Position, request.Contact.EmailAddress);
+
             return Task.FromResult(new UpdateContactReply()
             {
                 UpdatedContact = updateContact
@@ -279,15 +286,17 @@ namespace PracowniaProgramowaniaServer
         public override Task<CreateCompanyReply> CreateCompany(CreateCompanyRequest request, ServerCallContext context)
         {
             var companiesLogic = new CompaniesLogic();
-            var newCompany = companiesLogic.CreateCompany(request.CompanyName, request.BrandId, request.BrandId, request.Nip, request.Address);
+            var newCompany = companiesLogic.CreateCompany(request.Company.CompanyName, request.Company.BrandId,
+                request.Company.UserAddingCompanyId, request.Company.Nip, request.Company.Address);
+            CompanyField company = new CompanyField();
+            company.CompanyName = newCompany.CompanyName;
+            company.BrandId = newCompany.BrandId;
+            company.UserAddingCompanyId = newCompany.UserId;
+            company.Nip = newCompany.Nip;
+            company.Address = newCompany.Address;
             return Task.FromResult(new CreateCompanyReply()
             {
-                CompanyId = newCompany.Id,
-                CompanyName = newCompany.CompanyName,
-                BrandId = (int)newCompany.BrandId,
-                UserAddingCompanyId = newCompany.UserId,
-                Nip = newCompany.Nip,
-                Address = newCompany.Address
+                NewCompany = company
             });
         }
 
@@ -330,7 +339,8 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateCompanyReply> UpdateCompany(UpdateCompanyRequest request, ServerCallContext context)
         {
             var companiesLogic = new CompaniesLogic();
-            var updateCompany = companiesLogic.UpdateCompany(request.Id, request.CompanyName, request.Nip, request.Address);
+            var updateCompany = companiesLogic.UpdateCompany(request.Company.Id, request.Company.CompanyName, 
+                request.Company.Nip, request.Company.Address);
             return Task.FromResult(new UpdateCompanyReply { UpdatedCompany = updateCompany });
         }
 
@@ -338,12 +348,20 @@ namespace PracowniaProgramowaniaServer
         public override Task<CreateUserReply> CreateUser(CreateUserRequest request, ServerCallContext context)
         {
             var usersLogic = new UsersLogic();
-            var newUser = usersLogic.CreateUser(request.Login, request.Password, request.RoleID, request.Name, request.Surname, request.DateOfBirth);
+            var newUser = usersLogic.CreateUser(request.User.Login, request.User.Password, request.User.RoleID, request.User.Name, request.User.Surname,
+                request.User.DateOfBirth);
+            UserField grpcUser = new UserField();
+            grpcUser.Id = newUser.Id;
+            grpcUser.Login = newUser.Login;
+            grpcUser.Password = newUser.PasswordMd5;
+            grpcUser.Name = newUser.Name;
+            grpcUser.RoleID = newUser.RoleId;
+            grpcUser.Surname = newUser.Surname;
+            grpcUser.DateOfBirth = newUser.DateOfBirth.ToString();
+            grpcUser.IsDeleted = newUser.IsDeleted;
             return Task.FromResult(new CreateUserReply()
             {
-                Id = newUser.Id,
-                Login = newUser.Login,
-                RoleID = newUser.RoleId
+                NewUser = grpcUser
             });
         }
 
@@ -384,7 +402,8 @@ namespace PracowniaProgramowaniaServer
         public override Task<UpdateUserReply> UpdateUser(UpdateUserRequest request, ServerCallContext context)
         {
             var usersLogic = new UsersLogic();
-            var updateUser = usersLogic.UpdateUser(request.Id, request.Login, request.Password, request.Name, request.Surname, request.DateOfBirth);
+            var updateUser = usersLogic.UpdateUser(request.User.Id, request.User.Login, request.User.Password,
+                request.User.Name, request.User.Surname, request.User.DateOfBirth);
             return Task.FromResult(new UpdateUserReply()
             {
                 UpdatedUser = updateUser

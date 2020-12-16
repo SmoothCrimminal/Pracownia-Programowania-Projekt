@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracowniaProgramowaniaServer;
+using System;
 namespace PracowniaProgramowaniaClient.ServerRemote
 {
     public class ServerServiceRemote
@@ -9,227 +10,203 @@ namespace PracowniaProgramowaniaClient.ServerRemote
             _serverServiceAddress = serverServiceAddress;
         }
 
-        public PracowniaProgramowaniaServer.CreateBrandReply CreateBrand(string brandName)
+        public CreateBrandReply CreateBrand(string brandName)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.CreateBrand(new PracowniaProgramowaniaServer.CreateBrandRequest() { BrandName = brandName });
+            return pPServer.CreateBrand(new CreateBrandRequest() { BrandName = brandName });
             
         }
-        public PracowniaProgramowaniaServer.DeleteBrandReply DeleteBrand(int brandId)
+        public DeleteBrandReply DeleteBrand(int brandId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.DeleteBrand(new PracowniaProgramowaniaServer.DeleteBrandRequest(){ BrandId = brandId });
+            return pPServer.DeleteBrand(new DeleteBrandRequest(){ BrandId = brandId });
 
         }
 
-       public PracowniaProgramowaniaServer.ReadAllBrandsReply ReadAllBrands()
+       public ReadAllBrandsReply ReadAllBrands()
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadAllBrands(new PracowniaProgramowaniaServer.ReadAllBrandsRequest());
+            return pPServer.ReadAllBrands(new ReadAllBrandsRequest());
         } 
-        public PracowniaProgramowaniaServer.ReadBrandReply ReadBrand(int brandId)
+        public ReadBrandReply ReadBrand(int brandId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadBrand(new PracowniaProgramowaniaServer.ReadBrandRequest() { BrandId = brandId });
+            return pPServer.ReadBrand(new ReadBrandRequest() { BrandId = brandId });
 
         }
 
-        public PracowniaProgramowaniaServer.UpdateBrandReply UpdateBrand(int brandId, string brandName)
+        public UpdateBrandReply UpdateBrand(BrandField brand)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.UpdateBrand(new PracowniaProgramowaniaServer.UpdateBrandRequest() { BrandId = brandId, BrandName = brandName });
+            return pPServer.UpdateBrand(new UpdateBrandRequest() { UpdateBrand = brand});
 
         }
 
-        public PracowniaProgramowaniaServer.CreateRoleReply CreateRole(string roleName)
+        public CreateRoleReply CreateRole(string roleName)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.CreateRole(new PracowniaProgramowaniaServer.CreateRoleRequest() { RoleName = roleName });
+            return pPServer.CreateRole(new CreateRoleRequest() { RoleName = roleName });
 
         }
-        public PracowniaProgramowaniaServer.DeleteRoleReply DeleteRole(int roleId)
+        public DeleteRoleReply DeleteRole(int roleId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.DeleteRole(new PracowniaProgramowaniaServer.DeleteRoleRequest() { RoleId = roleId });
+            return pPServer.DeleteRole(new DeleteRoleRequest() { RoleId = roleId });
 
         }
 
-        public PracowniaProgramowaniaServer.ReadAllRolesReply ReadAllRoles()       
+        public ReadAllRolesReply ReadAllRoles()       
         {
              var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-             return pPServer.ReadAllRoles(new PracowniaProgramowaniaServer.ReadAllRolesRequest());
+             return pPServer.ReadAllRoles(new ReadAllRolesRequest());
         } 
-        public PracowniaProgramowaniaServer.ReadRoleReply ReadRole(int roleId)
+        public ReadRoleReply ReadRole(int roleId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadRole(new PracowniaProgramowaniaServer.ReadRoleRequest() { RoleId = roleId });
+            return pPServer.ReadRole(new ReadRoleRequest() { RoleId = roleId });
 
         }
 
-        public PracowniaProgramowaniaServer.UpdateRoleReply UpdateRole(int roleId, string roleName)
+        public UpdateRoleReply UpdateRole(RoleField role)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.UpdateRole (new PracowniaProgramowaniaServer.UpdateRoleRequest() { RoleId = roleId, RoleName = roleName });
+            return pPServer.UpdateRole (new UpdateRoleRequest() { Role = role });
 
         }
 
 
-        public PracowniaProgramowaniaServer.CreateTradeNoteReply CreateTrade(string content, int companyId, int userId)
+        public CreateTradeNoteReply CreateTrade(TradeNoteField tradeNote)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.CreateTradeNote(new PracowniaProgramowaniaServer.CreateTradeNoteRequest() { Content = content, CompanyId = companyId, UserId = userId });
+            return pPServer.CreateTradeNote(new CreateTradeNoteRequest() { TradeNote = tradeNote });
         }
 
-        public PracowniaProgramowaniaServer.DeleteTradeNoteReply DeleteTradeNote(int tradeNoteId)
+        public DeleteTradeNoteReply DeleteTradeNote(int tradeNoteId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.DeleteTradeNote(new PracowniaProgramowaniaServer.DeleteTradeNoteRequest() { TradeNoteId = tradeNoteId });
+            return pPServer.DeleteTradeNote(new DeleteTradeNoteRequest() { TradeNoteId = tradeNoteId });
         }
 
-        public PracowniaProgramowaniaServer.ReadAllTradeNotesReply ReadAllTradeNotes()
+        public ReadAllTradeNotesReply ReadAllTradeNotes()
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadAllTradeNotes(new PracowniaProgramowaniaServer.ReadAllTradeNotesRequest());
+            return pPServer.ReadAllTradeNotes(new ReadAllTradeNotesRequest());
         }
 
-        public PracowniaProgramowaniaServer.ReadTradeNoteReply ReadTradeNote(int tradeNoteId)
+        public ReadTradeNoteReply ReadTradeNote(int tradeNoteId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadTradeNote(new PracowniaProgramowaniaServer.ReadTradeNoteRequest() { TradeNoteId = tradeNoteId });
+            return pPServer.ReadTradeNote(new ReadTradeNoteRequest() { TradeNoteId = tradeNoteId });
         }
 
-        public PracowniaProgramowaniaServer.UpdateTradeNoteReply UpdateTrade(int tradeNoteId, string content)
+        public UpdateTradeNoteReply UpdateTrade(TradeNoteField tradeNote)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.UpdateTradeNote(new PracowniaProgramowaniaServer.UpdateTradeNoteRequest() { TradeNoteId = tradeNoteId, NewContent = content });
+            return pPServer.UpdateTradeNote(new UpdateTradeNoteRequest() { TradeNote = tradeNote });
         }
 
-        public PracowniaProgramowaniaServer.CreateContactReply CreateContact(string name, string surname, int connectedCompanyId, int userId,
-            int phoneNumber = 0, string emailAddress = "", string stanowisko = "")
+        public CreateContactReply CreateContact(ContactField contact)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.CreateContact(new PracowniaProgramowaniaServer.CreateContactRequest()
+            return pPServer.CreateContact(new CreateContactRequest()
             {
-                Name = name,
-                Surname = surname,
-                ConnectedCompanyId = connectedCompanyId,
-                UserAddingContactId = userId,
-                PhoneNumber = phoneNumber,
-                EmailAddress = emailAddress,
-                Position = stanowisko
+              Contact = contact
             });
         }
 
-        public PracowniaProgramowaniaServer.DeleteContactReply DeleteContact(int contactId)
+        public DeleteContactReply DeleteContact(int contactId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.DeleteContact(new PracowniaProgramowaniaServer.DeleteContactRequest() { ContactId = contactId });
+            return pPServer.DeleteContact(new DeleteContactRequest() { ContactId = contactId });
         }
 
-        public PracowniaProgramowaniaServer.ReadAllContactsReply ReadAllContacts()
+        public ReadAllContactsReply ReadAllContacts()
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadAllContacts(new PracowniaProgramowaniaServer.ReadAllContactsRequest());
+            return pPServer.ReadAllContacts(new ReadAllContactsRequest());
         }
 
-        public PracowniaProgramowaniaServer.ReadContactReply ReadContact(int contactId)
+        public ReadContactReply ReadContact(int contactId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadContact(new PracowniaProgramowaniaServer.ReadContactRequest() { Id = contactId });
+            return pPServer.ReadContact(new ReadContactRequest() { Id = contactId });
         }
 
-        public PracowniaProgramowaniaServer.UpdateContactReply UpdateContact(int contactId, string name = "", string surname = "", int phoneNumber = 0, string position = "", string emailAddress = "")
+        public UpdateContactReply UpdateContact(ContactField contact)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.UpdateContact(new PracowniaProgramowaniaServer.UpdateContactRequest()
+            return pPServer.UpdateContact(new UpdateContactRequest()
             {
-                ContactId = contactId,
-                Name = name,
-                Surname = surname,
-                PhoneNumber = phoneNumber,
-                Position = position,
-                EmailAddress = emailAddress
+                Contact = contact
             });
         }
 
-        public PracowniaProgramowaniaServer.CreateCompanyReply CreateCompany(string companyName, int brandId, int userId, string nip = "", string address = "")
+        public CreateCompanyReply CreateCompany(CompanyField company)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.CreateCompany(new PracowniaProgramowaniaServer.CreateCompanyRequest()
+            return pPServer.CreateCompany(new CreateCompanyRequest()
             {
-                CompanyName = companyName,
-                BrandId = brandId,
-                UserAddingCompanyId = userId,
-                Nip = nip,
-                Address = address
+                Company = company
             });
         }
 
-        public PracowniaProgramowaniaServer.DeleteCompanyReply DeleteCompany(int companyId)
+        public DeleteCompanyReply DeleteCompany(int companyId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.DeleteCompany(new PracowniaProgramowaniaServer.DeleteCompanyRequest() { CompanyId = companyId });
+            return pPServer.DeleteCompany(new DeleteCompanyRequest() { CompanyId = companyId });
         }
 
-        public PracowniaProgramowaniaServer.ReadAllCompaniesReply ReadAllCompanies()
+        public ReadAllCompaniesReply ReadAllCompanies()
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadAllCompanies(new PracowniaProgramowaniaServer.ReadAllCompaniesRequest());
+            return pPServer.ReadAllCompanies(new ReadAllCompaniesRequest());
         }
 
-        public PracowniaProgramowaniaServer.ReadCompanyReply ReadCompany(int companyId)
+        public ReadCompanyReply ReadCompany(int companyId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadCompany(new PracowniaProgramowaniaServer.ReadCompanyRequest() { CompanyId = companyId });
+            return pPServer.ReadCompany(new ReadCompanyRequest() { CompanyId = companyId });
         }
 
-        public PracowniaProgramowaniaServer.UpdateCompanyReply UpdateCompany(int companyId, string companyName = "", string nip = "", string address = "")
+        public UpdateCompanyReply UpdateCompany(CompanyField company)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.UpdateCompany(new PracowniaProgramowaniaServer.UpdateCompanyRequest()
+            return pPServer.UpdateCompany(new UpdateCompanyRequest()
             {
-                Id = companyId,
-                CompanyName = companyName,
-                Nip = nip,
-                Address = address
+               Company = company
             });
         }
 
-        public PracowniaProgramowaniaServer.CreateUserReply CreateUser(string login, string password, int roleId, string name = "", string surname = "", string dateOfBirth = "")
+        public CreateUserReply CreateUser(UserField user)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.CreateUser(new PracowniaProgramowaniaServer.CreateUserRequest() { Login = login, Password = password, RoleID = roleId, Name = name, Surname = surname, DateOfBirth = dateOfBirth });
+            return pPServer.CreateUser(new CreateUserRequest() { User = user});
         }
 
-        public PracowniaProgramowaniaServer.DeleteUserReply DeleteUser(int userId)
+        public DeleteUserReply DeleteUser(int userId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.DeleteUser(new PracowniaProgramowaniaServer.DeleteUserRequest() { Id = userId });
+            return pPServer.DeleteUser(new DeleteUserRequest() { Id = userId });
         }
 
-        public PracowniaProgramowaniaServer.ReadAllUsersReply ReadAllUsers()
+        public ReadAllUsersReply ReadAllUsers()
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadAllUsers(new PracowniaProgramowaniaServer.ReadAllUsersRequest());
+            return pPServer.ReadAllUsers(new ReadAllUsersRequest());
         }
 
-        public PracowniaProgramowaniaServer.ReadUserReply ReadUser(int userId)
+        public ReadUserReply ReadUser(int userId)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.ReadUser(new PracowniaProgramowaniaServer.ReadUserRequest() { Id = userId });
+            return pPServer.ReadUser(new ReadUserRequest() { Id = userId });
         }
 
-        public PracowniaProgramowaniaServer.UpdateUserReply UpdateUser(int userId, string login = "", string password = "", string name = "", string surname = "", string dateOfBirth = "")
+        public UpdateUserReply UpdateUser(UserField user)
         {
             var pPServer = new PracowniaProgramowaniaServer.PracowniaProgramowaniaServer.PracowniaProgramowaniaServerClient(Grpc.Net.Client.GrpcChannel.ForAddress(_serverServiceAddress));
-            return pPServer.UpdateUser(new PracowniaProgramowaniaServer.UpdateUserRequest()
+            return pPServer.UpdateUser(new UpdateUserRequest()
             {
-                Id = userId,
-                Login = login,
-                Password = password,
-                Name = name,
-                Surname = surname,
-                DateOfBirth = dateOfBirth
+               User = user
             });
         }
     }

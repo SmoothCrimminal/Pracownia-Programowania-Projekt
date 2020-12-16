@@ -25,14 +25,19 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             _serverServiceAddress = configuration.GetValue<string>("ServerServiceAddress");
         }
 
-        [HttpGet]
-        [Route("create/{content} {companyId} {userAddingNoteID}")]
-        public TradeNote CreateTradeNote(string content, int companyId, int userAddingNoteId)
+        [HttpPost]
+        [Route("create")]
+        public TradeNote CreateTradeNote(TradeNoteField tradeNote)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.CreateTrade(content, companyId, userAddingNoteId);
-            return new TradeNote() { Id = reply.TradeNoteId, Tresc = reply.TradeNoteContent, FirmaPowiazana = reply.ConnectedCompanyId,
-            IdUżytkownika = userAddingNoteId};
+            var reply = remote.CreateTrade(tradeNote);
+            return new TradeNote()
+            {
+                Id = reply.NewNote.Id,
+                Tresc = reply.NewNote.Content,
+                FirmaPowiazana = reply.NewNote.ConnectedCompanyId,
+                IdUżytkownika = reply.NewNote.UserAddingNoteId
+            };
         }
 
         [HttpGet]
@@ -65,12 +70,12 @@ namespace PracowniaProgramowaniaClient.Api.Controllers
             return reply.RoleDetails;
         }
 
-        [HttpGet]
-        [Route("update/{tradeNoteId} {content}")]
-        public string UpdateTradeNote(int tradeNoteId, string content)
+        [HttpPost]
+        [Route("update")]
+        public string UpdateTradeNote(TradeNoteField tradeNote)
         {
             var remote = new ServerServiceRemote(_serverServiceAddress);
-            var reply = remote.UpdateTrade(tradeNoteId, content);
+            var reply = remote.UpdateTrade(tradeNote);
             return reply.UpdatedTradeNote;
 
         }

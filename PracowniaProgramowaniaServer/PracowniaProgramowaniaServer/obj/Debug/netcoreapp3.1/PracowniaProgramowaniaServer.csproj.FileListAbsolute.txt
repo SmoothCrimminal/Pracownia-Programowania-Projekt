@@ -152,8 +152,3 @@ C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowania
 C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.dll
 C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.pdb
 C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\obj\Debug\netcoreapp3.1\PracowniaProgramowaniaServer.genruntimeconfig.cache
-C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\bin\Debug\netcoreapp3.1\Login.dll
-C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\bin\Debug\netcoreapp3.1\System.ServiceModel.dll
-C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\bin\Debug\netcoreapp3.1\System.IdentityModel.dll
-C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\bin\Debug\netcoreapp3.1\System.IdentityModel.Selectors.dll
-C:\Users\lataw\source\repos\PracowniaProgramowaniaProjekt\PracowniaProgramowaniaServer\PracowniaProgramowaniaServer\bin\Debug\netcoreapp3.1\Login.pdb

@@ -140,8 +140,7 @@ message ReadBrandReply{
 }
 
 message UpdateBrandRequest{
-	int32 brandId = 1;
-	string brandName = 2;
+	BrandField updateBrand = 1;
 }
 
 message UpdateBrandReply{
@@ -151,11 +150,11 @@ message UpdateBrandReply{
 
 
 message CreateRoleRequest{
-	string roleName = 1;  // checemy mieæ nazwê Brandu
+	string roleName = 1;  
 }
 
 message CreateRoleReply{
-	int32 roleId = 1;       // zwracamy ID i Name
+	int32 roleId = 1;      
 	string roleName = 2;
 }
 
@@ -184,8 +183,7 @@ message ReadRoleReply{
 }
 
 message UpdateRoleRequest{
-	int32 roleId = 1;
-	string roleName = 2;
+	RoleField role = 1;
 }
 
 message UpdateRoleReply{
@@ -194,16 +192,11 @@ message UpdateRoleReply{
 
 
 message CreateTradeNoteRequest{
-	string content = 1;
-	int32 companyId = 2;
-	int32 userId = 3;
+	TradeNoteField tradeNote = 1;
 }
 
 message CreateTradeNoteReply{
-	int32 tradeNoteId = 1;
-	string tradeNoteContent = 2;
-	int32 connectedCompanyId = 3;
-	int32 userAddingNoteId = 4;
+	TradeNoteField newNote = 1;
 }
 
 message DeleteTradeNoteRequest{
@@ -231,8 +224,7 @@ message ReadTradeNoteReply{
 }
 
 message UpdateTradeNoteRequest{
-	int32 tradeNoteId = 1;
-	string newContent = 2;
+	TradeNoteField tradeNote = 1;
 }
 
 message UpdateTradeNoteReply{
@@ -241,25 +233,11 @@ message UpdateTradeNoteReply{
 
 
 message CreateContactRequest{
-	int32 contactId = 1;
-	string name = 2;
-	string surname = 3;
-	int32 connectedCompanyId = 4;
-	int32 userAddingContactId = 5;
-	int32 phoneNumber = 6;
-	string emailAddress = 7;
-	string position = 8;
+	ContactField contact = 1;
 }
 
 message CreateContactReply{
-	int32 contactId = 1;
-	string name = 2;
-	string surname = 3;
-	int32 connectedCompanyId = 4;
-	int32 userAddingContactId = 5;
-	int32 phoneNumber = 6;
-	string emailAddress = 7;
-	string position = 8;
+	ContactField newContact = 1;
 }
 
 message DeleteContactRequest{
@@ -287,14 +265,7 @@ message ReadContactReply{
 }
 
 message UpdateContactRequest{
-	int32 contactId = 1;
-	string name = 2;
-	string surname = 3;
-	int32 connectedCompanyId = 4;
-	int32 userAddingContactId = 5;
-	int32 phoneNumber = 6;
-	string emailAddress = 7;
-	string position = 8;
+	ContactField contact = 1;
 }
 
 message UpdateContactReply{
@@ -304,20 +275,11 @@ message UpdateContactReply{
 
 
 message CreateCompanyRequest{
-	string companyName = 1;
-	int32 brandId = 2;
-	int32 userAddingCompanyId = 3;
-	string nip = 4;
-	string address = 5;
+	CompanyField company = 1;
 }
 
 message CreateCompanyReply{
-	int32 companyId = 1;
-	string companyName = 2;
-	int32 brandId = 3;
-	int32 userAddingCompanyId = 4;
-	string nip = 5;
-	string address = 6;
+	CompanyField newCompany = 1;
 }
 
 message DeleteCompanyRequest{
@@ -345,13 +307,7 @@ message ReadCompanyReply{
 }
 
 message UpdateCompanyRequest{
-	int32 id = 1;
-	string companyName = 2;
-	int32 brandId = 3;
-	int32 userAddingCompanyId = 4;
-	string nip = 5;
-	string address = 6;
-	bool isDeleted = 7;
+	CompanyField company = 1;
 }
 
 message UpdateCompanyReply{
@@ -360,18 +316,11 @@ message UpdateCompanyReply{
 
 
 message CreateUserRequest{
-	string login = 1;
-	string password = 2;
-	int32 roleID = 3;
-	string name = 4;
-	string surname = 5;
-	string dateOfBirth = 6;
+	UserField user = 1;
 }
 
 message CreateUserReply{
-	int32 id = 1;
-	string login = 2;
-	int32 roleID = 3;
+	UserField newUser = 1;
 }
 
 message DeleteUserRequest{
@@ -399,14 +348,7 @@ message ReadUserReply{
 }
 
 message UpdateUserRequest{
-	int32 id = 1;
-	string login = 2;
-	string password = 3;
-	int32 roleID = 4;
-	string name = 5;
-	string surname = 6;
-	string dateOfBirth = 7;
-	bool isDeleted = 8;
+	UserField user = 1;
 }
 
 message UpdateUserReply{

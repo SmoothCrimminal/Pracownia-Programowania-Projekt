@@ -1546,19 +1546,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Login/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "P.P.Database": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Login.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Login.dll": {}
-        }
-      },
       "P.P.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5879,11 +5866,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Login/1.0.0": {
-      "type": "project",
-      "path": "../Login/Login.csproj",
-      "msbuildProject": "../Login/Login.csproj"
-    },
     "P.P.Database/1.0.0": {
       "type": "project",
       "path": "../P.P.Database/P.P.Database.csproj",
@@ -5892,7 +5874,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Login >= 1.0.0",
       "P.P.Database >= 1.0.0"
     ]
   },
@@ -5922,9 +5903,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\Login\\Login.csproj": {
-              "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\Login\\Login.csproj"
-            },
             "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj": {
               "projectPath": "C:\\Users\\lataw\\source\\repos\\PracowniaProgramowaniaProjekt\\PracowniaProgramowaniaServer\\P.P.Database\\P.P.Database.csproj"
             }
